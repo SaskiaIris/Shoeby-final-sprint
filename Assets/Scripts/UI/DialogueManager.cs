@@ -3,8 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class DialogueManager : MonoBehaviour
-{
+public class DialogueManager : MonoBehaviour {
 
     public Text beeText;
 
@@ -15,22 +14,17 @@ public class DialogueManager : MonoBehaviour
 
 
 
-    void Start()
-    {
+    void Start() {
         sentences = new Queue<string>();
-        
     }
 
-    public void StartBeeText (Dialogue dialogue)
-    {
+    public void StartBeeText(Dialogue dialogue) {
 
-        if (pushedOnce == false)
-        {
+        if(pushedOnce == false) {
             pushedOnce = true;
             sentences.Clear();
 
-            foreach (string sentence in dialogue.sentences)
-            {
+            foreach(string sentence in dialogue.sentences) {
                 sentences.Enqueue(sentence);
             }
 
@@ -38,22 +32,19 @@ public class DialogueManager : MonoBehaviour
         }
     }
 
-    public void DisplayNextSentence()
-    {
-        if (sentences.Count == 0)
-        {
+    public void DisplayNextSentence() {
+        if(sentences.Count == 0) {
             EndDialogue();
             return;
         }
-        
+
 
         string sentence = sentences.Dequeue();
         beeText.text = sentence;
-            
+
     }
 
-    void EndDialogue()
-    {
+    void EndDialogue() {
         Debug.Log("end");
     }
 
