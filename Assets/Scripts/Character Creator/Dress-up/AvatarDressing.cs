@@ -7,10 +7,19 @@ public class AvatarDressing : MonoBehaviour
     private int clothingLayerNumber = 3;
 
     [SerializeField]
+    private string throwableIdentifierString = "Throwable";
+
+    [SerializeField]
+    private string dressableIdentifierString = "Dressable";
+
+    [SerializeField]
     private List<ClothingType> clothes = null;
 
-    //Detect collisions between the GameObjects with Colliders attached
-    void OnCollisionEnter(Collision collision) {
+    [SerializeField]
+    private string emptySpace = " ";
+
+	//Detect collisions between the GameObjects with Colliders attached
+	void OnCollisionEnter(Collision collision) {
         if(collision.gameObject.layer == clothingLayerNumber) {
 			for(int i = 0; i < clothes.Count; i++) {
                 if(collision.gameObject.tag == clothes[i].tagName) {
@@ -21,8 +30,35 @@ public class AvatarDressing : MonoBehaviour
     }
 
     public void ChangeClothing(List<GameObject> clothingType, GameObject thrownClothing, bool isFullOutfit) {
+        Debug.Log("something is thrown");
+        string clothingNameThrown;
+        string clothingNameDressed;
+
+        int positionThrowableString;
+        int positionDressableString;
+
         for(int i = 0; i < clothingType.Count; i++) {
-            if(clothingType[i].name == thrownClothing.name) {
+            clothingNameThrown = thrownClothing.name;
+            clothingNameDressed = clothingType[i].name;
+
+            positionThrowableString = clothingNameThrown.IndexOf(throwableIdentifierString);
+            positionDressableString = clothingNameDressed.IndexOf(dressableIdentifierString);
+
+            if(positionThrowableString >= 0) {
+                Debug.Log("de naam thrown was: " + clothingNameThrown);
+                clothingNameThrown = clothingNameThrown.Remove(positionThrowableString);
+                clothingNameThrown.TrimEnd();
+                Debug.Log("de naam van thrown is nu: " + clothingNameThrown);
+            }
+
+            if(positionDressableString >= 0) {
+                Debug.Log("de naam dressed was: " + clothingNameDressed);
+                clothingNameDressed = clothingNameDressed.Remove(positionDressableString);
+                clothingNameDressed.TrimEnd();
+                Debug.Log("de naam dressed is nu: " + clothingNameDressed);
+            }
+
+            if(clothingNameDressed == clothingNameThrown) {
                 clothingType[i].SetActive(true);
             } else {
                 clothingType[i].SetActive(false);
