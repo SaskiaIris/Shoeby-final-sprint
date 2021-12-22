@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 5102264946577298362}
   - component: {fileID: 5102264946577298358}
   m_Layer: 0
-  m_Name: Sakura petals
+  m_Name: Sakura Petals
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4760,7 +4760,7 @@ ParticleSystemRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 673e8be27565e3a48aaad5a8713f5afd, type: 2}
+  - {fileID: 2100000, guid: a257aa22e52777a45ada2b3d1ee2ace6, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

@@ -15,9 +15,6 @@ public class AvatarDressing : MonoBehaviour
     [SerializeField]
     private List<ClothingType> clothes = null;
 
-    [SerializeField]
-    private string emptySpace = " ";
-
 	//Detect collisions between the GameObjects with Colliders attached
 	void OnCollisionEnter(Collision collision) {
         if(collision.gameObject.layer == clothingLayerNumber) {

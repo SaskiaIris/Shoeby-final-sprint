@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7768559446450659637}
   m_Layer: 0
-  m_Name: Noorderlicht
+  m_Name: Northern Light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -42,7 +42,7 @@ GameObject:
   - component: {fileID: 1263717587146158183}
   - component: {fileID: 9081921568797580967}
   m_Layer: 0
-  m_Name: cylinder
+  m_Name: Light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

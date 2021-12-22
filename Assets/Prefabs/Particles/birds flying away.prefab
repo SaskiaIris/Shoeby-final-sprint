@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 3827863840032569514}
   - component: {fileID: 3827863840032569515}
   m_Layer: 0
-  m_Name: birds flying away
+  m_Name: Birds Flying Away
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 5300018757453919810}
   - component: {fileID: 8864257917015830877}
   m_Layer: 0
-  m_Name: ogen
+  m_Name: EyesMesh
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1648,7 +1648,7 @@ GameObject:
   - component: {fileID: 5165475524282648250}
   - component: {fileID: 5903347366463100835}
   m_Layer: 0
-  m_Name: lichaam
+  m_Name: BodyMesh
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2141,6 +2141,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   clothingLayerNumber: 3
+  throwableIdentifierString: Throwable
+  dressableIdentifierString: Dressable
   clothes:
   - typeName: Shirt
     tagName: Shirt
@@ -2160,6 +2162,7 @@ MonoBehaviour:
     gameObjectPieces:
     - {fileID: 5488216279848087312}
     fullOutfit: 1
+  emptySpace: ' '
 --- !u!1 &6437371611584225841
 GameObject:
   m_ObjectHideFlags: 0
