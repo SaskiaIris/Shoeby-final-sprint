@@ -2432,6 +2432,10 @@ PrefabInstance:
       propertyPath: clothing.Array.data[5]
       value: 
       objectReference: {fileID: 724652253}
+    - target: {fileID: 8158579371462117898, guid: f4662298e8a0e5041bd4acb4fa31665c, type: 3}
+      propertyPath: throwableIdentifierString
+      value: Throwable(Clone)
+      objectReference: {fileID: 0}
     - target: {fileID: 9103454600171132186, guid: f4662298e8a0e5041bd4acb4fa31665c, type: 3}
       propertyPath: m_ThrowOnDetach
       value: 0

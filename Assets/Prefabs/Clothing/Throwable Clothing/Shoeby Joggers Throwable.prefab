@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 2421626062990888669}
   m_Layer: 3
   m_Name: Shoeby Joggers Throwable
-  m_TagString: Outfits
+  m_TagString: Bottom
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

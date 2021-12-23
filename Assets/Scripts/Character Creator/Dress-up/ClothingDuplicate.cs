@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class Clothing : MonoBehaviour {
+public class ClothingDuplicate : MonoBehaviour {
     [SerializeField]
     private GameObject throwableVersion;
 
@@ -12,7 +12,7 @@ public class Clothing : MonoBehaviour {
         if(GameObject.Find(throwableVersion.name + cloneText) == null) {
             GameObject newPiece = GameObject.Instantiate(throwableVersion);
             newPiece.transform.position = transform.position;
-			this.gameObject.SetActive(false); // dit zorgt ervoor dat je de nieuwe meteen vastpakt, vraag mij ook niet waarom het werkt.
+			gameObject.SetActive(false); // dit zorgt ervoor dat je de nieuwe meteen vastpakt, vraag mij ook niet waarom het werkt.
                                               // én nee: de oude wordt blijkbaar niet op inactive gezet.
 		}
 	}

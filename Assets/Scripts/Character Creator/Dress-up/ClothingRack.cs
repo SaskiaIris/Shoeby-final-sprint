@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -22,37 +23,26 @@ public class ClothingRack : MonoBehaviour {
     }
 
     public void ActivateClothingOnRack(GameObject thrownPiece) {
-        foreach(GameObject clothingOnEnvironment in clothing) {
-            Debug.Log("something is thrown");
-            string clothingNameThrown;
-            string clothingNameEnvironment;
-
-            int positionThrowableString;
-            int positionEnvironmentString;
-
-            clothingNameThrown = thrownPiece.name;
-            clothingNameEnvironment = clothingOnEnvironment.name;
-
-            positionThrowableString = clothingNameThrown.IndexOf(throwableIdentifierString);
-            positionEnvironmentString = clothingNameEnvironment.IndexOf(environmentIdentifierString);
-
-            if(positionThrowableString >= 0) {
-                Debug.Log("de naam thrown was: " + clothingNameThrown);
-                clothingNameThrown = clothingNameThrown.Remove(positionThrowableString);
-                clothingNameThrown.TrimEnd();
-                Debug.Log("de naam van thrown is nu: " + clothingNameThrown);
-            }
-
-            if(positionEnvironmentString >= 0) {
-                Debug.Log("de naam Environment was: " + clothingNameEnvironment);
-                clothingNameEnvironment = clothingNameEnvironment.Remove(positionEnvironmentString);
-                clothingNameEnvironment.TrimEnd();
-                Debug.Log("de naam Environment is nu: " + clothingNameEnvironment);
-            }
+        foreach(GameObject clothingInEnvironment in clothing) {
+            Debug.Log("TREE something is thrown");
+            string clothingNameThrown = RemoveEndOfString(thrownPiece.name, throwableIdentifierString);
+            string clothingNameEnvironment = RemoveEndOfString(clothingInEnvironment.name, environmentIdentifierString);
 
             if(clothingNameEnvironment == clothingNameThrown) {
-                clothingOnEnvironment.SetActive(true);
+                clothingInEnvironment.SetActive(true);
             }
         }
+    }
+
+    public String RemoveEndOfString(string stringToTrim, string removeThis) {
+        string outputString = stringToTrim;
+        int positionWordToRemove = stringToTrim.IndexOf(removeThis);
+
+        if(positionWordToRemove >= 0) {
+            outputString.Remove(positionWordToRemove);
+            outputString.TrimEnd();
+        }
+
+        return outputString;
     }
 }

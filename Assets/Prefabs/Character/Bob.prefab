@@ -2081,10 +2081,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selectedBodyPart: {fileID: 6909671490160322236}
-  timeForScaling: 25
-  scaleStep: 25
+  timeForScaling: 50
+  scaleStep: 50
   middleSize: 0
-  maxSize: 100
+  maxSize: 200
   blendshapes:
   - shapeName: Hoofd
     minIndex: 0
@@ -2142,7 +2142,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   clothingLayerNumber: 3
   throwableIdentifierString: Throwable(Clone)
-  dressableIdentifierString: Environment
+  environmentIdentifierString: Environment
   clothes:
   - typeName: Shirt
     tagName: Shirt

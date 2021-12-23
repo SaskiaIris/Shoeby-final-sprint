@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -27,36 +28,16 @@ public class AvatarDressing : MonoBehaviour
     }
 
     public void ChangeClothing(List<GameObject> clothingType, GameObject thrownClothing, bool isFullOutfit) {
-        Debug.Log("something is thrown");
-        string clothingNameThrown;
+        Debug.Log("POP something is thrown");
+        string clothingNameThrown = RemoveEndOfString(thrownClothing.name, throwableIdentifierString);
         string clothingNameEnvironment;
 
-        int positionThrowableString;
-        int positionenvironmentString;
-
         for(int i = 0; i < clothingType.Count; i++) {
-            clothingNameThrown = thrownClothing.name;
-            clothingNameEnvironment = clothingType[i].name;
-
-            positionThrowableString = clothingNameThrown.IndexOf(throwableIdentifierString);
-            positionenvironmentString = clothingNameEnvironment.IndexOf(environmentIdentifierString);
-
-            if(positionThrowableString >= 0) {
-                Debug.Log("de naam thrown was: " + clothingNameThrown);
-                clothingNameThrown = clothingNameThrown.Remove(positionThrowableString);
-                clothingNameThrown.TrimEnd();
-                Debug.Log("de naam van thrown is nu: " + clothingNameThrown);
-            }
-
-            if(positionenvironmentString >= 0) {
-                Debug.Log("de naam environment was: " + clothingNameEnvironment);
-                clothingNameEnvironment = clothingNameEnvironment.Remove(positionenvironmentString);
-                clothingNameEnvironment.TrimEnd();
-                Debug.Log("de naam environment is nu: " + clothingNameEnvironment);
-            }
+            clothingNameEnvironment = RemoveEndOfString(clothingType[i].name, environmentIdentifierString);
 
             if(clothingNameEnvironment == clothingNameThrown) {
                 clothingType[i].SetActive(true);
+                Debug.Log("POP kleding active gezet");
             } else {
                 clothingType[i].SetActive(false);
             }
@@ -79,5 +60,17 @@ public class AvatarDressing : MonoBehaviour
                 }
             }
         }
+    }
+
+    public String RemoveEndOfString(string stringToTrim, string removeThis) {
+        string outputString = stringToTrim;
+        int positionWordToRemove = stringToTrim.IndexOf(removeThis);
+
+        if(positionWordToRemove >= 0) {
+            outputString.Remove(positionWordToRemove);
+            outputString.TrimEnd();
+        }
+
+        return outputString;
     }
 }
