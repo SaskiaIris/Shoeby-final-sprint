@@ -399,7 +399,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 2f5616635bea1f74a86e5dc59c569e77, type: 2}
+  - {fileID: 2100000, guid: 691550fec4fec704ea96bb26ee86d86a, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -497,7 +497,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 112
+  m_Constraints: 122
   m_CollisionDetection: 0
 --- !u!153 &8889917520854399675
 ConfigurableJoint:
@@ -511,7 +511,7 @@ ConfigurableJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0, y: 1.9000024, z: 0}
+  m_ConnectedAnchor: {x: 0.00000029802322, y: 1.8999994, z: -0.000000834465}
   serializedVersion: 2
   m_SecondaryAxis: {x: 0, y: 1, z: 0}
   m_XMotion: 0
@@ -935,6 +935,7 @@ GameObject:
   - component: {fileID: 8328824544016887999}
   - component: {fileID: 2295907535972631114}
   - component: {fileID: 4965519544397098329}
+  - component: {fileID: 78307897}
   m_Layer: 0
   m_Name: PushConfirm
   m_TagString: Untagged
@@ -984,7 +985,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 112
+  m_Constraints: 122
   m_CollisionDetection: 0
 --- !u!153 &2295907535972631114
 ConfigurableJoint:
@@ -998,7 +999,7 @@ ConfigurableJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0, y: 1.9000024, z: 0}
+  m_ConnectedAnchor: {x: -0.00000044703484, y: 1.8999994, z: 0.00000059604645}
   serializedVersion: 2
   m_SecondaryAxis: {x: 0, y: 1, z: 0}
   m_XMotion: 0
@@ -1098,10 +1099,59 @@ MonoBehaviour:
   deadZone: 0.025
   onPressed:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: DialogueManager, Assembly-CSharp
+        m_MethodName: DisplayNextSentence
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: EnviSwitch, Assembly-CSharp
+        m_MethodName: Switch
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   onReleased:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &78307897
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7456207287085544864}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 755fa81e400a2894091b2ccb48bf9e3b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    sentences:
+    - Welkom in Shoeby-world. Ik ben Shoe-bee en dit is mijn paradijs. Raak de knop
+      aan om verder te gaan!
+    - Kijk om je heen. Dit is de runway! Hier zijn creaties te zien van voorgaande
+      shoeby klanten.
+    - Wie weet staat jouw creatie hier zometeen ook tussen.
+    - "Maar voordat we beginnen, even een kleine introductie:\r"
+    - Knoppen uitleg
+    - "Genoeg ge\xEFnspireerd voor nu? Druk op de knop om je eigen avatar te maken!"
+    - Dit is jouw zelf kneedbare avatar! Druk op de pijltje om hen aan te passen!
+    - Als je klaar bent druk je weer op de groene knop en kan je gaan aankleden.
+    - Pak een kledingstuk en gooi het naar de avatar om hen aan te kleden.
 --- !u!1 &8896719809901005065
 GameObject:
   m_ObjectHideFlags: 0
@@ -1142,6 +1192,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 2598541557200430588}
     m_Modifications:
     - target: {fileID: 4920200588488889288, guid: 56c8c09e6d81cc943a744ccb18e31968, type: 3}
+      propertyPath: m_AttachTransform
+      value: 
+      objectReference: {fileID: 2923933161465108871}
+    - target: {fileID: 4920200588488889288, guid: 56c8c09e6d81cc943a744ccb18e31968, type: 3}
       propertyPath: m_InteractionManager
       value: 
       objectReference: {fileID: 0}
@@ -1163,7 +1217,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8076380243549241627, guid: 56c8c09e6d81cc943a744ccb18e31968, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.064
+      value: -0.032
       objectReference: {fileID: 0}
     - target: {fileID: 8076380243549241627, guid: 56c8c09e6d81cc943a744ccb18e31968, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1171,23 +1225,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8076380243549241627, guid: 56c8c09e6d81cc943a744ccb18e31968, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.019
+      value: 0.128
       objectReference: {fileID: 0}
     - target: {fileID: 8076380243549241627, guid: 56c8c09e6d81cc943a744ccb18e31968, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.6978207
+      value: 0.7949983
       objectReference: {fileID: 0}
     - target: {fileID: 8076380243549241627, guid: 56c8c09e6d81cc943a744ccb18e31968, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 3.2716815e-11
+      value: 1.14847326e-10
       objectReference: {fileID: 0}
     - target: {fileID: 8076380243549241627, guid: 56c8c09e6d81cc943a744ccb18e31968, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.71627253
+      value: 0.6066117
       objectReference: {fileID: 0}
     - target: {fileID: 8076380243549241627, guid: 56c8c09e6d81cc943a744ccb18e31968, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 1.11723415e-10
+      value: -1.9042705e-11
       objectReference: {fileID: 0}
     - target: {fileID: 8076380243549241627, guid: 56c8c09e6d81cc943a744ccb18e31968, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -1195,7 +1249,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8076380243549241627, guid: 56c8c09e6d81cc943a744ccb18e31968, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: -91.495
+      value: 74.69
       objectReference: {fileID: 0}
     - target: {fileID: 8076380243549241627, guid: 56c8c09e6d81cc943a744ccb18e31968, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -1218,5 +1272,10 @@ PrefabInstance:
 --- !u!4 &8134267907514669607 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8076380243549241627, guid: 56c8c09e6d81cc943a744ccb18e31968, type: 3}
+  m_PrefabInstance: {fileID: 69709702668868412}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &2923933161465108871 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2910536115073385147, guid: 56c8c09e6d81cc943a744ccb18e31968, type: 3}
   m_PrefabInstance: {fileID: 69709702668868412}
   m_PrefabAsset: {fileID: 0}

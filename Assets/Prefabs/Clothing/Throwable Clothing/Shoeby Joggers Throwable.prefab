@@ -12,6 +12,8 @@ GameObject:
   - component: {fileID: 7111535774356337212}
   - component: {fileID: 4123958993015994954}
   - component: {fileID: 2421626062990888669}
+  - component: {fileID: 4061309428449043892}
+  - component: {fileID: -7957815784062672676}
   m_Layer: 3
   m_Name: Shoeby Joggers Throwable
   m_TagString: Bottom
@@ -46,7 +48,7 @@ Rigidbody:
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
-  m_IsKinematic: 0
+  m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
@@ -98,7 +100,19 @@ MonoBehaviour:
       m_Calls: []
   m_SelectExited:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: -7957815784062672676}
+        m_TargetAssemblyTypeName: KinematicOffWhenThrow, Assembly-CSharp
+        m_MethodName: TurnKinematicOff
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_Activated:
     m_PersistentCalls:
       m_Calls: []
@@ -169,6 +183,34 @@ MonoBehaviour:
   m_ForceGravityOnDetach: 0
   m_RetainTransformParent: 1
   m_AttachPointCompatibilityMode: 0
+--- !u!114 &4061309428449043892
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5284272494377847051}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 178a9cc71d4ba5d4990d234af81f31d2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  movementThreshold: 1.85
+  amountOfSecondsTillDespawn: 5
+  nameOfCarousel: Clothes Carousel
+  throwableIdentifierString: Throwable(Clone)
+--- !u!114 &-7957815784062672676
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5284272494377847051}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0a26e3f85599094c9cbe51591a720f9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &2985084599502602184
 PrefabInstance:
   m_ObjectHideFlags: 0
