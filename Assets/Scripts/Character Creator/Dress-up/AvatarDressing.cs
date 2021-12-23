@@ -48,18 +48,12 @@ public class AvatarDressing : MonoBehaviour {
                 for(int k = 0; k < clothes.Count; k++) {
                     if(!clothes[k].fullOutfit) {
                         SetRestInactive(clothes[k].gameObjectPieces);
-                        /*for(int j = 0; j < clothes[k].gameObjectPieces.Count; j++) {
-                            clothes[k].gameObjectPieces[j].SetActive(false);
-                        }*/
                     }
                 }
             } else {
                 for(int l = 0; l < clothes.Count; l++) {
                     if(clothes[l].fullOutfit) {
                         SetRestInactive(clothes[l].gameObjectPieces);
-                        /*for(int m = 0; m < clothes[l].gameObjectPieces.Count; m++) {
-                            clothes[l].gameObjectPieces[m].SetActive(false);
-                        }*/
                     }
                 }
             }
