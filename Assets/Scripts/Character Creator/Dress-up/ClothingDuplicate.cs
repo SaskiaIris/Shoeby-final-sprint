@@ -12,8 +12,7 @@ public class ClothingDuplicate : MonoBehaviour {
         if(GameObject.Find(throwableVersion.name + cloneText) == null) {
             GameObject newPiece = Instantiate(throwableVersion);
             newPiece.transform.position = transform.position;
-			gameObject.SetActive(false); // dit zorgt ervoor dat je de nieuwe meteen vastpakt, vraag mij ook niet waarom het werkt.
-                                              // én nee: de oude wordt blijkbaar niet op inactive gezet.
+			gameObject.SetActive(false);
 		}
 	}
 }

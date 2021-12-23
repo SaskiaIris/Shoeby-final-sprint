@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 7111535774356337212}
   - component: {fileID: 4123958993015994954}
   - component: {fileID: 2421626062990888669}
+  - component: {fileID: 8202940201370644740}
   m_Layer: 3
   m_Name: BobbyShort Throwable
   m_TagString: Outfits
@@ -169,6 +170,22 @@ MonoBehaviour:
   m_ForceGravityOnDetach: 0
   m_RetainTransformParent: 1
   m_AttachPointCompatibilityMode: 0
+--- !u!114 &8202940201370644740
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5284272494377847051}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 178a9cc71d4ba5d4990d234af81f31d2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  movementThreshold: 0.6
+  amountOfSecondsTillDespawn: 5
+  nameOfCarousel: Clothes Carousel
+  throwableIdentifierString: Throwable(Clone)
 --- !u!1001 &3798784011045534402
 PrefabInstance:
   m_ObjectHideFlags: 0
