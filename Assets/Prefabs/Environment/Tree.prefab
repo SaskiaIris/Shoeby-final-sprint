@@ -52,15 +52,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   clothingLayerNumber: 3
-  throwableIdentifierString: Throwable
-  treeIdentifierString: Tree
+  throwableIdentifierString: Throwable(Clone)
+  environmentIdentifierString: Environment
   clothing:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 4083743421185962169}
+  - {fileID: 2736802958950588722}
+  - {fileID: 6100590045770048427}
+  - {fileID: 8973802309916487734}
+  - {fileID: 1524358295632377289}
+  - {fileID: 7431048363317272019}
 --- !u!65 &1053030959777166316
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -373,6 +373,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8282b3f654952e7409e71dbef90f22f5, type: 3}
+--- !u!1 &6100590045770048427 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5284272494377847051, guid: 8282b3f654952e7409e71dbef90f22f5, type: 3}
+  m_PrefabInstance: {fileID: 2160645373912820384}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &6167196148190431333 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5218105978564010693, guid: 8282b3f654952e7409e71dbef90f22f5, type: 3}
@@ -439,6 +444,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2b9cb2db4d474ee4c8baffa6449c1cf8, type: 3}
+--- !u!1 &7431048363317272019 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5284272494377847051, guid: 2b9cb2db4d474ee4c8baffa6449c1cf8, type: 3}
+  m_PrefabInstance: {fileID: 3347831261397013720}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &7358755857500354077 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5218105978564010693, guid: 2b9cb2db4d474ee4c8baffa6449c1cf8, type: 3}
@@ -505,6 +515,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d93daa382a635074280f6ed18ffc3f5b, type: 3}
+--- !u!1 &8973802309916487734 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5284272494377847051, guid: d93daa382a635074280f6ed18ffc3f5b, type: 3}
+  m_PrefabInstance: {fileID: 3881214962166970685}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &9058629789052754936 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5218105978564010693, guid: d93daa382a635074280f6ed18ffc3f5b, type: 3}
@@ -673,6 +688,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 476fc15897f3f534e8e47327325d2f02, type: 3}
+--- !u!1 &1524358295632377289 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5284272494377847051, guid: 476fc15897f3f534e8e47327325d2f02, type: 3}
+  m_PrefabInstance: {fileID: 6661415511669357762}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1448036612921515527 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5218105978564010693, guid: 476fc15897f3f534e8e47327325d2f02, type: 3}
@@ -744,6 +764,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5218105978564010693, guid: 1c5755fe4c6858a41bcab123e6a8a1f8, type: 3}
   m_PrefabInstance: {fileID: 7831357452741158969}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2736802958950588722 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5284272494377847051, guid: 1c5755fe4c6858a41bcab123e6a8a1f8, type: 3}
+  m_PrefabInstance: {fileID: 7831357452741158969}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &8212840412069689778
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -808,5 +833,10 @@ PrefabInstance:
 --- !u!4 &4148854754770197367 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5218105978564010693, guid: 090ae8e7b110ae146a639497afab0f2c, type: 3}
+  m_PrefabInstance: {fileID: 8212840412069689778}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &4083743421185962169 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5284272494377847051, guid: 090ae8e7b110ae146a639497afab0f2c, type: 3}
   m_PrefabInstance: {fileID: 8212840412069689778}
   m_PrefabAsset: {fileID: 0}

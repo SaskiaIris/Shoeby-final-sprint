@@ -7,7 +7,7 @@ public class ClothingRack : MonoBehaviour {
     private int clothingLayerNumber = 3;
 
     [SerializeField]
-    private string throwableIdentifierString = "Throwable" + "(Clone)";
+    private string throwableIdentifierString = "Throwable(Clone)";
 
     [SerializeField]
     private string environmentIdentifierString = "Environment";
@@ -30,16 +30,17 @@ public class ClothingRack : MonoBehaviour {
 
             if(clothingNameEnvironment == clothingNameThrown) {
                 clothingInEnvironment.SetActive(true);
+                Destroy(thrownPiece);
             }
         }
     }
 
-    public String RemoveEndOfString(string stringToTrim, string removeThis) {
+    public string RemoveEndOfString(string stringToTrim, string removeThis) {
         string outputString = stringToTrim;
         int positionWordToRemove = stringToTrim.IndexOf(removeThis);
 
         if(positionWordToRemove >= 0) {
-            outputString.Remove(positionWordToRemove);
+            outputString = outputString.Remove(positionWordToRemove);
             outputString.TrimEnd();
         }
 

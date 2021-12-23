@@ -1,10 +1,8 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class DialogueManager : MonoBehaviour {
-
     public Text beeText;
 
     [SerializeField]
@@ -12,14 +10,11 @@ public class DialogueManager : MonoBehaviour {
 
     bool pushedOnce = false;
 
-
-
     void Start() {
         sentences = new Queue<string>();
     }
 
     public void StartBeeText(Dialogue dialogue) {
-
         if(pushedOnce == false) {
             pushedOnce = true;
             sentences.Clear();
@@ -38,14 +33,11 @@ public class DialogueManager : MonoBehaviour {
             return;
         }
 
-
         string sentence = sentences.Dequeue();
         beeText.text = sentence;
-
     }
 
     void EndDialogue() {
         Debug.Log("end");
     }
-
 }

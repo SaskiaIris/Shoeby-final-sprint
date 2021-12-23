@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 4123958993015994954}
   - component: {fileID: 2421626062990888669}
   - component: {fileID: 7640434193600266}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Shoeby Joggers Environment
   m_TagString: Bottom
   m_Icon: {fileID: 0}

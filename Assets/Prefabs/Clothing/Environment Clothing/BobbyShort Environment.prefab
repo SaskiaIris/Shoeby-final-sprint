@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 4123958993015994954}
   - component: {fileID: 2421626062990888669}
   - component: {fileID: 7640434193600266}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: BobbyShort Environment
   m_TagString: Outfits
   m_Icon: {fileID: 0}
@@ -209,7 +209,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4983727698354019130, guid: a2e48e1fbb6d61f418427fe29c897a8e, type: 3}
       propertyPath: m_Layer
-      value: 3
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5648095863597875584, guid: a2e48e1fbb6d61f418427fe29c897a8e, type: 3}
       propertyPath: m_RootOrder
