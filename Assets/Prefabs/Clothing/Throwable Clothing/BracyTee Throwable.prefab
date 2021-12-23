@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 2421626062990888669}
   m_Layer: 3
   m_Name: BracyTee Throwable
-  m_TagString: Shirt
+  m_TagString: Outfits
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -30,7 +30,7 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 3349783060381911672}
+  - {fileID: 4661310372384908350}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -61,8 +61,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.47919893, y: 0.46068376, z: 0.2}
-  m_Center: {x: -0.009124786, y: 0.012004726, z: 1.3542022e-11}
+  m_Size: {x: 0.5396992, y: 0.6858226, z: 0.24206553}
+  m_Center: {x: 0.006340623, y: -0.0018560886, z: 0.021032818}
 --- !u!114 &2421626062990888669
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -169,7 +169,7 @@ MonoBehaviour:
   m_ForceGravityOnDetach: 0
   m_RetainTransformParent: 1
   m_AttachPointCompatibilityMode: 0
---- !u!1001 &7701035875758209917
+--- !u!1001 &293595681651463483
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -224,14 +224,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BracyTee
       objectReference: {fileID: 0}
-    - target: {fileID: 5758012709585316799, guid: 44fa230157a6d95428491e7cf426cd1c, type: 3}
-      propertyPath: m_Layer
-      value: 3
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 44fa230157a6d95428491e7cf426cd1c, type: 3}
---- !u!4 &3349783060381911672 stripped
+--- !u!4 &4661310372384908350 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4945870078491242757, guid: 44fa230157a6d95428491e7cf426cd1c, type: 3}
-  m_PrefabInstance: {fileID: 7701035875758209917}
+  m_PrefabInstance: {fileID: 293595681651463483}
   m_PrefabAsset: {fileID: 0}

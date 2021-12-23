@@ -7,10 +7,10 @@ public class AvatarDressing : MonoBehaviour
     private int clothingLayerNumber = 3;
 
     [SerializeField]
-    private string throwableIdentifierString = "Throwable";
+    private string throwableIdentifierString = "Throwable" + "(Clone)";
 
     [SerializeField]
-    private string dressableIdentifierString = "Dressable";
+    private string environmentIdentifierString = "Environment";
 
     [SerializeField]
     private List<ClothingType> clothes = null;
@@ -29,17 +29,17 @@ public class AvatarDressing : MonoBehaviour
     public void ChangeClothing(List<GameObject> clothingType, GameObject thrownClothing, bool isFullOutfit) {
         Debug.Log("something is thrown");
         string clothingNameThrown;
-        string clothingNameDressed;
+        string clothingNameEnvironment;
 
         int positionThrowableString;
-        int positionDressableString;
+        int positionenvironmentString;
 
         for(int i = 0; i < clothingType.Count; i++) {
             clothingNameThrown = thrownClothing.name;
-            clothingNameDressed = clothingType[i].name;
+            clothingNameEnvironment = clothingType[i].name;
 
             positionThrowableString = clothingNameThrown.IndexOf(throwableIdentifierString);
-            positionDressableString = clothingNameDressed.IndexOf(dressableIdentifierString);
+            positionenvironmentString = clothingNameEnvironment.IndexOf(environmentIdentifierString);
 
             if(positionThrowableString >= 0) {
                 Debug.Log("de naam thrown was: " + clothingNameThrown);
@@ -48,14 +48,14 @@ public class AvatarDressing : MonoBehaviour
                 Debug.Log("de naam van thrown is nu: " + clothingNameThrown);
             }
 
-            if(positionDressableString >= 0) {
-                Debug.Log("de naam dressed was: " + clothingNameDressed);
-                clothingNameDressed = clothingNameDressed.Remove(positionDressableString);
-                clothingNameDressed.TrimEnd();
-                Debug.Log("de naam dressed is nu: " + clothingNameDressed);
+            if(positionenvironmentString >= 0) {
+                Debug.Log("de naam environment was: " + clothingNameEnvironment);
+                clothingNameEnvironment = clothingNameEnvironment.Remove(positionenvironmentString);
+                clothingNameEnvironment.TrimEnd();
+                Debug.Log("de naam environment is nu: " + clothingNameEnvironment);
             }
 
-            if(clothingNameDressed == clothingNameThrown) {
+            if(clothingNameEnvironment == clothingNameThrown) {
                 clothingType[i].SetActive(true);
             } else {
                 clothingType[i].SetActive(false);

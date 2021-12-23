@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 2421626062990888669}
   m_Layer: 3
   m_Name: Shoeby Joggers Throwable
-  m_TagString: Bottom
+  m_TagString: Outfits
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -30,7 +30,7 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 527642708069314333}
+  - {fileID: 3719565364329403807}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -61,8 +61,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.47919893, y: 0.9803068, z: 0.2}
-  m_Center: {x: -0.009124786, y: 0.6846527, z: 0}
+  m_Size: {x: 0.47919893, y: 1.0608768, z: 0.2798101}
+  m_Center: {x: -0.009124786, y: 0.64300656, z: -0.039905082}
 --- !u!114 &2421626062990888669
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -169,7 +169,7 @@ MonoBehaviour:
   m_ForceGravityOnDetach: 0
   m_RetainTransformParent: 1
   m_AttachPointCompatibilityMode: 0
---- !u!1001 &2135051891412813130
+--- !u!1001 &2985084599502602184
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -226,8 +226,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4601d8fb2511cea4f9b82a43c34e4977, type: 3}
---- !u!4 &527642708069314333 stripped
+--- !u!4 &3719565364329403807 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1942083181983574615, guid: 4601d8fb2511cea4f9b82a43c34e4977, type: 3}
-  m_PrefabInstance: {fileID: 2135051891412813130}
+  m_PrefabInstance: {fileID: 2985084599502602184}
   m_PrefabAsset: {fileID: 0}

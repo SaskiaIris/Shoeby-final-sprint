@@ -12,10 +12,9 @@ GameObject:
   - component: {fileID: 7111535774356337212}
   - component: {fileID: 4123958993015994954}
   - component: {fileID: 2421626062990888669}
-  - component: {fileID: 3205003817828894107}
   m_Layer: 3
   m_Name: FredPippaSkirt Throwable
-  m_TagString: Bottom
+  m_TagString: Outfits
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -31,7 +30,7 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 5310111536203170566}
+  - {fileID: 7643043327242783325}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -62,8 +61,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.47919893, y: 0.46068376, z: 0.2}
-  m_Center: {x: -0.009124786, y: 0.012004726, z: 1.3542022e-11}
+  m_Size: {x: 0.47919893, y: 0.46068376, z: 0.3167663}
+  m_Center: {x: -0.009124786, y: 0.012004733, z: 0.017555103}
 --- !u!114 &2421626062990888669
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -170,19 +169,7 @@ MonoBehaviour:
   m_ForceGravityOnDetach: 0
   m_RetainTransformParent: 1
   m_AttachPointCompatibilityMode: 0
---- !u!114 &3205003817828894107
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5284272494377847051}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1f7af28ef0f0437488a7ae4c3db01532, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!1001 &5150697735895825235
+--- !u!1001 &7267175282725581320
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -239,8 +226,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0a0e2d63fec12314aabfb6aebee35790, type: 3}
---- !u!4 &5310111536203170566 stripped
+--- !u!4 &7643043327242783325 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1066150262145726549, guid: 0a0e2d63fec12314aabfb6aebee35790, type: 3}
-  m_PrefabInstance: {fileID: 5150697735895825235}
+  m_PrefabInstance: {fileID: 7267175282725581320}
   m_PrefabAsset: {fileID: 0}

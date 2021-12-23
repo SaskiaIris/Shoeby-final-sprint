@@ -6,10 +6,10 @@ public class ClothingRack : MonoBehaviour {
     private int clothingLayerNumber = 3;
 
     [SerializeField]
-    private string throwableIdentifierString = "Throwable";
+    private string throwableIdentifierString = "Throwable" + "(Clone)";
 
     [SerializeField]
-    private string treeIdentifierString = "Tree";
+    private string environmentIdentifierString = "Environment";
 
     [SerializeField]
     private List<GameObject> clothing = null;
@@ -22,19 +22,19 @@ public class ClothingRack : MonoBehaviour {
     }
 
     public void ActivateClothingOnRack(GameObject thrownPiece) {
-        foreach(GameObject clothingOnTree in clothing) {
+        foreach(GameObject clothingOnEnvironment in clothing) {
             Debug.Log("something is thrown");
             string clothingNameThrown;
-            string clothingNameTree;
+            string clothingNameEnvironment;
 
             int positionThrowableString;
-            int positionTreeString;
+            int positionEnvironmentString;
 
             clothingNameThrown = thrownPiece.name;
-            clothingNameTree = clothingOnTree.name;
+            clothingNameEnvironment = clothingOnEnvironment.name;
 
             positionThrowableString = clothingNameThrown.IndexOf(throwableIdentifierString);
-            positionTreeString = clothingNameTree.IndexOf(treeIdentifierString);
+            positionEnvironmentString = clothingNameEnvironment.IndexOf(environmentIdentifierString);
 
             if(positionThrowableString >= 0) {
                 Debug.Log("de naam thrown was: " + clothingNameThrown);
@@ -43,15 +43,15 @@ public class ClothingRack : MonoBehaviour {
                 Debug.Log("de naam van thrown is nu: " + clothingNameThrown);
             }
 
-            if(positionTreeString >= 0) {
-                Debug.Log("de naam Tree was: " + clothingNameTree);
-                clothingNameTree = clothingNameTree.Remove(positionTreeString);
-                clothingNameTree.TrimEnd();
-                Debug.Log("de naam Tree is nu: " + clothingNameTree);
+            if(positionEnvironmentString >= 0) {
+                Debug.Log("de naam Environment was: " + clothingNameEnvironment);
+                clothingNameEnvironment = clothingNameEnvironment.Remove(positionEnvironmentString);
+                clothingNameEnvironment.TrimEnd();
+                Debug.Log("de naam Environment is nu: " + clothingNameEnvironment);
             }
 
-            if(clothingNameTree == clothingNameThrown) {
-                clothingOnTree.SetActive(true);
+            if(clothingNameEnvironment == clothingNameThrown) {
+                clothingOnEnvironment.SetActive(true);
             }
         }
     }
