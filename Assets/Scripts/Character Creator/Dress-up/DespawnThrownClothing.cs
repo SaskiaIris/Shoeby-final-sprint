@@ -24,6 +24,8 @@ public class DespawnThrownClothing : MonoBehaviour {
 
     private string nameOfObject;
 
+    private bool startCounting = false;
+
     // Start is called before the first frame update
     void Start() {
         lastPosition = transform.position;
@@ -32,21 +34,27 @@ public class DespawnThrownClothing : MonoBehaviour {
 
     // Update is called once per frame
     void Update() {
-        timer += Time.deltaTime;
-        timerInSeconds = (int) timer % amountOfMSInASecond;
+        if(startCounting) {
+            timer += Time.deltaTime;
+            timerInSeconds = (int) timer % amountOfMSInASecond;
 
-        amountMoved = transform.position - lastPosition;
-        if(amountMoved.x > movementThreshold || amountMoved.y > movementThreshold || amountMoved.z > movementThreshold) {
-            timer = 0;
-            timerInSeconds = 0;
-        }
+            amountMoved = transform.position - lastPosition;
+            if(amountMoved.x > movementThreshold || amountMoved.y > movementThreshold || amountMoved.z > movementThreshold) {
+                timer = 0;
+                timerInSeconds = 0;
+            }
 
-        if(timerInSeconds >= amountOfSecondsTillDespawn) {
-            nameOfObject = gameObject.name;
-            nameOfObject = RemoveEndOfString(nameOfObject, throwableIdentifierString);
-            Destroy(gameObject);
-            clothingCarousel.GetComponent<RespawnClothing>().CheckIfPieceNeedsActivation(nameOfObject);
+            if(timerInSeconds >= amountOfSecondsTillDespawn) {
+                nameOfObject = gameObject.name;
+                nameOfObject = RemoveEndOfString(nameOfObject, throwableIdentifierString);
+                Destroy(gameObject);
+                clothingCarousel.GetComponent<RespawnClothing>().CheckIfPieceNeedsActivation(nameOfObject);
+            }
         }
+    }
+
+    public void SetStartCounting(bool value) {
+        startCounting = value;
     }
 
     public string RemoveEndOfString(string stringToTrim, string removeThis) {
