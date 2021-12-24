@@ -15,8 +15,12 @@ public class AvatarDressing : MonoBehaviour {
     [SerializeField]
     private List<ClothingType> clothes = null;
 
-	//Detect collisions between the GameObjects with Colliders attached
-	void OnCollisionEnter(Collision collision) {
+    [SerializeField]
+    private string nameOfCarousel = "Clothes Carousel";
+    private GameObject clothingCarousel;
+
+    //Detect collisions between the GameObjects with Colliders attached
+    void OnCollisionEnter(Collision collision) {
         if(collision.gameObject.layer == clothingLayerNumber) {
 			foreach(ClothingType clothingOnAvatar in clothes) {
                 if(collision.gameObject.tag == clothingOnAvatar.tagName) {
@@ -42,6 +46,7 @@ public class AvatarDressing : MonoBehaviour {
                 Destroy(thrownClothing);
             } else {
                 clothingInType.SetActive(false);
+                clothingCarousel.GetComponent<RespawnClothing>().CheckIfPieceNeedsActivation(clothingNameEnvironment);
             }
 
             if(isFullOutfit) {
@@ -77,6 +82,7 @@ public class AvatarDressing : MonoBehaviour {
     public void SetRestInactive(List<GameObject> clothingPieces) {
         foreach(GameObject piece in clothingPieces) {
             piece.SetActive(false);
+            clothingCarousel.GetComponent<RespawnClothing>().CheckIfPieceNeedsActivation(RemoveEndOfString(piece.name, environmentIdentifierString));
         }
     }
 }
