@@ -7,12 +7,6 @@ public class ClothingRack : MonoBehaviour {
     private int clothingLayerNumber = 3;
 
     [SerializeField]
-    private string throwableIdentifierString = "Throwable(Clone)";
-
-    [SerializeField]
-    private string environmentIdentifierString = "Environment";
-
-    [SerializeField]
     private List<GameObject> clothing = null;
 
     //Detect collisions between the GameObjects with Colliders attached
@@ -25,25 +19,17 @@ public class ClothingRack : MonoBehaviour {
     public void ActivateClothingOnRack(GameObject thrownPiece) {
         foreach(GameObject clothingInEnvironment in clothing) {
             Debug.Log("TREE something is thrown");
-            string clothingNameThrown = RemoveEndOfString(thrownPiece.name, throwableIdentifierString);
-            string clothingNameEnvironment = RemoveEndOfString(clothingInEnvironment.name, environmentIdentifierString);
+            //string clothingNameThrown = RemoveEndOfString(thrownPiece.name, throwableIdentifierString);
+            string clothingNameThrown = thrownPiece.GetComponent<ClothingPieceHandler>().GetRealName();
+            Debug.Log("TREE thrname: " + clothingNameThrown);
+            //string clothingNameEnvironment = RemoveEndOfString(clothingInEnvironment.name, environmentIdentifierString);
+            string clothingNameEnvironment = thrownPiece.GetComponent<ClothingPieceHandler>().GetRealName();
+            Debug.Log("TREE envname: " + clothingNameEnvironment);
 
             if(clothingNameEnvironment == clothingNameThrown) {
-                clothingInEnvironment.SetActive(true);
+                clothingInEnvironment.GetComponent<ClothingPieceHandler>().GetChild().SetActive(true);
                 Destroy(thrownPiece);
             }
         }
-    }
-
-    public string RemoveEndOfString(string stringToTrim, string removeThis) {
-        string outputString = stringToTrim;
-        int positionWordToRemove = stringToTrim.IndexOf(removeThis);
-
-        if(positionWordToRemove >= 0) {
-            outputString = outputString.Remove(positionWordToRemove);
-            outputString.TrimEnd();
-        }
-
-        return outputString;
     }
 }

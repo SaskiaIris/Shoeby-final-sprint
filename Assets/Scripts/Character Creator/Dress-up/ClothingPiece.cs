@@ -10,7 +10,7 @@ public class ClothingPiece {
 
     private string _pieceName;
     private GameObject _thisGameObject;
-    private ClothingType _clothingType;
+    //private ClothingType _clothingType;
     private bool _isThrowable;
     private GameObject _throwableVersion;
 
@@ -31,23 +31,31 @@ public class ClothingPiece {
 
     private bool _isCounting = false;
 
+    public string PieceName {
+        get {
+            //return _pieceName;
+            return FindRealName();
+        }
+    }
+
     public bool IsCounting {
         get {
             return _isCounting;
         }
     }
 
-    /*public ClothingType ClothingType {
-        get {
-            return _clothingType;
-        }
+    /*public ClothingPiece(GameObject givenGameObject, bool isThrowable, GameObject throwableVersion) {
+        _thisGameObject = givenGameObject;
+        _pieceName = FindRealName();
+        _correspondingCarousel = FindCarousel();
+        _isThrowable = isThrowable;
+        _throwableVersion = throwableVersion;
     }*/
 
-    public void SetEverything(GameObject gameObject, ClothingType clothingType, bool isThrowable, GameObject throwableVersion) {
-        _thisGameObject = gameObject;
-        _pieceName = FindRealName(_thisGameObject.name);
+    public void SetEverything(GameObject givenGameObject, bool isThrowable, GameObject throwableVersion) {
+        _thisGameObject = givenGameObject;
+        _pieceName = FindRealName();
         _correspondingCarousel = FindCarousel();
-        _clothingType = clothingType;
         _isThrowable = isThrowable;
         _throwableVersion = throwableVersion;
     }
@@ -88,9 +96,19 @@ public class ClothingPiece {
         }
     }
 
+    public GameObject GetChildObject() {
+        return _thisGameObject.transform.GetChild(0).gameObject;
+    }
+
     private void Despawn() {
         GameObject.Destroy(_thisGameObject);
         //TODO: test if next line still works
+        CarouselRespawn();
+    }
+
+    public void CarouselRespawn() {
+        //IDK!?
+        _correspondingCarousel = FindCarousel();
         _correspondingCarousel.GetComponent<RespawnClothing>().CheckIfPieceNeedsActivation(_pieceName);
     }
 
@@ -115,19 +133,20 @@ public class ClothingPiece {
         return doesItExist;
     }
 
-    public string FindRealName(string gameObjectName) {
-        string realName = "";
+    public string FindRealName() {
+        string realName = _thisGameObject.name;
         if(_isThrowable) {
             string throwableEndName = _throwableIdentifierString + _cloneIdentifierString;
-            realName = RemoveEndOfString(gameObjectName, throwableEndName);
+            realName = RemoveEndOfString(realName, throwableEndName);
         } else {
-            realName = RemoveEndOfString(gameObjectName, _environmentPieceIdentifierString);
+            realName = RemoveEndOfString(realName, _environmentPieceIdentifierString);
         }
         return realName;
     }
 
     public GameObject FindCarousel() {
-        string nameToSearchFor = _pieceName + _space + _carouselName;
+        string nameToSearchFor = _thisGameObject.tag + _space + _carouselName;
+        Debug.Log(nameToSearchFor);
         GameObject foundCarousel = GameObject.Find(nameToSearchFor);
         return foundCarousel;
     }

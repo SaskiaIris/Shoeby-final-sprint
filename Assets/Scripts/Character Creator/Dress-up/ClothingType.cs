@@ -4,7 +4,25 @@ using UnityEngine;
 
 [Serializable]
 public class ClothingType {
+    private string _outfitName = "Outfit";
+
     public string tagName;
-    public bool fullOutfit;
+    
     public List<GameObject> gameObjectPieces;
+
+    public bool FullOutfit {
+        get {
+            return CheckFullOutfit();
+        }
+    }
+
+    private bool CheckFullOutfit() {
+        bool isOutfit = false;
+        if(tagName == _outfitName) {
+            isOutfit = true;
+        } else {
+            isOutfit = false;
+        }
+        return isOutfit;
+    }
 }

@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 8725634447011971440}
   m_Layer: 3
   m_Name: BobbyShort Throwable
-  m_TagString: Outfits
+  m_TagString: Outfit
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -206,11 +206,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 47e2bc980ba078542aad82be449a24e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  setClothingType:
-    tagName: Outfits
-    fullOutfit: 1
-    gameObjectPieces: []
   setIsThrowable: 1
+  setEnvironmentVersion: {fileID: 5284272494377847051, guid: 090ae8e7b110ae146a639497afab0f2c, type: 3}
   setThrowableVersion: {fileID: 5284272494377847051}
 --- !u!1001 &3798784011045534402
 PrefabInstance:

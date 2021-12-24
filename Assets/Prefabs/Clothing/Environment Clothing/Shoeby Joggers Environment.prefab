@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 7111535774356337212}
   - component: {fileID: 4123958993015994954}
   - component: {fileID: 2421626062990888669}
+  - component: {fileID: -4638879729430249571}
   m_Layer: 0
   m_Name: Shoeby Joggers Environment
   m_TagString: Bottom
@@ -96,9 +97,9 @@ MonoBehaviour:
   m_SelectEntered:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: Clothing, Assembly-CSharp
-        m_MethodName: GrabDuplicate
+      - m_Target: {fileID: -4638879729430249571}
+        m_TargetAssemblyTypeName: ClothingPieceHandler, Assembly-CSharp
+        m_MethodName: ToDoWhenEnterGrab
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -110,7 +111,19 @@ MonoBehaviour:
         m_CallState: 2
   m_SelectExited:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: -4638879729430249571}
+        m_TargetAssemblyTypeName: ClothingPieceHandler, Assembly-CSharp
+        m_MethodName: ToDoWhenExitGrab
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_Activated:
     m_PersistentCalls:
       m_Calls: []
@@ -181,6 +194,21 @@ MonoBehaviour:
   m_ForceGravityOnDetach: 0
   m_RetainTransformParent: 1
   m_AttachPointCompatibilityMode: 0
+--- !u!114 &-4638879729430249571
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5284272494377847051}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47e2bc980ba078542aad82be449a24e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  setIsThrowable: 0
+  setEnvironmentVersion: {fileID: 5284272494377847051}
+  setThrowableVersion: {fileID: 5284272494377847051, guid: 66eb646bad939bc4d92a63444f0adb66, type: 3}
 --- !u!1001 &5736621658576469824
 PrefabInstance:
   m_ObjectHideFlags: 0

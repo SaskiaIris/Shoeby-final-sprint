@@ -52,8 +52,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   clothingLayerNumber: 3
-  throwableIdentifierString: Throwable(Clone)
-  environmentIdentifierString: Environment
   clothing:
   - {fileID: 4083743421185962169}
   - {fileID: 2736802958950588722}
@@ -369,6 +367,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5284272494377847051, guid: 8282b3f654952e7409e71dbef90f22f5, type: 3}
       propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8075100307253973222, guid: 8282b3f654952e7409e71dbef90f22f5, type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -440,6 +442,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5284272494377847051, guid: 2b9cb2db4d474ee4c8baffa6449c1cf8, type: 3}
       propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8961148225404833180, guid: 2b9cb2db4d474ee4c8baffa6449c1cf8, type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -510,6 +516,10 @@ PrefabInstance:
       value: Shirt Environment
       objectReference: {fileID: 0}
     - target: {fileID: 5284272494377847051, guid: d93daa382a635074280f6ed18ffc3f5b, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7553609185148523299, guid: d93daa382a635074280f6ed18ffc3f5b, type: 3}
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
@@ -684,6 +694,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5284272494377847051, guid: 476fc15897f3f534e8e47327325d2f02, type: 3}
       propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6783804159932452781, guid: 476fc15897f3f534e8e47327325d2f02, type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -755,6 +769,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5284272494377847051, guid: 1c5755fe4c6858a41bcab123e6a8a1f8, type: 3}
       propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6883928791801780075, guid: 1c5755fe4c6858a41bcab123e6a8a1f8, type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -825,6 +843,10 @@ PrefabInstance:
       value: BobbyShort Environment
       objectReference: {fileID: 0}
     - target: {fileID: 5284272494377847051, guid: 090ae8e7b110ae146a639497afab0f2c, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8187047150440931832, guid: 090ae8e7b110ae146a639497afab0f2c, type: 3}
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
