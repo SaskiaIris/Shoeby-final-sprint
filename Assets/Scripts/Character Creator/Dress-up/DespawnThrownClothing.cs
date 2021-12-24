@@ -1,5 +1,4 @@
-using UnityEngine;
-using UnityEngine.Events;
+/*using UnityEngine;
 
 public class DespawnThrownClothing : MonoBehaviour {
     private Vector3 lastPosition;
@@ -68,4 +67,4 @@ public class DespawnThrownClothing : MonoBehaviour {
 
         return outputString;
     }
-}
+}*/

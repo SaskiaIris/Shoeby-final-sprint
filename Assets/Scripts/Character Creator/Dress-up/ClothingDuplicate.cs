@@ -1,4 +1,4 @@
-using UnityEngine;
+/*using UnityEngine;
 
 public class ClothingDuplicate : MonoBehaviour {
     [SerializeField]
@@ -15,4 +15,4 @@ public class ClothingDuplicate : MonoBehaviour {
 			gameObject.SetActive(false);
 		}
 	}
-}
+}*/

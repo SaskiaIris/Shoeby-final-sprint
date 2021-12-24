@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 7111535774356337212}
   - component: {fileID: 4123958993015994954}
   - component: {fileID: 2421626062990888669}
-  - component: {fileID: 7640434193600266}
   m_Layer: 0
   m_Name: Shoeby Top Environment
   m_TagString: Shirt
@@ -97,7 +96,7 @@ MonoBehaviour:
   m_SelectEntered:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 7640434193600266}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: Clothing, Assembly-CSharp
         m_MethodName: GrabDuplicate
         m_Mode: 1
@@ -182,20 +181,6 @@ MonoBehaviour:
   m_ForceGravityOnDetach: 0
   m_RetainTransformParent: 1
   m_AttachPointCompatibilityMode: 0
---- !u!114 &7640434193600266
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5284272494377847051}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1f7af28ef0f0437488a7ae4c3db01532, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  throwableVersion: {fileID: 5284272494377847051, guid: 906dad0f01d9fd84dacc3fbf37dfbdbb, type: 3}
-  cloneText: (Clone)
 --- !u!1001 &1546974481073547849
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -275,7 +275,7 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1011826517, guid: 1b5402f6398c91943811934015238cb0, type: 3}
+    - target: {fileID: 0}
       propertyPath: beeText
       value: 
       objectReference: {fileID: 0}
@@ -327,8 +327,7 @@ PrefabInstance:
       propertyPath: m_Name
       value: DialogueManager
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 1011826517, guid: 1b5402f6398c91943811934015238cb0, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1b5402f6398c91943811934015238cb0, type: 3}
 --- !u!1 &216021406
 GameObject:

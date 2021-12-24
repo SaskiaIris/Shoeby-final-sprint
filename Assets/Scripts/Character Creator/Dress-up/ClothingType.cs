@@ -4,8 +4,7 @@ using UnityEngine;
 
 [Serializable]
 public class ClothingType {
-    public string typeName;
     public string tagName;
-    public List<GameObject> gameObjectPieces;
     public bool fullOutfit;
+    public List<GameObject> gameObjectPieces;
 }

@@ -19,8 +19,12 @@ public class AvatarDressing : MonoBehaviour {
     private string nameOfCarousel = "Clothes Carousel";
     private GameObject clothingCarousel;
 
-    //Detect collisions between the GameObjects with Colliders attached
-    void OnCollisionEnter(Collision collision) {
+	private void Start() {
+        clothingCarousel = GameObject.Find(nameOfCarousel);
+    }
+
+	//Detect collisions between the GameObjects with Colliders attached
+	void OnCollisionEnter(Collision collision) {
         if(collision.gameObject.layer == clothingLayerNumber) {
 			foreach(ClothingType clothingOnAvatar in clothes) {
                 if(collision.gameObject.tag == clothingOnAvatar.tagName) {
