@@ -1,7 +1,7 @@
 using UnityEngine;
 
 public class ClothingPieceHandler : MonoBehaviour {
-	private ClothingPiece clothingPiece = new ClothingPiece();
+	private ClothingPiece clothingPiece/* = new ClothingPiece()*/;
 
 	[SerializeField]
 	private bool setIsThrowable;
@@ -13,9 +13,9 @@ public class ClothingPieceHandler : MonoBehaviour {
 	private GameObject setThrowableVersion;
 
 	// Start is called before the first frame update
-	void Start() {
-		//clothingPiece = new ClothingPiece(gameObject, setIsThrowable, setThrowableVersion);
-		clothingPiece.SetEverything(gameObject, setIsThrowable, setThrowableVersion);
+	void OnEnable() {
+		clothingPiece = new ClothingPiece(gameObject, setIsThrowable, setThrowableVersion);
+		//clothingPiece.SetEverything(gameObject, setIsThrowable, setThrowableVersion);
 	}
 
 	private void Update() {

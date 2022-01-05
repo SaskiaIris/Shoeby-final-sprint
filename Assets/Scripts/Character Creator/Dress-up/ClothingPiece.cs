@@ -44,15 +44,7 @@ public class ClothingPiece {
         }
     }
 
-    /*public ClothingPiece(GameObject givenGameObject, bool isThrowable, GameObject throwableVersion) {
-        _thisGameObject = givenGameObject;
-        _pieceName = FindRealName();
-        _correspondingCarousel = FindCarousel();
-        _isThrowable = isThrowable;
-        _throwableVersion = throwableVersion;
-    }*/
-
-    public void SetEverything(GameObject givenGameObject, bool isThrowable, GameObject throwableVersion) {
+    public ClothingPiece(GameObject givenGameObject, bool isThrowable, GameObject throwableVersion) {
         _thisGameObject = givenGameObject;
         _pieceName = FindRealName();
         _correspondingCarousel = FindCarousel();
@@ -60,11 +52,20 @@ public class ClothingPiece {
         _throwableVersion = throwableVersion;
     }
 
+    /*public void SetEverything(GameObject givenGameObject, bool isThrowable, GameObject throwableVersion) {
+        _thisGameObject = givenGameObject;
+        _pieceName = FindRealName();
+        _correspondingCarousel = FindCarousel();
+        _isThrowable = isThrowable;
+        _throwableVersion = throwableVersion;
+    }*/
+
     public void EnterGrab() {
         if(_isThrowable) {
             ResetTimer();
         } else {
             if(!CheckIfDuplicateExists()) {
+                Debug.Log("make dupe");
                 CreateDuplicate();
             }
         }
@@ -101,15 +102,16 @@ public class ClothingPiece {
     }
 
     private void Despawn() {
+        string naaam = _pieceName;
         GameObject.Destroy(_thisGameObject);
         //TODO: test if next line still works
-        CarouselRespawn();
+        CarouselRespawn(naaam);
     }
 
-    public void CarouselRespawn() {
+    public void CarouselRespawn(string naam) {
         //IDK!?
         _correspondingCarousel = FindCarousel();
-        _correspondingCarousel.GetComponent<RespawnClothing>().CheckIfPieceNeedsActivation(_pieceName);
+        _correspondingCarousel.GetComponent<RespawnClothing>().CheckIfPieceNeedsActivation(naam);
     }
 
     private void TurnKinematicOff() {

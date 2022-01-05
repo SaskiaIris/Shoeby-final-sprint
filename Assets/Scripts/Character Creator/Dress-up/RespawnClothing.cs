@@ -1,4 +1,3 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -22,6 +21,7 @@ public class RespawnClothing : MonoBehaviour {
 			foreach(GameObject piece in piecesOnBushes) {
 				bushPieceName = piece.name;
 				bushPieceName = RemoveEndOfString(bushPieceName, environmentIdentifierString);
+				Debug.Log("forloop piece name: " + bushPieceName + " search for name: " + deactivatedPieceName);
 				if(bushPieceName == deactivatedPieceName) {
 					Debug.Log("wow1");
 					piece.GetComponent<ClothingPieceHandler>().GetChild().SetActive(true);

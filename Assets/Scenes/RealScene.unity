@@ -1003,7 +1003,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1421641954}
   m_Layer: 0
-  m_Name: Bush
+  m_Name: Bushes
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1673,7 +1673,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   setIsThrowable: 0
-  setEnvironmentVersion: {fileID: 0}
   setThrowableVersion: {fileID: 5284272494377847051, guid: c32a8028904ac934492026356265763a, type: 3}
 --- !u!1 &663780719024869075
 GameObject:
@@ -1787,7 +1786,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   setIsThrowable: 0
-  setEnvironmentVersion: {fileID: 0}
   setThrowableVersion: {fileID: 5284272494377847051, guid: a0a6deee3538e3c42a20aa286c7c9f49, type: 3}
 --- !u!4 &1047384101460865868
 Transform:
@@ -3655,7 +3653,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   setIsThrowable: 0
-  setEnvironmentVersion: {fileID: 0}
   setThrowableVersion: {fileID: 5284272494377847051, guid: 66eb646bad939bc4d92a63444f0adb66, type: 3}
 --- !u!23 &4588386661310179758
 MeshRenderer:
@@ -5297,7 +5294,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   setIsThrowable: 0
-  setEnvironmentVersion: {fileID: 0}
   setThrowableVersion: {fileID: 5284272494377847051, guid: 89d80a60937200542a9e31e571586c85, type: 3}
 --- !u!114 &8838150111815975109
 MonoBehaviour:
@@ -5312,7 +5308,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   setIsThrowable: 0
-  setEnvironmentVersion: {fileID: 0}
   setThrowableVersion: {fileID: 5284272494377847051, guid: eb04866c1ede4654caf2c52f017c6808, type: 3}
 --- !u!4 &8851240870793122031
 Transform:
