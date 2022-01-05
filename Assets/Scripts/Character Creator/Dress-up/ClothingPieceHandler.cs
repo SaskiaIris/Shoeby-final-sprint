@@ -33,7 +33,7 @@ public class ClothingPieceHandler : MonoBehaviour {
 	}
 
 	public void RespawnOnCarousel() {
-		clothingPiece.CarouselRespawn();
+		clothingPiece.CarouselRespawn("biiop");
 	}
 
 	public void ToDoWhenEnterGrab() {

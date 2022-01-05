@@ -46,6 +46,7 @@ public class ClothingPiece {
 
     public ClothingPiece(GameObject givenGameObject, bool isThrowable, GameObject throwableVersion) {
         _thisGameObject = givenGameObject;
+        //ond werkt niet
         _pieceName = FindRealName();
         _correspondingCarousel = FindCarousel();
         _isThrowable = isThrowable;
@@ -102,7 +103,7 @@ public class ClothingPiece {
     }
 
     private void Despawn() {
-        string naaam = _pieceName;
+        string naaam = FindRealName();
         GameObject.Destroy(_thisGameObject);
         //TODO: test if next line still works
         CarouselRespawn(naaam);
