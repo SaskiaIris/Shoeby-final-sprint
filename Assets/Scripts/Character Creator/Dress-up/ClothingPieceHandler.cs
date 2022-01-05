@@ -32,8 +32,8 @@ public class ClothingPieceHandler : MonoBehaviour {
 		return clothingPiece.GetChildObject();
 	}
 
-	public void RespawnOnCarousel() {
-		clothingPiece.CarouselRespawn("biiop");
+	public void RespawnOnCarousel(string searchName) {
+		clothingPiece.CarouselRespawn(searchName);
 	}
 
 	public void ToDoWhenEnterGrab() {

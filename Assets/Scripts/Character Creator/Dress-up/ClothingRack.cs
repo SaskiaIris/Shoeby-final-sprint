@@ -17,13 +17,13 @@ public class ClothingRack : MonoBehaviour {
     }
 
     public void ActivateClothingOnRack(GameObject thrownPiece) {
+        string clothingNameThrown;
+        string clothingNameEnvironment;
         foreach(GameObject clothingInEnvironment in clothing) {
             Debug.Log("TREE something is thrown");
-            //string clothingNameThrown = RemoveEndOfString(thrownPiece.name, throwableIdentifierString);
-            string clothingNameThrown = thrownPiece.GetComponent<ClothingPieceHandler>().GetRealName();
+            clothingNameThrown = thrownPiece.GetComponent<ClothingPieceHandler>().GetRealName();
             Debug.Log("TREE thrname: " + clothingNameThrown);
-            //string clothingNameEnvironment = RemoveEndOfString(clothingInEnvironment.name, environmentIdentifierString);
-            string clothingNameEnvironment = thrownPiece.GetComponent<ClothingPieceHandler>().GetRealName();
+            clothingNameEnvironment = clothingInEnvironment.GetComponent<ClothingPieceHandler>().GetRealName();
             Debug.Log("TREE envname: " + clothingNameEnvironment);
 
             if(clothingNameEnvironment == clothingNameThrown) {

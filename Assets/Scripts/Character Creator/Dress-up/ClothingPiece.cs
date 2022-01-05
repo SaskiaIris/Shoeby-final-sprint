@@ -64,8 +64,9 @@ public class ClothingPiece {
     public void EnterGrab() {
         if(_isThrowable) {
             ResetTimer();
+            TurnKinematicOffOrOn(true);
         } else {
-            if(!CheckIfDuplicateExists()) {
+            if(!CheckIfDuplicateExists() && CheckIfChildActive()) {
                 Debug.Log("make dupe");
                 CreateDuplicate();
             }
@@ -74,7 +75,7 @@ public class ClothingPiece {
 
     public void ExitGrab() {
         if(_isThrowable) {
-            TurnKinematicOff();
+            TurnKinematicOffOrOn(false);
             StartTimer();
         }
     }
@@ -103,26 +104,37 @@ public class ClothingPiece {
     }
 
     private void Despawn() {
-        string naaam = FindRealName();
+        string destroyedName = FindRealName();
         GameObject.Destroy(_thisGameObject);
         //TODO: test if next line still works
-        CarouselRespawn(naaam);
+        CarouselRespawn(destroyedName);
     }
 
-    public void CarouselRespawn(string naam) {
+    public void CarouselRespawn(string carouselPieceName) {
         //IDK!?
         _correspondingCarousel = FindCarousel();
-        _correspondingCarousel.GetComponent<RespawnClothing>().CheckIfPieceNeedsActivation(naam);
+        _correspondingCarousel.GetComponent<RespawnClothing>().CheckIfPieceNeedsActivation(carouselPieceName);
     }
 
-    private void TurnKinematicOff() {
-        _thisGameObject.GetComponent<Rigidbody>().isKinematic = false;
+    private void TurnKinematicOffOrOn(bool value) {
+        _thisGameObject.GetComponent<Rigidbody>().isKinematic = value;
+    }
+
+    private bool CheckIfChildActive() {
+        bool returnBool = false;
+        if(GetChildObject().activeInHierarchy) {
+            returnBool = true;
+        } else {
+            returnBool = false;
+        }
+
+        return returnBool;
     }
 
     private void CreateDuplicate() {
         GameObject duplicateGameObject = GameObject.Instantiate(_throwableVersion);
         duplicateGameObject.transform.position = _thisGameObject.transform.position;
-        _thisGameObject.SetActive(false);
+        /*_thisGameObject.*/GetChildObject().SetActive(false);
     }
 
     private bool CheckIfDuplicateExists() {
