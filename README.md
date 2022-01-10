@@ -1,3 +1,0 @@
-# Shoeby Lens
-
-Google drive: 
