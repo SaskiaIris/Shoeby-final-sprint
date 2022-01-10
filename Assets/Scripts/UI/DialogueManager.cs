@@ -1,9 +1,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class DialogueManager : MonoBehaviour {
-    public Text beeText;
+    public TextMeshProUGUI beeText;
 
     [SerializeField]
     private Queue<string> sentences;
