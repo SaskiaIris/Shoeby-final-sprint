@@ -11,7 +11,7 @@ public class DialogueManager : MonoBehaviour {
 
     bool pushedOnce = false;
 
-    void Start() {
+    void Awake() {
         sentences = new Queue<string>();
     }
 
