@@ -185,7 +185,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 78307897, guid: f25786a16a89d754385590f84ae68700, type: 3}
       propertyPath: dialogue.sentences.Array.size
-      value: 2
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 78307897, guid: f25786a16a89d754385590f84ae68700, type: 3}
       propertyPath: dialogue.sentences.Array.data[0]
@@ -197,11 +197,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 78307897, guid: f25786a16a89d754385590f84ae68700, type: 3}
       propertyPath: dialogue.sentences.Array.data[2]
-      value: 
+      value: sadasdasd 3
       objectReference: {fileID: 0}
     - target: {fileID: 78307897, guid: f25786a16a89d754385590f84ae68700, type: 3}
       propertyPath: dialogue.sentences.Array.data[3]
-      value: 
+      value: asdasdasdas 4
       objectReference: {fileID: 0}
     - target: {fileID: 78307897, guid: f25786a16a89d754385590f84ae68700, type: 3}
       propertyPath: dialogue.sentences.Array.data[4]
@@ -740,7 +740,7 @@ MonoBehaviour:
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
-  m_enableWordWrapping: 0
+  m_enableWordWrapping: 1
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
   m_linkedTextComponent: {fileID: 0}
@@ -961,7 +961,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4601993178278350020, guid: 9eaa24964f1529f4e9eaed27981ff05a, type: 3}
       propertyPath: m_LocalScale.x
-      value: 83.59
+      value: 1000
       objectReference: {fileID: 0}
     - target: {fileID: 4601993178278350020, guid: 9eaa24964f1529f4e9eaed27981ff05a, type: 3}
       propertyPath: m_LocalScale.y
@@ -969,7 +969,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4601993178278350020, guid: 9eaa24964f1529f4e9eaed27981ff05a, type: 3}
       propertyPath: m_LocalScale.z
-      value: 84.1
+      value: 1000
       objectReference: {fileID: 0}
     - target: {fileID: 4601993178278350020, guid: 9eaa24964f1529f4e9eaed27981ff05a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1053,7 +1053,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fadeScreen: {fileID: 1291041763}
   AmountClicked: 0
-  SceneSwitchClick: 2
+  SceneSwitchClick: 100
 --- !u!4 &1243848888
 Transform:
   m_ObjectHideFlags: 0
@@ -1086,7 +1086,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1291041762
 Transform:
   m_ObjectHideFlags: 0
@@ -4556,6 +4556,18 @@ PrefabInstance:
     - target: {fileID: 6618223281143330857, guid: 0562c09251ec8bf4a89ec58b024ecc36, type: 3}
       propertyPath: m_RootOrder
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6618223281143330857, guid: 0562c09251ec8bf4a89ec58b024ecc36, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 6618223281143330857, guid: 0562c09251ec8bf4a89ec58b024ecc36, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.02
+      objectReference: {fileID: 0}
+    - target: {fileID: 6618223281143330857, guid: 0562c09251ec8bf4a89ec58b024ecc36, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 200
       objectReference: {fileID: 0}
     - target: {fileID: 6618223281143330857, guid: 0562c09251ec8bf4a89ec58b024ecc36, type: 3}
       propertyPath: m_LocalPosition.x
