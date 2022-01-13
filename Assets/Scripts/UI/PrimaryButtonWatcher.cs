@@ -11,8 +11,8 @@ public class PrimaryButtonWatcher : MonoBehaviour
     public PrimaryButtonEvent primaryButtonPress;
 
     private bool lastButtonState = false;
-    private List<UnityEngine.XR.InputDevice> allDevices;
-    private List<UnityEngine.XR.InputDevice> devicesWithPrimaryButton;
+    private List<InputDevice> allDevices;
+    private List<InputDevice> devicesWithPrimaryButton;
 
     void Start()
     {
@@ -20,8 +20,8 @@ public class PrimaryButtonWatcher : MonoBehaviour
         {
             primaryButtonPress = new PrimaryButtonEvent();
         }
-        allDevices = new List<UnityEngine.XR.InputDevice>();
-        devicesWithPrimaryButton = new List<UnityEngine.XR.InputDevice>();
+        allDevices = new List<InputDevice>();
+        devicesWithPrimaryButton = new List<InputDevice>();
         InputTracking.nodeAdded += InputTracking_nodeAdded;
     }
 
@@ -31,36 +31,35 @@ public class PrimaryButtonWatcher : MonoBehaviour
         updateInputDevices();
     }
 
-    void Update()
-    {
+    void Update() {
         bool tempState = false;
         bool invalidDeviceFound = false;
-        foreach (var device in devicesWithPrimaryButton)
-        {
+        foreach (var device in devicesWithPrimaryButton) {
             bool primaryButtonState = false;
             tempState = device.isValid // the device is still valid
                         && device.TryGetFeatureValue(CommonUsages.primaryButton, out primaryButtonState) // did get a value
                         && primaryButtonState // the value we got
                         || tempState; // cumulative result from other controllers
-            if (!device.isValid)
+            if(!device.isValid) {
                 invalidDeviceFound = true;
+            }
         }
 
-        if (tempState != lastButtonState) // Button state changed since last frame
+        if(tempState != lastButtonState && tempState == true) // Button state changed since last frame & button is pressed
         {
             primaryButtonPress.Invoke(tempState);
-            lastButtonState = tempState;
         }
+        lastButtonState = tempState;
 
-        if (invalidDeviceFound || devicesWithPrimaryButton.Count == 0) // refresh device lists
+        if(invalidDeviceFound || devicesWithPrimaryButton.Count == 0) {// refresh device lists
             updateInputDevices();
+        }
     }
 
     // find any devices supporting the desired feature usage
-    void updateInputDevices()
-    {
+    void updateInputDevices() {
         devicesWithPrimaryButton.Clear();
-        UnityEngine.XR.InputDevices.GetDevices(allDevices);
+        InputDevices.GetDevices(allDevices);
         bool discardedValue;
         foreach (var device in allDevices)
         {
