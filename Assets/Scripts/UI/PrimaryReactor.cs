@@ -1,9 +1,8 @@
-using System.Collections;
-using System.Collections.Generic;
+/*using System.Collections;
+using System.Collections.Generic;*/
 using UnityEngine;
 
-public class PrimaryReactor : MonoBehaviour
-{
+public class PrimaryReactor : MonoBehaviour {
     public PrimaryButtonWatcher watcher;
     public bool IsPressed = false; // used to display button state in the Unity Inspector window
     //public Vector3 descentSpeed = new Vector3(1, 5, 1);
@@ -14,15 +13,13 @@ public class PrimaryReactor : MonoBehaviour
     //[SerializeField]
     //private GameObject bushes;
 
-    void Start()
-    {
+    void Start() {
         watcher.primaryButtonPress.AddListener(onPrimaryButtonEvent);
         //offPosition = bushes.transform.position;
         //onPosition = Vector3.Scale(descentSpeed, offPosition);
     }
 
-    public void onPrimaryButtonEvent(bool pressed)
-    {
+    public void onPrimaryButtonEvent(bool pressed) {
         IsPressed = pressed;
         //if (descent != null)
         //    StopCoroutine(descent);
