@@ -11,13 +11,6 @@ public class DialogueManager : MonoBehaviour {
 
     private int sentenceIndex = 0;
 
-    private int amountOfSecondsTillNext = 20;
-    private float timer = 0.0f;
-    private int timerInSeconds = 0;
-    private int amountOfMSInASecond = 60;
-    private bool counting = false;
-    private int zero = 0;
-
     bool pushedOnce = false;
 
     void Awake() {
