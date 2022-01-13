@@ -188,6 +188,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 78307897, guid: f25786a16a89d754385590f84ae68700, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2598541557200430588, guid: f25786a16a89d754385590f84ae68700, type: 3}
       propertyPath: m_RootOrder
       value: 5
@@ -239,7 +243,7 @@ PrefabInstance:
     - target: {fileID: 4965519544397098329, guid: f25786a16a89d754385590f84ae68700, type: 3}
       propertyPath: onPressed.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 186202099}
     - target: {fileID: 4965519544397098329, guid: f25786a16a89d754385590f84ae68700, type: 3}
       propertyPath: onPressed.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
@@ -377,6 +381,47 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1b5402f6398c91943811934015238cb0, type: 3}
+--- !u!114 &186202099 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: -7784984706089509794, guid: 1b5402f6398c91943811934015238cb0, type: 3}
+  m_PrefabInstance: {fileID: 186202098}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 186202100}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0bb689eb621e6634b9c08468e7b8c5d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &186202100 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9190736197753597439, guid: 1b5402f6398c91943811934015238cb0, type: 3}
+  m_PrefabInstance: {fileID: 186202098}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &186202101
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 186202100}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 755fa81e400a2894091b2ccb48bf9e3b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    sentences:
+    - Welkom in Shoeby-world. Ik ben Shoe-bee en dit is mijn paradijs. Raak de knop
+      aan om verder te gaan!
+    - Kijk om je heen. Dit is de runway! Hier zijn creaties te zien van voorgaande
+      shoeby klanten.
+    - Wie weet staat jouw creatie hier zometeen ook tussen.
+    - "Maar voordat we beginnen, even een kleine introductie:\r"
+    - Knoppen uitleg
+    - "Genoeg ge\xEFnspireerd voor nu? Druk op de knop om je eigen avatar te maken!"
+    - Dit is jouw zelf kneedbare avatar! Druk op de pijltje om hen aan te passen!
+    - Als je klaar bent druk je weer op de groene knop en kan je gaan aankleden.
+    - Pak een kledingstuk en gooi het naar de avatar om hen aan te kleden.
 --- !u!1 &216021406
 GameObject:
   m_ObjectHideFlags: 0

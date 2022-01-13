@@ -3,7 +3,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 
-public class DialogueManager : MonoBehaviour {
+public class DialogueManagerOnboarding : MonoBehaviour {
     public TextMeshProUGUI beeText;
 
     [SerializeField]
@@ -11,17 +11,35 @@ public class DialogueManager : MonoBehaviour {
 
     private int sentenceIndex = 0;
 
-    private int amountOfSecondsTillNext = 20;
+    private int amountOfSecondsTillNext = 5;
     private float timer = 0.0f;
     private int timerInSeconds = 0;
     private int amountOfMSInASecond = 60;
     private bool counting = false;
     private int zero = 0;
 
+    [SerializeField]
+    private GameObject Controller, Button, Kleding, Bob;
+
+
     bool pushedOnce = false;
 
     void Awake() {
         sentences = new List<string>();
+    }
+
+    void Update()
+    {
+        if (sentenceIndex == 1 || sentenceIndex == 2 || sentenceIndex == 3)
+        {
+            counting = true;
+        }
+
+        if (counting)
+        {
+            TimerCheck();
+        }
+
     }
 
     public void StartBeeText(Dialogue dialogue) {
@@ -43,10 +61,40 @@ public class DialogueManager : MonoBehaviour {
             return;
         }
 
+        if(sentenceIndex == 2) {
+            Controller.SetActive(true);
+        }
+
+        if(sentenceIndex == 3)
+        {
+            Controller.SetActive(false);
+            Button.SetActive(true);
+        }
+
+        Debug.Log(sentenceIndex);
         string sentence = sentences[sentenceIndex];
         beeText.text = sentence;
         sentenceIndex++;
         
+    }
+
+    public void TimerCheck()
+    {
+        timer += Time.deltaTime;
+        timerInSeconds = (int)timer % amountOfMSInASecond;
+
+        if (timerInSeconds >= amountOfSecondsTillNext)
+        {
+            ResetTimer();
+            DisplayNextSentence();
+        }
+    }
+
+    private void ResetTimer()
+    {
+        counting = false;
+        timer = zero;
+        timerInSeconds = zero;
     }
 
     void EndDialogue() {
