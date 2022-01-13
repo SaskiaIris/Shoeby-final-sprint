@@ -8,6 +8,7 @@ TagManager:
   - Shirt
   - Bottom
   - Outfit
+  - Top
   layers:
   - Default
   - TransparentFX
