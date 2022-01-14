@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: -6131600352777254624}
   - component: {fileID: -8462277378071560167}
   - component: {fileID: -778196415426305742}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: VayenDress Throwable
   m_TagString: Outfit
   m_Icon: {fileID: 0}

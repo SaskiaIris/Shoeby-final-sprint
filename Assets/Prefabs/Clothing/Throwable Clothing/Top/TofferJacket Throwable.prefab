@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 7573060546943631703}
   - component: {fileID: 7151454998574574979}
   - component: {fileID: -3021094641748574626}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: TofferJacket Throwable
   m_TagString: Top
   m_Icon: {fileID: 0}

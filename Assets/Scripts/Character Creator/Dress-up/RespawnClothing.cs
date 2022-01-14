@@ -15,16 +15,16 @@ public class RespawnClothing : MonoBehaviour {
 	private string space = " ";
 
 	public void CheckIfPieceNeedsActivation(string deactivatedPieceName) {
-		Debug.Log("Wow 0");
+		Debug.Log("FILE NAME: RespawnClothing.cs " + "MESSAGE: --- " + "Method: CheckIfPieceNeedsActivation() has been activated");
 		string bushPieceName;
 		if(GameObject.Find(deactivatedPieceName + space + throwableIdentifierString) == null && GameObject.Find(deactivatedPieceName + space + environmentIdentifierString) == null) {
 			foreach(GameObject piece in piecesOnBushes) {
 				bushPieceName = piece.name;
 				bushPieceName = RemoveEndOfString(bushPieceName, environmentIdentifierString);
-				Debug.Log("forloop piece name: " + bushPieceName + " search for name: " + deactivatedPieceName);
+				Debug.Log("FILE NAME: RespawnClothing.cs " + "MESSAGE: --- " + "Current piece in for-loop: " + bushPieceName + " Searching for name: " + deactivatedPieceName);
 				if(bushPieceName == deactivatedPieceName) {
-					Debug.Log("wow1");
-					piece.GetComponent<ClothingPieceHandler>().GetChild().SetActive(true);
+					Debug.Log("FILE NAME: RespawnClothing.cs " + "MESSAGE: --- " + "Match found, " + deactivatedPieceName + " will be respawning on the bush");
+					piece.GetComponent<ClothingPieceHandler>().SetActiveness(true);
 				}
 			}
 		}

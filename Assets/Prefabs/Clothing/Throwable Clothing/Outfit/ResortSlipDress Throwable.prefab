@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 7180059330878266131}
   - component: {fileID: 1810738765183851882}
   - component: {fileID: -5543205320735166151}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: ResortSlipDress Throwable
   m_TagString: Outfit
   m_Icon: {fileID: 0}

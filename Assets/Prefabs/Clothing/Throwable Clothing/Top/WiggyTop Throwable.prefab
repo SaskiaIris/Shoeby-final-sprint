@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: -7387508641742901948}
   - component: {fileID: -6799979480970795981}
   - component: {fileID: -2608581364958619767}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: WiggyTop Throwable
   m_TagString: Top
   m_Icon: {fileID: 0}

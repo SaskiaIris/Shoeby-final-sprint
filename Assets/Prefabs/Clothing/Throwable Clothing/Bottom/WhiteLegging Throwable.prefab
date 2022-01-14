@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 3942114102870672042}
   - component: {fileID: 1097857583611215636}
   - component: {fileID: -4213523795130172229}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: WhiteLegging Throwable
   m_TagString: Bottom
   m_Icon: {fileID: 0}

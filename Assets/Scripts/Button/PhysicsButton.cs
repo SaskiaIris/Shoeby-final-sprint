@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -50,13 +48,13 @@ public class PhysicsButton : MonoBehaviour
     {
         isPressed = true;
         onPressed.Invoke();
-        Debug.Log("Pressed");
+        Debug.Log("FILE NAME: PhysicsButton.cs " + "MESSAGE: --- " + "Pressed");
     }
 
     private void Released()
     {
         isPressed = false;
         onReleased.Invoke();
-        Debug.Log("Released");
+        Debug.Log("FILE NAME: PhysicsButton.cs " + "MESSAGE: --- " + "Released");
     }
 }

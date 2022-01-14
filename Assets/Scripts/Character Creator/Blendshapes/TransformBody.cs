@@ -80,7 +80,7 @@ public class TransformBody : MonoBehaviour {
             }
         }
 
-        Debug.Log("to be: " + sizeToBe);
+        Debug.Log("FILE NAME: TransformBody.cs " + "MESSAGE: --- " + "The new value of the blendshape will be: " + sizeToBe);
 
         skinnedMeshRenderer.SetBlendShapeWeight(blendshapeIndex, Mathf.Lerp(currentSize, sizeToBe, scaleScaleStep));
 
@@ -99,21 +99,21 @@ public class TransformBody : MonoBehaviour {
                 if(!isThisButtonUp) {
                     if(b != end) {
                         blendshapes[(b + 1)].isSelected = true;
-                        Debug.Log("state 1");
+                        Debug.Log("FILE NAME: TransformBody.cs " + "MESSAGE: --- " + "State 1:" + "Button pressed: down, we are NOT at the end of the list");
                     } else {
                         blendshapes[start].isSelected = true;
-                        Debug.Log("state 2");
+                        Debug.Log("FILE NAME: TransformBody.cs " + "MESSAGE: --- " + "State 2:" + "Button pressed: down, we ARE at the end of the list");
                     }
                 } else {
                     if(b != start) {
                         blendshapes[(b - 1)].isSelected = true;
-                        Debug.Log("state 3");
+                        Debug.Log("FILE NAME: TransformBody.cs " + "MESSAGE: --- " + "State 3:" + "Button pressed: up, we are NOT at the beginning of the list");
                     } else {
                         blendshapes[end].isSelected = true;
-                        Debug.Log("state 4");
+                        Debug.Log("FILE NAME: TransformBody.cs " + "MESSAGE: --- " + "State 4:" + "Button pressed: up, we ARE at the end of the list");
                     }
                 }
-                Debug.Log("b is " + b);
+                Debug.Log("FILE NAME: TransformBody.cs " + "MESSAGE: --- " + "The number of the previously selected blendshape is: " + b);
                 blendshapes[b].isSelected = false;
                 break;
             }

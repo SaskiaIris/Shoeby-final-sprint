@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: -1295978807210475828}
   m_Layer: 3
   m_Name: BracyTee Throwable
-  m_TagString: Shirt
+  m_TagString: Top
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -207,7 +207,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   setIsThrowable: 1
-  setEnvironmentVersion: {fileID: 5284272494377847051, guid: 1c5755fe4c6858a41bcab123e6a8a1f8, type: 3}
   setThrowableVersion: {fileID: 5284272494377847051}
 --- !u!1001 &293595681651463483
 PrefabInstance:

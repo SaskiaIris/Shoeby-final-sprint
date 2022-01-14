@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 477267353171625410}
   - component: {fileID: 2701971597317991614}
   - component: {fileID: -8927626656803144592}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: TofferPants Throwable
   m_TagString: Bottom
   m_Icon: {fileID: 0}

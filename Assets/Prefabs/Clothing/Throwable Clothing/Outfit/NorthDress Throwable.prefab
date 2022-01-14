@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: -1542298551224714180}
   - component: {fileID: -1008303973775411970}
   - component: {fileID: -1727342502663616524}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: NorthDress Throwable
   m_TagString: Outfit
   m_Icon: {fileID: 0}

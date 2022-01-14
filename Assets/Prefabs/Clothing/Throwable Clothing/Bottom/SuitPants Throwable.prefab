@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 7928489927225487682}
   - component: {fileID: -2335656360813920414}
   - component: {fileID: -110147690157075295}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SuitPants Throwable
   m_TagString: Bottom
   m_Icon: {fileID: 0}

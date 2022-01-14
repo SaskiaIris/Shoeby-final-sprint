@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 335213820594433053}
   - component: {fileID: -8475887783145319835}
   - component: {fileID: -3348117720425166441}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: TwiggyTop Throwable
   m_TagString: Top
   m_Icon: {fileID: 0}

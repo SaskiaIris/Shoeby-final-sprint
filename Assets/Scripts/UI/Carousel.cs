@@ -27,7 +27,7 @@ public class Carousel : MonoBehaviour {
 
 
     void Start() {
-        Debug.Log(carouselObjects[0].name);//just display the name of the first chosen element in the console
+        Debug.Log("FILE NAME: Carousel.cs " + "MESSAGE: --- " + "Name of the first displayed object: " + carouselObjects[0].name);//just display the name of the first chosen element in the console
         GameObject raycastHolder = new GameObject();//create an empty gameobject
         raycastHolder.name = "RaycastPicker"; //rename it to RaycastPicker
         theRayCaster = raycastHolder.transform; // assign the transform of the newlycreated gameobject to the raycast transform variable
@@ -92,7 +92,7 @@ public class Carousel : MonoBehaviour {
             theRayCaster.position = transform.position;
             RaycastHit hit;
             if(Physics.Raycast(transform.position, -theRayCaster.forward, out hit, DistanceFromCenter)) {
-                Debug.Log(hit.collider.name);//display in the console which element is detected
+                Debug.Log("FILE NAME: Carousel.cs " + "MESSAGE: --- " + "XXX??" + hit.collider.name);//display in the console which element is detected
             }
         }
 
@@ -118,7 +118,7 @@ public class Carousel : MonoBehaviour {
             } else {
                 ChosenObject--;
             }
-            Debug.Log(carouselObjects[ChosenObject].name); //show in the console the name of the selected element
+            Debug.Log("FILE NAME: Carousel.cs " + "MESSAGE: --- " + "Carousel rotated to the left, current selected piece: " + carouselObjects[ChosenObject].name); //show in the console the name of the selected element
         }
     }
     public void rotateTheCarouselRight()// call this function to rotate the carousel towards the right
@@ -138,7 +138,7 @@ public class Carousel : MonoBehaviour {
             } else {
                 ChosenObject++;
             }
-            Debug.Log(carouselObjects[ChosenObject].name); //show in the console the name of the selected element
+            Debug.Log("FILE NAME: Carousel.cs " + "MESSAGE: --- " + "Carousel rotated to the right, current selected piece: " + carouselObjects[ChosenObject].name); //show in the console the name of the selected element
         }
     }
 }

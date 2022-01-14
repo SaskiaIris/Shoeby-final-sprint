@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: -1055398321826352189}
   - component: {fileID: 2206880709614010867}
   - component: {fileID: 3073908124370300152}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: ResortBlouse Throwable
   m_TagString: Top
   m_Icon: {fileID: 0}

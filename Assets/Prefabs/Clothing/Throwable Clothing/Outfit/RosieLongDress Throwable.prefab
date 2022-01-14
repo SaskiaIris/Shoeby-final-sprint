@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: -1090414973114868644}
   - component: {fileID: -6649417280215737414}
   - component: {fileID: -241833369710369047}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: RosieLongDress Throwable
   m_TagString: Outfit
   m_Icon: {fileID: 0}

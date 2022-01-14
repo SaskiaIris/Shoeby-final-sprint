@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 6766739629335368956}
   - component: {fileID: 1233540800542917727}
   - component: {fileID: -1109349731546717413}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: TankTop Throwable
   m_TagString: Top
   m_Icon: {fileID: 0}

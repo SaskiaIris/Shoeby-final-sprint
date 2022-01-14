@@ -28,8 +28,12 @@ public class ClothingPieceHandler : MonoBehaviour {
 		return clothingPiece.PieceName;
 	}
 
-	public GameObject GetChild() {
+	/*public GameObject GetChild() {
 		return clothingPiece.GetChildObject();
+	}*/
+
+	public void SetActiveness(bool value) {
+		clothingPiece.SetOnOff(value);
 	}
 
 	public void RespawnOnCarousel(string searchName) {

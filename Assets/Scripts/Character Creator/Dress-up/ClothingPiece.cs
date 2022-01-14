@@ -53,21 +53,13 @@ public class ClothingPiece {
         _throwableVersion = throwableVersion;
     }
 
-    /*public void SetEverything(GameObject givenGameObject, bool isThrowable, GameObject throwableVersion) {
-        _thisGameObject = givenGameObject;
-        _pieceName = FindRealName();
-        _correspondingCarousel = FindCarousel();
-        _isThrowable = isThrowable;
-        _throwableVersion = throwableVersion;
-    }*/
-
     public void EnterGrab() {
         if(_isThrowable) {
             ResetTimer();
             TurnKinematicOffOrOn(true);
         } else {
             if(!CheckIfDuplicateExists() && CheckIfChildActive()) {
-                Debug.Log("make dupe");
+                Debug.Log("FILE NAME: ClothingPiece.cs " + "MESSAGE: --- " + "Duplicate of " + this.FindRealName() + " is made");
                 CreateDuplicate();
             }
         }
@@ -99,8 +91,16 @@ public class ClothingPiece {
         }
     }
 
-    public GameObject GetChildObject() {
+    public void SetOnOff(bool value) {
+		GetChildObject().SetActive(value);
+        GetBoxCollider().enabled = value;
+    }
+
+    private GameObject GetChildObject() {
         return _thisGameObject.transform.GetChild(0).gameObject;
+    }
+    private Collider GetBoxCollider() {
+        return _thisGameObject.GetComponent<BoxCollider>();
     }
 
     private void Despawn() {
@@ -134,7 +134,8 @@ public class ClothingPiece {
     private void CreateDuplicate() {
         GameObject duplicateGameObject = GameObject.Instantiate(_throwableVersion);
         duplicateGameObject.transform.position = _thisGameObject.transform.position;
-        /*_thisGameObject.*/GetChildObject().SetActive(false);
+        Debug.Log("FILE NAME: ClothingPiece.cs " + "MESSAGE: --- " + "Making a duplicate");
+        SetOnOff(false); //Does this work?
     }
 
     private bool CheckIfDuplicateExists() {
@@ -161,7 +162,7 @@ public class ClothingPiece {
 
     public GameObject FindCarousel() {
         string nameToSearchFor = _thisGameObject.tag + _space + _carouselName;
-        Debug.Log(nameToSearchFor);
+        Debug.Log("FILE NAME: ClothingPiece.cs " + "MESSAGE: --- " + "Name of the carousel we are searching for: " + nameToSearchFor);
         GameObject foundCarousel = GameObject.Find(nameToSearchFor);
         return foundCarousel;
     }

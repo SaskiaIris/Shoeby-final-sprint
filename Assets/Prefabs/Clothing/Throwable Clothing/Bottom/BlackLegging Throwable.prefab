@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 545906329877607508}
   - component: {fileID: 8747914661328965704}
   - component: {fileID: -1534500940145072289}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: BlackLegging Throwable
   m_TagString: Bottom
   m_Icon: {fileID: 0}

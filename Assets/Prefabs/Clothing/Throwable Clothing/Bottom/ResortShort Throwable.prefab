@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 3742475273335158667}
   - component: {fileID: 5792073574173654395}
   - component: {fileID: 5283949330711084746}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: ResortShort Throwable
   m_TagString: Bottom
   m_Icon: {fileID: 0}

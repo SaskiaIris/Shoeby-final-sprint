@@ -1,4 +1,3 @@
-using System;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -21,21 +20,21 @@ public class AvatarDressing : MonoBehaviour {
     }
 
     public void ChangeClothing(List<GameObject> clothingType, GameObject thrownClothing, bool isFullOutfit) {
-        Debug.Log("POP something is thrown");
+        Debug.Log("FILE NAME: AvatarDressing.cs " + "MESSAGE: --- " + "Clothing is thrown on avatar");
         string clothingNameThrown = thrownClothing.GetComponent<ClothingPieceHandler>().GetRealName();
-        Debug.Log("POP thrname " + clothingNameThrown);
+        Debug.Log("FILE NAME: AvatarDressing.cs " + "MESSAGE: --- " + "Thrown item name: " + clothingNameThrown);
         string clothingNameEnvironment;
 
         foreach(GameObject clothingInType in clothingType) {
             clothingNameEnvironment = clothingInType.GetComponent<ClothingPieceHandler>().GetRealName();
-            Debug.Log("POP envname " + clothingNameEnvironment);
+            Debug.Log("FILE NAME: AvatarDressing.cs " + "MESSAGE: --- " + "Name of the current piece in the for-loop: " + clothingNameEnvironment);
 
             if(clothingNameEnvironment == clothingNameThrown) {
-                clothingInType.GetComponent<ClothingPieceHandler>().GetChild().SetActive(true);
-                Debug.Log("POP kleding active gezet");
+                clothingInType.GetComponent<ClothingPieceHandler>().SetActiveness(true);
+                Debug.Log("FILE NAME: AvatarDressing.cs " + "MESSAGE: --- " + clothingNameThrown + " set active on avatar");
                 Destroy(thrownClothing);
             } else {
-                clothingInType.GetComponent<ClothingPieceHandler>().GetChild().SetActive(false);
+                clothingInType.GetComponent<ClothingPieceHandler>().SetActiveness(false);
                 clothingInType.GetComponent<ClothingPieceHandler>().RespawnOnCarousel(clothingNameEnvironment);
             }
 
@@ -58,7 +57,7 @@ public class AvatarDressing : MonoBehaviour {
     public void SetRestInactive(List<GameObject> clothingPieces) {
         foreach(GameObject piece in clothingPieces) {
             string pieceName = piece.GetComponent<ClothingPieceHandler>().GetRealName();
-            piece.GetComponent<ClothingPieceHandler>().GetChild().SetActive(false);
+            piece.GetComponent<ClothingPieceHandler>().SetActiveness(false);
             piece.GetComponent<ClothingPieceHandler>().RespawnOnCarousel(pieceName);
         }
     }

@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: -2271799078281781412}
   - component: {fileID: 380243672520678027}
   - component: {fileID: -7573494019096827598}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: MikkyPants Throwable
   m_TagString: Bottom
   m_Icon: {fileID: 0}

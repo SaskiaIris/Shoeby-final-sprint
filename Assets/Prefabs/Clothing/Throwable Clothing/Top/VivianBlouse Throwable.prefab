@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 5693084061595026741}
   - component: {fileID: -1180604605358411377}
   - component: {fileID: 3400900023398350376}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: VivianBlouse Throwable
   m_TagString: Top
   m_Icon: {fileID: 0}

@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: -3944639820100008538}
   - component: {fileID: 528103145521052505}
   - component: {fileID: -814202101377449812}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: RamoonShirt Throwable
   m_TagString: Top
   m_Icon: {fileID: 0}

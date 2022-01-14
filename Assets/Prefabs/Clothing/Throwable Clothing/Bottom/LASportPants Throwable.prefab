@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: -4663946283270078104}
   - component: {fileID: -612920123366186679}
   - component: {fileID: 2992092803398368766}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: LASportPants Throwable
   m_TagString: Bottom
   m_Icon: {fileID: 0}

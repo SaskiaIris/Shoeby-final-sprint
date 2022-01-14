@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: -8381961867421589876}
   - component: {fileID: -6144825718089459960}
   - component: {fileID: -7466391690230811754}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: RosieBlouse Throwable
   m_TagString: Top
   m_Icon: {fileID: 0}

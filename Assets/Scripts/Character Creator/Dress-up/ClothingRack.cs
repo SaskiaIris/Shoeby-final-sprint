@@ -1,4 +1,3 @@
-using System;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -19,15 +18,15 @@ public class ClothingRack : MonoBehaviour {
     public void ActivateClothingOnRack(GameObject thrownPiece) {
         string clothingNameThrown;
         string clothingNameEnvironment;
+        Debug.Log("FILE NAME: ClothingRack.cs " + "MESSAGE: --- " + "Something is thrown on the tree");
         foreach(GameObject clothingInEnvironment in clothing) {
-            Debug.Log("TREE something is thrown");
             clothingNameThrown = thrownPiece.GetComponent<ClothingPieceHandler>().GetRealName();
-            Debug.Log("TREE thrname: " + clothingNameThrown);
+            Debug.Log("FILE NAME: ClothingRack.cs " + "MESSAGE: --- " + "Name of the piece thrown on the tree: " + clothingNameThrown);
             clothingNameEnvironment = clothingInEnvironment.GetComponent<ClothingPieceHandler>().GetRealName();
-            Debug.Log("TREE envname: " + clothingNameEnvironment);
+            Debug.Log("FILE NAME: ClothingRack.cs " + "MESSAGE: --- " + "Name of the current piece in the for-loop" + clothingNameEnvironment);
 
             if(clothingNameEnvironment == clothingNameThrown) {
-                clothingInEnvironment.GetComponent<ClothingPieceHandler>().GetChild().SetActive(true);
+                clothingInEnvironment.GetComponent<ClothingPieceHandler>().SetActiveness(true);
                 Destroy(thrownPiece);
             }
         }
