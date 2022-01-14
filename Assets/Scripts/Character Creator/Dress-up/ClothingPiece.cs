@@ -10,7 +10,6 @@ public class ClothingPiece {
 
     private string _pieceName;
     private GameObject _thisGameObject;
-    //private ClothingType _clothingType;
     private bool _isThrowable;
     private GameObject _throwableVersion;
 

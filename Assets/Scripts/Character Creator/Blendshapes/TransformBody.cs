@@ -99,18 +99,18 @@ public class TransformBody : MonoBehaviour {
                 if(!isThisButtonUp) {
                     if(b != end) {
                         blendshapes[(b + 1)].isSelected = true;
-                        Debug.Log("FILE NAME: TransformBody.cs " + "MESSAGE: --- " + "State 1:" + "Button pressed: down, we are NOT at the end of the list");
+                        Debug.Log("FILE NAME: TransformBody.cs " + "MESSAGE: --- " + "State 1: " + "Button pressed: down, we are NOT at the end of the list");
                     } else {
                         blendshapes[start].isSelected = true;
-                        Debug.Log("FILE NAME: TransformBody.cs " + "MESSAGE: --- " + "State 2:" + "Button pressed: down, we ARE at the end of the list");
+                        Debug.Log("FILE NAME: TransformBody.cs " + "MESSAGE: --- " + "State 2: " + "Button pressed: down, we ARE at the end of the list");
                     }
                 } else {
                     if(b != start) {
                         blendshapes[(b - 1)].isSelected = true;
-                        Debug.Log("FILE NAME: TransformBody.cs " + "MESSAGE: --- " + "State 3:" + "Button pressed: up, we are NOT at the beginning of the list");
+                        Debug.Log("FILE NAME: TransformBody.cs " + "MESSAGE: --- " + "State 3: " + "Button pressed: up, we are NOT at the beginning of the list");
                     } else {
                         blendshapes[end].isSelected = true;
-                        Debug.Log("FILE NAME: TransformBody.cs " + "MESSAGE: --- " + "State 4:" + "Button pressed: up, we ARE at the end of the list");
+                        Debug.Log("FILE NAME: TransformBody.cs " + "MESSAGE: --- " + "State 4: " + "Button pressed: up, we ARE at the end of the list");
                     }
                 }
                 Debug.Log("FILE NAME: TransformBody.cs " + "MESSAGE: --- " + "The number of the previously selected blendshape is: " + b);
