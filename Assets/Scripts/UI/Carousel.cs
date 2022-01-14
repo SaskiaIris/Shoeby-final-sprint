@@ -1,5 +1,7 @@
 using UnityEngine;
 using System.Collections;
+using System;
+using System.Collections.Generic;
 
 //Wissam El Hajj, 2016
 //this is a simple script that creates a carousel form game objects
@@ -10,8 +12,10 @@ using System.Collections;
 * make sure there are no elements with colliders in between the center and the carousel elements
 */
 public class Carousel : MonoBehaviour {
-
-    public GameObject[] carouselObjects;//the elements of the carousel
+    [SerializeField]
+    private GameObject[] carouselObjectsInspector;//the elements of the carousel
+    private LinkedList<GameObject> carouselObjects = new LinkedList<GameObject> { };//The elements of the carousel
+    
     public bool ResetCenterRotation = true;//do you want to reset the rotation of the carousel center (recommended to be true)
     public float DistanceFromCenter = 10.0f;//the distance from the center of the carousel
     public bool AssumeObject = true; // if true assume the object that is picked, otherwise (false) keep checking what the next item is through raycast.
@@ -25,9 +29,37 @@ public class Carousel : MonoBehaviour {
     private float newAngle = 0.0f; //the calculated angle
     private bool firstTime = true; //used to calculate the offset for the first time
 
+    //Iris Oostra
+    [SerializeField]
+    private int maximumObjects = 5;
+    private LinkedList<GameObject> excessCarouselObjects = new LinkedList<GameObject> { };
+    private bool excessAvailable = false;
 
     void Start() {
-        Debug.Log("FILE NAME: Carousel.cs " + "MESSAGE: --- " + "Name of the first displayed object: " + carouselObjects[0].name);//just display the name of the first chosen element in the console
+        if(carouselObjectsInspector.Length > maximumObjects) {
+            //Iris Oostra
+            //Have objects be invisible when there are too many
+            //TODO: testing testing testing!
+            excessAvailable = true;
+            for(int i = 0; i < maximumObjects; i++) {
+                carouselObjects.AddLast(carouselObjectsInspector[i]);
+            }
+            for(int j = maximumObjects; j < carouselObjectsInspector.Length; j++) {
+                Debug.Log("FILE NAME: Carousel.cs " + "MESSAGE: --- " + "For-loop excess linkedlist NR: " + j);
+                excessCarouselObjects.AddLast(carouselObjectsInspector[j]); //TODO: nullreference error oplossen
+            }
+
+            foreach(GameObject excessObject in excessCarouselObjects) {
+                excessObject.GetComponent<ClothingPieceHandler>().SetActiveness(false);
+            }
+        } else {
+            foreach(GameObject gameObject in carouselObjectsInspector) {
+                carouselObjects.AddLast(gameObject);
+            }
+        }
+
+        //Debug.Log("FILE NAME: Carousel.cs " + "MESSAGE: --- " + "Name of the first displayed object: " + carouselObjects[0].name);//just display the name of the first chosen element in the console
+        Debug.Log("FILE NAME: Carousel.cs " + "MESSAGE: --- " + "Name of the first displayed object: " + carouselObjects.First.Value.name);//just display the name of the first chosen element in the console
         GameObject raycastHolder = new GameObject();//create an empty gameobject
         raycastHolder.name = "RaycastPicker"; //rename it to RaycastPicker
         theRayCaster = raycastHolder.transform; // assign the transform of the newlycreated gameobject to the raycast transform variable
@@ -36,20 +68,42 @@ public class Carousel : MonoBehaviour {
             transform.rotation = Quaternion.identity;//reset the rotation of the carousel center
         }
 
-        Angle = diameter / (float) carouselObjects.Length;//calculate the angle according to the number of elements
-        float ObjectAngle = Angle;//create a temp value that keeps track of the angle of each element
-        for(int i = 0; i < carouselObjects.Length; i++) { //loop through the objects
+        //Angle = diameter / (float) carouselObjects.Length;//calculate the angle according to the number of elements
+        /*if(carouselObjects.Count > maximumObjects) {
+            Angle = diameter / (float) maximumObjects;
+        } else {*/
+            Angle = diameter / (float) carouselObjects.Count;//new
+        //}
 
+        float ObjectAngle = Angle;//create a temp value that keeps track of the angle of each element
+		/*for(int i = 0; i < carouselObjects.Length; i++) { //loop through the objects
             carouselObjects[i].transform.position = this.transform.position;//Reset objects to the postion of the carousel center
             carouselObjects[i].transform.rotation = Quaternion.identity; //make sure their rotation is zero
             carouselObjects[i].transform.parent = this.transform; // make the element child to the carousel center
             carouselObjects[i].transform.position = new Vector3(this.transform.position.x, this.transform.position.y, this.transform.position.z + DistanceFromCenter);//move each carousel item from the center an amount of "DistanceFromCenter"
             carouselObjects[i].transform.RotateAround(this.transform.position, new Vector3(0, 1, 0), ObjectAngle);//position the element in their respective locations accordind to the center throufh rotation
             ObjectAngle += Angle;//calculate the next angle value
+        }*/
+		foreach(GameObject carouselPiece in carouselObjects) {
+            carouselPiece.transform.position = this.transform.position;//Reset objects to the postion of the carousel center
+            carouselPiece.transform.rotation = Quaternion.identity; //make sure their rotation is zero
+            carouselPiece.transform.parent = this.transform; // make the element child to the carousel center
+            carouselPiece.transform.position = new Vector3(this.transform.position.x, this.transform.position.y, this.transform.position.z + DistanceFromCenter);//move each carousel item from the center an amount of "DistanceFromCenter"
+            carouselPiece.transform.RotateAround(this.transform.position, new Vector3(0, 1, 0), ObjectAngle);//position the element in their respective locations accordind to the center throufh rotation
+            ObjectAngle += Angle;//calculate the next angle value
+        }
+        foreach(GameObject excessCarouselPiece in excessCarouselObjects) {
+            excessCarouselPiece.transform.position = this.transform.position;//Reset objects to the postion of the carousel center
+            excessCarouselPiece.transform.rotation = Quaternion.identity; //make sure their rotation is zero
+            excessCarouselPiece.transform.parent = this.transform; // make the element child to the carousel center
+            excessCarouselPiece.transform.position = new Vector3(this.transform.position.x, this.transform.position.y, this.transform.position.z + DistanceFromCenter);//move each carousel item from the center an amount of "DistanceFromCenter"
+            excessCarouselPiece.transform.RotateAround(this.transform.position, new Vector3(0, 1, 0), ObjectAngle);//position the element in their respective locations accordind to the center throufh rotation
+            ObjectAngle += Angle;//calculate the next angle value
         }
 
         //Make sure an element is perfectly centered.
-        if(carouselObjects.Length % 2 != 0) {
+        //if(carouselObjects.Length % 2 != 0) {
+        if(carouselObjects.Count % 2 != 0) {
             float rotateAngle = Angle + Angle / 2;
             transform.eulerAngles = new Vector3(transform.eulerAngles.x, rotateAngle, transform.eulerAngles.z);
             newAngle = rotateAngle;
@@ -57,6 +111,8 @@ public class Carousel : MonoBehaviour {
             transform.eulerAngles = new Vector3(transform.eulerAngles.x, Angle, transform.eulerAngles.z);
             newAngle = Angle;
         }
+
+        
 
         ////////////////////////////////////////////////////////////////////////////////////////////////////////
         /// ////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -69,9 +125,20 @@ public class Carousel : MonoBehaviour {
             objectName = hit.collider.name;
         }
 
-        if(objectName != carouselObjects[0].name) // only work if the first item presented isn't the first item in the array
+        if(objectName != carouselObjects.First.Value.name /*carouselObjects[0].name*/) // only work if the first item presented isn't the first item in the array
         {
-            for(int c = 0; c < carouselObjects.Length; c++) //loop through the array
+            int c = 0;
+            foreach(GameObject carouselObject in carouselObjects) {
+                if(carouselObject.name == objectName) {
+                    float angleMultiplier = c++; //the array starts with zero so adding 1 to c gives the correct value
+                    transform.eulerAngles = new Vector3(transform.eulerAngles.x, transform.eulerAngles.y + Angle * angleMultiplier, transform.eulerAngles.z); //rotate the carousel to center the first object in the array
+                    newAngle = transform.eulerAngles.y; //reset the angle to the newly calculated angle
+
+                    break; //exit the loop so it won't do any unecessary calculations
+                }
+                c++;
+            }
+            /*for(int c = 0; c < carouselObjects.Length; c++) //loop through the array
             {
                 if(carouselObjects[c].name == objectName) {
                     float angleMultiplier = c++; //the array starts with zero so adding 1 to c gives the correct value
@@ -80,7 +147,7 @@ public class Carousel : MonoBehaviour {
 
                     break; //exit the loop so it won't do any unecessary calculations
                 }
-            }
+            }*/
         }
         ////////////////////////////////////////////////////////////////////////////////////////////////////////
     }
@@ -114,11 +181,21 @@ public class Carousel : MonoBehaviour {
         if(AssumeObject == true)//here we check which element is selected and if we reached the start of the array we reset the index
         {
             if(ChosenObject <= 0) {
-                ChosenObject = carouselObjects.Length - 1;
+                ChosenObject = carouselObjects.Count - 1;
             } else {
                 ChosenObject--;
             }
-            Debug.Log("FILE NAME: Carousel.cs " + "MESSAGE: --- " + "Carousel rotated to the left, current selected piece: " + carouselObjects[ChosenObject].name); //show in the console the name of the selected element
+            //Debug.Log("FILE NAME: Carousel.cs " + "MESSAGE: --- " + "Carousel rotated to the left, current selected piece: " + carouselObjects[ChosenObject].name); //show in the console the name of the selected element
+        }
+        if(excessAvailable) {
+            GameObject transferToExcess = carouselObjects.First.Value;
+            GameObject transferToVisible = excessCarouselObjects.First.Value;
+            carouselObjects.RemoveFirst();
+            excessCarouselObjects.RemoveFirst();
+            carouselObjects.AddLast(transferToVisible);
+            excessCarouselObjects.AddLast(transferToExcess);
+            excessCarouselObjects.Last.Value.GetComponent<ClothingPieceHandler>().SetActiveness(false);
+            carouselObjects.Last.Value.GetComponent<ClothingPieceHandler>().SetActiveness(true);
         }
     }
     public void rotateTheCarouselRight()// call this function to rotate the carousel towards the right
@@ -133,12 +210,22 @@ public class Carousel : MonoBehaviour {
         }
         if(AssumeObject == true) //here we check which element is selected and if we reached the end of the array we reset the index
         {
-            if(ChosenObject >= carouselObjects.Length - 1) {
+            if(ChosenObject >= carouselObjects.Count - 1) {
                 ChosenObject = 0;
             } else {
                 ChosenObject++;
             }
-            Debug.Log("FILE NAME: Carousel.cs " + "MESSAGE: --- " + "Carousel rotated to the right, current selected piece: " + carouselObjects[ChosenObject].name); //show in the console the name of the selected element
+            //Debug.Log("FILE NAME: Carousel.cs " + "MESSAGE: --- " + "Carousel rotated to the right, current selected piece: " + carouselObjects[ChosenObject].name); //show in the console the name of the selected element
+        }
+        if(excessAvailable) {
+            GameObject transferToExcess = carouselObjects.First.Value;
+            GameObject transferToVisible = excessCarouselObjects.First.Value;
+            carouselObjects.RemoveFirst();
+            excessCarouselObjects.RemoveFirst();
+            carouselObjects.AddLast(transferToVisible);
+            excessCarouselObjects.AddLast(transferToExcess);
+            excessCarouselObjects.Last.Value.GetComponent<ClothingPieceHandler>().SetActiveness(false);
+            carouselObjects.Last.Value.GetComponent<ClothingPieceHandler>().SetActiveness(true);
         }
     }
 }
