@@ -10,11 +10,19 @@ public class Screenshot : MonoBehaviour
     private string screenShotName;
     private string folderPath;
 
+    public OVRInput.Button button;
+    public OVRInput.Controller controller;
+
 
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Space)) {
             takeScreenShot();
+        }
+
+        if(OVRInput.GetDown(button, controller))
+        {
+            Debug.Log("hey");
         }
 
 
@@ -33,9 +41,9 @@ public class Screenshot : MonoBehaviour
         Debug.Log("screenshot taken");
     }
 
-    void OnApplicationQuit()
-    {
-        //Debug.Log("Screenshots deleted");
-        //FileUtil.DeleteFileOrDirectory(folderPath);
-    }
+    //void OnApplicationQuit()
+    //{
+    //    Debug.Log("Screenshots deleted");
+    //    FileUtil.DeleteFileOrDirectory(folderPath);
+    //}
 }
