@@ -13,8 +13,8 @@ using System.Collections.Generic;
 */
 public class Carousel : MonoBehaviour {
     [SerializeField]
-    private GameObject[] carouselObjectsInspector;//the elements of the carousel
-    private LinkedList<GameObject> carouselObjects = new LinkedList<GameObject> { };//The elements of the carousel
+    private GameObject[] carouselObjects;//the elements of the carousel
+    private LinkedList<GameObject> carouselObjectsInspector = new LinkedList<GameObject> { };//The elements of the carousel
     
     public bool ResetCenterRotation = true;//do you want to reset the rotation of the carousel center (recommended to be true)
     public float DistanceFromCenter = 10.0f;//the distance from the center of the carousel
@@ -35,7 +35,12 @@ public class Carousel : MonoBehaviour {
     private LinkedList<GameObject> excessCarouselObjects = new LinkedList<GameObject> { };
     private bool excessAvailable = false;
 
+    private Vector3[] positions;
+
+
     void Start() {
+        positions = new Vector3[maximumObjects];
+
         if(carouselObjectsInspector.Length > maximumObjects) {
             //Iris Oostra
             //Have objects be invisible when there are too many
@@ -72,19 +77,20 @@ public class Carousel : MonoBehaviour {
         /*if(carouselObjects.Count > maximumObjects) {
             Angle = diameter / (float) maximumObjects;
         } else {*/
-            Angle = diameter / (float) carouselObjects.Count;//new
+        //Angle = diameter / (float) carouselObjects.Count;//new
         //}
+        Angle = diameter / (float) maximumObjects;
 
         float ObjectAngle = Angle;//create a temp value that keeps track of the angle of each element
-		/*for(int i = 0; i < carouselObjects.Length; i++) { //loop through the objects
+		for(int i = 0; i < carouselObjects.Length; i++) { //loop through the objects
             carouselObjects[i].transform.position = this.transform.position;//Reset objects to the postion of the carousel center
             carouselObjects[i].transform.rotation = Quaternion.identity; //make sure their rotation is zero
             carouselObjects[i].transform.parent = this.transform; // make the element child to the carousel center
-            carouselObjects[i].transform.position = new Vector3(this.transform.position.x, this.transform.position.y, this.transform.position.z + DistanceFromCenter);//move each carousel item from the center an amount of "DistanceFromCenter"
+            //carouselObjects[i].transform.position = new Vector3(this.transform.position.x, this.transform.position.y, this.transform.position.z + DistanceFromCenter);//move each carousel item from the center an amount of "DistanceFromCenter"
             carouselObjects[i].transform.RotateAround(this.transform.position, new Vector3(0, 1, 0), ObjectAngle);//position the element in their respective locations accordind to the center throufh rotation
             ObjectAngle += Angle;//calculate the next angle value
-        }*/
-		foreach(GameObject carouselPiece in carouselObjects) {
+        }
+		/*foreach(GameObject carouselPiece in carouselObjects) {
             carouselPiece.transform.position = this.transform.position;//Reset objects to the postion of the carousel center
             carouselPiece.transform.rotation = Quaternion.identity; //make sure their rotation is zero
             carouselPiece.transform.parent = this.transform; // make the element child to the carousel center
@@ -99,11 +105,21 @@ public class Carousel : MonoBehaviour {
             excessCarouselPiece.transform.position = new Vector3(this.transform.position.x, this.transform.position.y, this.transform.position.z + DistanceFromCenter);//move each carousel item from the center an amount of "DistanceFromCenter"
             excessCarouselPiece.transform.RotateAround(this.transform.position, new Vector3(0, 1, 0), ObjectAngle);//position the element in their respective locations accordind to the center throufh rotation
             ObjectAngle += Angle;//calculate the next angle value
+        }*/
+        //parent wel hier houden ^ net als de eerste positions van het resetten naar carousel center
+        
+        
+
+        
+
+        for(int m = 0; m < maximumObjects; m++) {
+            positions[m] = new Vector3(this.transform.position.x, this.transform.position.y, this.transform.position.z + DistanceFromCenter);
         }
 
         //Make sure an element is perfectly centered.
         //if(carouselObjects.Length % 2 != 0) {
-        if(carouselObjects.Count % 2 != 0) {
+        //if(carouselObjects.Length % 2 != 0) {
+        if(maximumObjects % 2 != 0) {
             float rotateAngle = Angle + Angle / 2;
             transform.eulerAngles = new Vector3(transform.eulerAngles.x, rotateAngle, transform.eulerAngles.z);
             newAngle = rotateAngle;
@@ -125,7 +141,7 @@ public class Carousel : MonoBehaviour {
             objectName = hit.collider.name;
         }
 
-        if(objectName != carouselObjects.First.Value.name /*carouselObjects[0].name*/) // only work if the first item presented isn't the first item in the array
+        if(objectName != /*carouselObjects.First.Value.name */carouselObjects[0].name) // only work if the first item presented isn't the first item in the array
         {
             int c = 0;
             foreach(GameObject carouselObject in carouselObjects) {
