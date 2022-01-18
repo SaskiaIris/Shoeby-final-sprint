@@ -8,7 +8,7 @@ using UnityEngine;
 public class Carousel : MonoBehaviour {
     private GameObject[] carouselObjects;//the elements of the carousel
     
-    public bool resetCenterRotation = true;//do you want to reset the rotation of the carousel center (recommended to be true)
+    //public bool resetCenterRotation = true;//do you want to reset the rotation of the carousel center (recommended to be true)
     public float distanceFromCenter = 0.4f;//the distance from the center of the carousel
     //public bool AssumeObject = true; // if true assume the object that is picked, otherwise (false) keep checking what the next item is through raycast.
     public int chosenObject = 0; //index of the object that is centered in the carousel
@@ -50,9 +50,9 @@ public class Carousel : MonoBehaviour {
         raycastHolder.name = "RaycastPicker"; //rename it to RaycastPicker
         theRayCaster = raycastHolder.transform; // assign the transform of the newlycreated gameobject to the raycast transform variable
         theRayCaster.position = transform.position; // place it at the positon of the carousel center*/
-        if(resetCenterRotation) {
+        /*if(resetCenterRotation) {
             transform.rotation = Quaternion.identity;//reset the rotation of the carousel center
-        }
+        }*/
 
         angle = diameter / (float) maximumObjects;
 
@@ -138,7 +138,7 @@ public class Carousel : MonoBehaviour {
         }
     }
 
-    public void rotateTheCarouselRight()// call this function to rotate the carousel towards the right
+    public void rotateTheCarousel()// call this function to rotate the carousel
     {
         if(firstTime) // if run the first time calcule the offset
         {
@@ -172,8 +172,8 @@ public class Carousel : MonoBehaviour {
             currentSpawnAngle++;
         } //TODO: make this neater
 
-        if(currentVisibleIndexes[maximumObjects - 1] == carouselObjects.Length - 1) {
-            currentSpawnAngle = 0;
-        }
+        /*if(currentVisibleIndexes[maximumObjects - 1] == carouselObjects.Length - 1) {
+            currentSpawnAngle = maximumObjects-1;
+        }*/
     }
 }
