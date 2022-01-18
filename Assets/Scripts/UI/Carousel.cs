@@ -7,12 +7,12 @@ using System.Collections.Generic;
 * make sure there are no elements with colliders in between the center and the carousel elements
 */
 public class Carousel : MonoBehaviour {
-    [SerializeField]
+    //[SerializeField]
     private GameObject[] carouselObjects;//the elements of the carousel
     //private LinkedList<GameObject> carouselObjectsInspector = new LinkedList<GameObject> { };//The elements of the carousel
     
     public bool ResetCenterRotation = true;//do you want to reset the rotation of the carousel center (recommended to be true)
-    public float DistanceFromCenter = 10.0f;//the distance from the center of the carousel
+    public float DistanceFromCenter = 0.4f;//the distance from the center of the carousel
     public bool AssumeObject = true; // if true assume the object that is picked, otherwise (false) keep checking what the next item is through raycast.
     public int ChosenObject = 0; //index of the object that is centered in the carousel
     public float speedOfRotation = 0.1f; //the speed in which the carousel rotates: values should be between 0.01f -> 1.0f, zero will stop the rotation
@@ -41,6 +41,10 @@ public class Carousel : MonoBehaviour {
     int test;
 
     void Start() {
+        carouselObjects = new GameObject[transform.childCount];
+        for(int i = 0; i < transform.childCount; i++) {
+            carouselObjects[i] = transform.GetChild(i).gameObject;
+        }
         test = 0;
         //positions = new Vector3[maximumObjects];
         objectAngles = new float[maximumObjects];

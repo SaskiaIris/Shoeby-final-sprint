@@ -2,7 +2,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class RespawnClothing : MonoBehaviour {
-	[SerializeField]
+	//[SerializeField]
 	private List<GameObject> piecesOnBushes = null;
 
 	[SerializeField]
@@ -13,6 +13,12 @@ public class RespawnClothing : MonoBehaviour {
 
 	//[SerializeField]
 	private string space = " ";
+
+	private void Start() {
+		for(int i = 0; i < transform.childCount; i++) {
+			piecesOnBushes[i] = transform.GetChild(i).gameObject;
+		}
+	}
 
 	public void CheckIfPieceNeedsActivation(string deactivatedPieceName) {
 		Debug.Log("FILE NAME: RespawnClothing.cs " + "MESSAGE: --- " + "Method: CheckIfPieceNeedsActivation() has been activated");
