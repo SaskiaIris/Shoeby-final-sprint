@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class RespawnClothing : MonoBehaviour {
 	//[SerializeField]
-	private List<GameObject> piecesOnBushes = null;
+	private GameObject[] piecesOnBushes = null;
 
 	[SerializeField]
 	private string throwableIdentifierString = "Throwable(Clone)";
@@ -15,8 +15,9 @@ public class RespawnClothing : MonoBehaviour {
 	private string space = " ";
 
 	private void Start() {
-		for(int i = 0; i < transform.childCount; i++) {
-			piecesOnBushes[i] = transform.GetChild(i).gameObject;
+		piecesOnBushes = new GameObject[this.transform.childCount];
+		for(int i = 0; i < this.transform.childCount; i++) {
+			piecesOnBushes[i] = this.transform.GetChild(i).gameObject;
 		}
 	}
 
