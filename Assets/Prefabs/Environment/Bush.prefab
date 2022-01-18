@@ -267,9 +267,9 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8557807608709161917}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.8783456, y: 0, z: -5.7209005}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.89, y: 0.89, z: 0.89}
   m_Children:
   - {fileID: 387438652210107867}
   - {fileID: 4406137511422151547}
@@ -325,9 +325,909 @@ Transform:
   - {fileID: 1594454886310786001}
   - {fileID: 4587297798409609464}
   - {fileID: 3140235881284117775}
+  - {fileID: 6892278094712190334}
+  - {fileID: 6892278094608695479}
+  - {fileID: 6892278095895194668}
+  - {fileID: 6892278094835957635}
+  - {fileID: 6892278096660615495}
+  - {fileID: 6892278095496863929}
+  - {fileID: 6892278095768526773}
+  - {fileID: 6892278096676835098}
+  - {fileID: 6892278095707932289}
+  - {fileID: 6892278095820905917}
+  - {fileID: 6892278095698885551}
+  - {fileID: 6892278094898362345}
   m_Father: {fileID: 9045655779198040327}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 155.539, z: 0}
+--- !u!1001 &242536247
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 8791617444801315606}
+    m_Modifications:
+    - target: {fileID: 6119717643481275031, guid: 91eb6890e5b75634f8da9af76eba09d4, type: 3}
+      propertyPath: m_Name
+      value: Hibiscus Flower (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6892278096512417837, guid: 91eb6890e5b75634f8da9af76eba09d4, type: 3}
+      propertyPath: m_RootOrder
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 6892278096512417837, guid: 91eb6890e5b75634f8da9af76eba09d4, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.034675676
+      objectReference: {fileID: 0}
+    - target: {fileID: 6892278096512417837, guid: 91eb6890e5b75634f8da9af76eba09d4, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.03467567
+      objectReference: {fileID: 0}
+    - target: {fileID: 6892278096512417837, guid: 91eb6890e5b75634f8da9af76eba09d4, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.034675673
+      objectReference: {fileID: 0}
+    - target: {fileID: 6892278096512417837, guid: 91eb6890e5b75634f8da9af76eba09d4, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.625
+      objectReference: {fileID: 0}
+    - target: {fileID: 6892278096512417837, guid: 91eb6890e5b75634f8da9af76eba09d4, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.072
+      objectReference: {fileID: 0}
+    - target: {fileID: 6892278096512417837, guid: 91eb6890e5b75634f8da9af76eba09d4, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.439
+      objectReference: {fileID: 0}
+    - target: {fileID: 6892278096512417837, guid: 91eb6890e5b75634f8da9af76eba09d4, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.6523059
+      objectReference: {fileID: 0}
+    - target: {fileID: 6892278096512417837, guid: 91eb6890e5b75634f8da9af76eba09d4, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.48715478
+      objectReference: {fileID: 0}
+    - target: {fileID: 6892278096512417837, guid: 91eb6890e5b75634f8da9af76eba09d4, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.4379138
+      objectReference: {fileID: 0}
+    - target: {fileID: 6892278096512417837, guid: 91eb6890e5b75634f8da9af76eba09d4, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.38132492
+      objectReference: {fileID: 0}
+    - target: {fileID: 6892278096512417837, guid: 91eb6890e5b75634f8da9af76eba09d4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -75.818
+      objectReference: {fileID: 0}
+    - target: {fileID: 6892278096512417837, guid: 91eb6890e5b75634f8da9af76eba09d4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 54.629
+      objectReference: {fileID: 0}
+    - target: {fileID: 6892278096512417837, guid: 91eb6890e5b75634f8da9af76eba09d4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 16.801
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 91eb6890e5b75634f8da9af76eba09d4, type: 3}
+--- !u!4 &6892278096676835098 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6892278096512417837, guid: 91eb6890e5b75634f8da9af76eba09d4, type: 3}
+  m_PrefabInstance: {fileID: 242536247}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &259871082
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 8791617444801315606}
+    m_Modifications:
+    - target: {fileID: 6119717643481275031, guid: 91eb6890e5b75634f8da9af76eba09d4, type: 3}
+      propertyPath: m_Name
+      value: Hibiscus Flower (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6892278096512417837, guid: 91eb6890e5b75634f8da9af76eba09d4, type: 3}
+      propertyPath: m_RootOrder
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 6892278096512417837, guid: 91eb6890e5b75634f8da9af76eba09d4, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.02516969
+      objectReference: {fileID: 0}
+    - target: {fileID: 6892278096512417837, guid: 91eb6890e5b75634f8da9af76eba09d4, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.025169685
+      objectReference: {fileID: 0}
+    - target: {fileID: 6892278096512417837, guid: 91eb6890e5b75634f8da9af76eba09d4, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.025169685
+      objectReference: {fileID: 0}
+    - target: {fileID: 6892278096512417837, guid: 91eb6890e5b75634f8da9af76eba09d4, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 6892278096512417837, guid: 91eb6890e5b75634f8da9af76eba09d4, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.14399904
+      objectReference: {fileID: 0}
+    - target: {fileID: 6892278096512417837, guid: 91eb6890e5b75634f8da9af76eba09d4, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.938
+      objectReference: {fileID: 0}
+    - target: {fileID: 6892278096512417837, guid: 91eb6890e5b75634f8da9af76eba09d4, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.23079509
+      objectReference: {fileID: 0}
+    - target: {fileID: 6892278096512417837, guid: 91eb6890e5b75634f8da9af76eba09d4, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.57792413
+      objectReference: {fileID: 0}
+    - target: {fileID: 6892278096512417837, guid: 91eb6890e5b75634f8da9af76eba09d4, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.7643598
+      objectReference: {fileID: 0}
+    - target: {fileID: 6892278096512417837, guid: 91eb6890e5b75634f8da9af76eba09d4, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.16879454
+      objectReference: {fileID: 0}
+    - target: {fileID: 6892278096512417837, guid: 91eb6890e5b75634f8da9af76eba09d4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6892278096512417837, guid: 91eb6890e5b75634f8da9af76eba09d4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -213.226
+      objectReference: {fileID: 0}
+    - target: {fileID: 6892278096512417837, guid: 91eb6890e5b75634f8da9af76eba09d4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 74.036
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 91eb6890e5b75634f8da9af76eba09d4, type: 3}
+--- !u!4 &6892278096660615495 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6892278096512417837, guid: 91eb6890e5b75634f8da9af76eba09d4, type: 3}
+  m_PrefabInstance: {fileID: 259871082}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &808748716
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 8791617444801315606}
+    m_Modifications:
+    - target: {fileID: 6119717643481275031, guid: 91eb6890e5b75634f8da9af76eba09d4, type: 3}
+      propertyPath: m_Name
+      value: Hibiscus Flower (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6892278096512417837, guid: 91eb6890e5b75634f8da9af76eba09d4, type: 3}
+      propertyPath: m_RootOrder
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 6892278096512417837, guid: 91eb6890e5b75634f8da9af76eba09d4, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.02482293
+      objectReference: {fileID: 0}
+    - target: {fileID: 6892278096512417837, guid: 91eb6890e5b75634f8da9af76eba09d4, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.02482293
+      objectReference: {fileID: 0}
+    - target: {fileID: 6892278096512417837, guid: 91eb6890e5b75634f8da9af76eba09d4, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.02482293
+      objectReference: {fileID: 0}
+    - target: {fileID: 6892278096512417837, guid: 91eb6890e5b75634f8da9af76eba09d4, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.692
+      objectReference: {fileID: 0}
+    - target: {fileID: 6892278096512417837, guid: 91eb6890e5b75634f8da9af76eba09d4, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.2820192
+      objectReference: {fileID: 0}
+    - target: {fileID: 6892278096512417837, guid: 91eb6890e5b75634f8da9af76eba09d4, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.749
+      objectReference: {fileID: 0}
+    - target: {fileID: 6892278096512417837, guid: 91eb6890e5b75634f8da9af76eba09d4, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.78776264
+      objectReference: {fileID: 0}
+    - target: {fileID: 6892278096512417837, guid: 91eb6890e5b75634f8da9af76eba09d4, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.032161847
+      objectReference: {fileID: 0}
+    - target: {fileID: 6892278096512417837, guid: 91eb6890e5b75634f8da9af76eba09d4, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.31585297
+      objectReference: {fileID: 0}
+    - target: {fileID: 6892278096512417837, guid: 91eb6890e5b75634f8da9af76eba09d4, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.5278566
+      objectReference: {fileID: 0}
+    - target: {fileID: 6892278096512417837, guid: 91eb6890e5b75634f8da9af76eba09d4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -16.426
+      objectReference: {fileID: 0}
+    - target: {fileID: 6892278096512417837, guid: 91eb6890e5b75634f8da9af76eba09d4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 33.656
+      objectReference: {fileID: 0}
+    - target: {fileID: 6892278096512417837, guid: 91eb6890e5b75634f8da9af76eba09d4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 62.65
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 91eb6890e5b75634f8da9af76eba09d4, type: 3}
+--- !u!4 &6892278095707932289 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6892278096512417837, guid: 91eb6890e5b75634f8da9af76eba09d4, type: 3}
+  m_PrefabInstance: {fileID: 808748716}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &813857666
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 8791617444801315606}
+    m_Modifications:
+    - target: {fileID: 6119717643481275031, guid: 91eb6890e5b75634f8da9af76eba09d4, type: 3}
+      propertyPath: m_Name
+      value: Hibiscus Flower (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6892278096512417837, guid: 91eb6890e5b75634f8da9af76eba09d4, type: 3}
+      propertyPath: m_RootOrder
+      value: 17
+      objectReference: {fileID: 0}
+    - target: {fileID: 6892278096512417837, guid: 91eb6890e5b75634f8da9af76eba09d4, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.02516969
+      objectReference: {fileID: 0}
+    - target: {fileID: 6892278096512417837, guid: 91eb6890e5b75634f8da9af76eba09d4, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.025169685
+      objectReference: {fileID: 0}
+    - target: {fileID: 6892278096512417837, guid: 91eb6890e5b75634f8da9af76eba09d4, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.025169685
+      objectReference: {fileID: 0}
+    - target: {fileID: 6892278096512417837, guid: 91eb6890e5b75634f8da9af76eba09d4, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.47738412
+      objectReference: {fileID: 0}
+    - target: {fileID: 6892278096512417837, guid: 91eb6890e5b75634f8da9af76eba09d4, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.35999995
+      objectReference: {fileID: 0}
+    - target: {fileID: 6892278096512417837, guid: 91eb6890e5b75634f8da9af76eba09d4, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.39017838
+      objectReference: {fileID: 0}
+    - target: {fileID: 6892278096512417837, guid: 91eb6890e5b75634f8da9af76eba09d4, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.15123302
+      objectReference: {fileID: 0}
+    - target: {fileID: 6892278096512417837, guid: 91eb6890e5b75634f8da9af76eba09d4, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.5921813
+      objectReference: {fileID: 0}
+    - target: {fileID: 6892278096512417837, guid: 91eb6890e5b75634f8da9af76eba09d4, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.78399044
+      objectReference: {fileID: 0}
+    - target: {fileID: 6892278096512417837, guid: 91eb6890e5b75634f8da9af76eba09d4, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.10866879
+      objectReference: {fileID: 0}
+    - target: {fileID: 6892278096512417837, guid: 91eb6890e5b75634f8da9af76eba09d4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6892278096512417837, guid: 91eb6890e5b75634f8da9af76eba09d4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -201.46
+      objectReference: {fileID: 0}
+    - target: {fileID: 6892278096512417837, guid: 91eb6890e5b75634f8da9af76eba09d4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 74.036
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 91eb6890e5b75634f8da9af76eba09d4, type: 3}
+--- !u!4 &6892278095698885551 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6892278096512417837, guid: 91eb6890e5b75634f8da9af76eba09d4, type: 3}
+  m_PrefabInstance: {fileID: 813857666}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &883498904
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 8791617444801315606}
+    m_Modifications:
+    - target: {fileID: 6119717643481275031, guid: 91eb6890e5b75634f8da9af76eba09d4, type: 3}
+      propertyPath: m_Name
+      value: Hibiscus Flower (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6892278096512417837, guid: 91eb6890e5b75634f8da9af76eba09d4, type: 3}
+      propertyPath: m_RootOrder
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 6892278096512417837, guid: 91eb6890e5b75634f8da9af76eba09d4, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.025169685
+      objectReference: {fileID: 0}
+    - target: {fileID: 6892278096512417837, guid: 91eb6890e5b75634f8da9af76eba09d4, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.025169682
+      objectReference: {fileID: 0}
+    - target: {fileID: 6892278096512417837, guid: 91eb6890e5b75634f8da9af76eba09d4, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.025169682
+      objectReference: {fileID: 0}
+    - target: {fileID: 6892278096512417837, guid: 91eb6890e5b75634f8da9af76eba09d4, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.5421046
+      objectReference: {fileID: 0}
+    - target: {fileID: 6892278096512417837, guid: 91eb6890e5b75634f8da9af76eba09d4, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.27899987
+      objectReference: {fileID: 0}
+    - target: {fileID: 6892278096512417837, guid: 91eb6890e5b75634f8da9af76eba09d4, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.9562539
+      objectReference: {fileID: 0}
+    - target: {fileID: 6892278096512417837, guid: 91eb6890e5b75634f8da9af76eba09d4, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.30955353
+      objectReference: {fileID: 0}
+    - target: {fileID: 6892278096512417837, guid: 91eb6890e5b75634f8da9af76eba09d4, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.57605636
+      objectReference: {fileID: 0}
+    - target: {fileID: 6892278096512417837, guid: 91eb6890e5b75634f8da9af76eba09d4, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.70263726
+      objectReference: {fileID: 0}
+    - target: {fileID: 6892278096512417837, guid: 91eb6890e5b75634f8da9af76eba09d4, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.28042212
+      objectReference: {fileID: 0}
+    - target: {fileID: 6892278096512417837, guid: 91eb6890e5b75634f8da9af76eba09d4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -2.145
+      objectReference: {fileID: 0}
+    - target: {fileID: 6892278096512417837, guid: 91eb6890e5b75634f8da9af76eba09d4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -130.658
+      objectReference: {fileID: 0}
+    - target: {fileID: 6892278096512417837, guid: 91eb6890e5b75634f8da9af76eba09d4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -79.679
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 91eb6890e5b75634f8da9af76eba09d4, type: 3}
+--- !u!4 &6892278095768526773 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6892278096512417837, guid: 91eb6890e5b75634f8da9af76eba09d4, type: 3}
+  m_PrefabInstance: {fileID: 883498904}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &961043856
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 8791617444801315606}
+    m_Modifications:
+    - target: {fileID: 6119717643481275031, guid: 91eb6890e5b75634f8da9af76eba09d4, type: 3}
+      propertyPath: m_Name
+      value: Hibiscus Flower (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6892278096512417837, guid: 91eb6890e5b75634f8da9af76eba09d4, type: 3}
+      propertyPath: m_RootOrder
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 6892278096512417837, guid: 91eb6890e5b75634f8da9af76eba09d4, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.025169687
+      objectReference: {fileID: 0}
+    - target: {fileID: 6892278096512417837, guid: 91eb6890e5b75634f8da9af76eba09d4, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.025169685
+      objectReference: {fileID: 0}
+    - target: {fileID: 6892278096512417837, guid: 91eb6890e5b75634f8da9af76eba09d4, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.025169685
+      objectReference: {fileID: 0}
+    - target: {fileID: 6892278096512417837, guid: 91eb6890e5b75634f8da9af76eba09d4, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.78
+      objectReference: {fileID: 0}
+    - target: {fileID: 6892278096512417837, guid: 91eb6890e5b75634f8da9af76eba09d4, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.47345236
+      objectReference: {fileID: 0}
+    - target: {fileID: 6892278096512417837, guid: 91eb6890e5b75634f8da9af76eba09d4, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.603
+      objectReference: {fileID: 0}
+    - target: {fileID: 6892278096512417837, guid: 91eb6890e5b75634f8da9af76eba09d4, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.12707072
+      objectReference: {fileID: 0}
+    - target: {fileID: 6892278096512417837, guid: 91eb6890e5b75634f8da9af76eba09d4, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.5660981
+      objectReference: {fileID: 0}
+    - target: {fileID: 6892278096512417837, guid: 91eb6890e5b75634f8da9af76eba09d4, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.6912634
+      objectReference: {fileID: 0}
+    - target: {fileID: 6892278096512417837, guid: 91eb6890e5b75634f8da9af76eba09d4, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.43074474
+      objectReference: {fileID: 0}
+    - target: {fileID: 6892278096512417837, guid: 91eb6890e5b75634f8da9af76eba09d4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -47.679
+      objectReference: {fileID: 0}
+    - target: {fileID: 6892278096512417837, guid: 91eb6890e5b75634f8da9af76eba09d4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 207.608
+      objectReference: {fileID: 0}
+    - target: {fileID: 6892278096512417837, guid: 91eb6890e5b75634f8da9af76eba09d4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -91.023
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 91eb6890e5b75634f8da9af76eba09d4, type: 3}
+--- !u!4 &6892278095820905917 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6892278096512417837, guid: 91eb6890e5b75634f8da9af76eba09d4, type: 3}
+  m_PrefabInstance: {fileID: 961043856}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1021176833
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 8791617444801315606}
+    m_Modifications:
+    - target: {fileID: 6119717643481275031, guid: 91eb6890e5b75634f8da9af76eba09d4, type: 3}
+      propertyPath: m_Name
+      value: Hibiscus Flower (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6892278096512417837, guid: 91eb6890e5b75634f8da9af76eba09d4, type: 3}
+      propertyPath: m_RootOrder
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 6892278096512417837, guid: 91eb6890e5b75634f8da9af76eba09d4, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.025169687
+      objectReference: {fileID: 0}
+    - target: {fileID: 6892278096512417837, guid: 91eb6890e5b75634f8da9af76eba09d4, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.025169685
+      objectReference: {fileID: 0}
+    - target: {fileID: 6892278096512417837, guid: 91eb6890e5b75634f8da9af76eba09d4, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.025169685
+      objectReference: {fileID: 0}
+    - target: {fileID: 6892278096512417837, guid: 91eb6890e5b75634f8da9af76eba09d4, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.36
+      objectReference: {fileID: 0}
+    - target: {fileID: 6892278096512417837, guid: 91eb6890e5b75634f8da9af76eba09d4, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.459
+      objectReference: {fileID: 0}
+    - target: {fileID: 6892278096512417837, guid: 91eb6890e5b75634f8da9af76eba09d4, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1.068
+      objectReference: {fileID: 0}
+    - target: {fileID: 6892278096512417837, guid: 91eb6890e5b75634f8da9af76eba09d4, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.071501896
+      objectReference: {fileID: 0}
+    - target: {fileID: 6892278096512417837, guid: 91eb6890e5b75634f8da9af76eba09d4, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.32917953
+      objectReference: {fileID: 0}
+    - target: {fileID: 6892278096512417837, guid: 91eb6890e5b75634f8da9af76eba09d4, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.722146
+      objectReference: {fileID: 0}
+    - target: {fileID: 6892278096512417837, guid: 91eb6890e5b75634f8da9af76eba09d4, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.60418
+      objectReference: {fileID: 0}
+    - target: {fileID: 6892278096512417837, guid: 91eb6890e5b75634f8da9af76eba09d4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -55.643
+      objectReference: {fileID: 0}
+    - target: {fileID: 6892278096512417837, guid: 91eb6890e5b75634f8da9af76eba09d4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -117.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6892278096512417837, guid: 91eb6890e5b75634f8da9af76eba09d4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -84.589
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 91eb6890e5b75634f8da9af76eba09d4, type: 3}
+--- !u!4 &6892278095895194668 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6892278096512417837, guid: 91eb6890e5b75634f8da9af76eba09d4, type: 3}
+  m_PrefabInstance: {fileID: 1021176833}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1151328404
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 8791617444801315606}
+    m_Modifications:
+    - target: {fileID: 6119717643481275031, guid: 91eb6890e5b75634f8da9af76eba09d4, type: 3}
+      propertyPath: m_Name
+      value: Hibiscus Flower (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6892278096512417837, guid: 91eb6890e5b75634f8da9af76eba09d4, type: 3}
+      propertyPath: m_RootOrder
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 6892278096512417837, guid: 91eb6890e5b75634f8da9af76eba09d4, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.03467568
+      objectReference: {fileID: 0}
+    - target: {fileID: 6892278096512417837, guid: 91eb6890e5b75634f8da9af76eba09d4, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.034675676
+      objectReference: {fileID: 0}
+    - target: {fileID: 6892278096512417837, guid: 91eb6890e5b75634f8da9af76eba09d4, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.034675673
+      objectReference: {fileID: 0}
+    - target: {fileID: 6892278096512417837, guid: 91eb6890e5b75634f8da9af76eba09d4, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.06
+      objectReference: {fileID: 0}
+    - target: {fileID: 6892278096512417837, guid: 91eb6890e5b75634f8da9af76eba09d4, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.0020014453
+      objectReference: {fileID: 0}
+    - target: {fileID: 6892278096512417837, guid: 91eb6890e5b75634f8da9af76eba09d4, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.888
+      objectReference: {fileID: 0}
+    - target: {fileID: 6892278096512417837, guid: 91eb6890e5b75634f8da9af76eba09d4, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.030611865
+      objectReference: {fileID: 0}
+    - target: {fileID: 6892278096512417837, guid: 91eb6890e5b75634f8da9af76eba09d4, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.12340207
+      objectReference: {fileID: 0}
+    - target: {fileID: 6892278096512417837, guid: 91eb6890e5b75634f8da9af76eba09d4, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.8536214
+      objectReference: {fileID: 0}
+    - target: {fileID: 6892278096512417837, guid: 91eb6890e5b75634f8da9af76eba09d4, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.50513893
+      objectReference: {fileID: 0}
+    - target: {fileID: 6892278096512417837, guid: 91eb6890e5b75634f8da9af76eba09d4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -60.453
+      objectReference: {fileID: 0}
+    - target: {fileID: 6892278096512417837, guid: 91eb6890e5b75634f8da9af76eba09d4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -188.443
+      objectReference: {fileID: 0}
+    - target: {fileID: 6892278096512417837, guid: 91eb6890e5b75634f8da9af76eba09d4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 21.377
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 91eb6890e5b75634f8da9af76eba09d4, type: 3}
+--- !u!4 &6892278095496863929 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6892278096512417837, guid: 91eb6890e5b75634f8da9af76eba09d4, type: 3}
+  m_PrefabInstance: {fileID: 1151328404}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1615558596
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 8791617444801315606}
+    m_Modifications:
+    - target: {fileID: 6119717643481275031, guid: 91eb6890e5b75634f8da9af76eba09d4, type: 3}
+      propertyPath: m_Name
+      value: Hibiscus Flower (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6892278096512417837, guid: 91eb6890e5b75634f8da9af76eba09d4, type: 3}
+      propertyPath: m_RootOrder
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 6892278096512417837, guid: 91eb6890e5b75634f8da9af76eba09d4, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.03467568
+      objectReference: {fileID: 0}
+    - target: {fileID: 6892278096512417837, guid: 91eb6890e5b75634f8da9af76eba09d4, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.034675676
+      objectReference: {fileID: 0}
+    - target: {fileID: 6892278096512417837, guid: 91eb6890e5b75634f8da9af76eba09d4, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.034675673
+      objectReference: {fileID: 0}
+    - target: {fileID: 6892278096512417837, guid: 91eb6890e5b75634f8da9af76eba09d4, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.361
+      objectReference: {fileID: 0}
+    - target: {fileID: 6892278096512417837, guid: 91eb6890e5b75634f8da9af76eba09d4, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 6892278096512417837, guid: 91eb6890e5b75634f8da9af76eba09d4, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.345
+      objectReference: {fileID: 0}
+    - target: {fileID: 6892278096512417837, guid: 91eb6890e5b75634f8da9af76eba09d4, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.47820023
+      objectReference: {fileID: 0}
+    - target: {fileID: 6892278096512417837, guid: 91eb6890e5b75634f8da9af76eba09d4, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.67380756
+      objectReference: {fileID: 0}
+    - target: {fileID: 6892278096512417837, guid: 91eb6890e5b75634f8da9af76eba09d4, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.5001636
+      objectReference: {fileID: 0}
+    - target: {fileID: 6892278096512417837, guid: 91eb6890e5b75634f8da9af76eba09d4, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.25912213
+      objectReference: {fileID: 0}
+    - target: {fileID: 6892278096512417837, guid: 91eb6890e5b75634f8da9af76eba09d4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -64.64
+      objectReference: {fileID: 0}
+    - target: {fileID: 6892278096512417837, guid: 91eb6890e5b75634f8da9af76eba09d4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -162.448
+      objectReference: {fileID: 0}
+    - target: {fileID: 6892278096512417837, guid: 91eb6890e5b75634f8da9af76eba09d4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 95.671
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 91eb6890e5b75634f8da9af76eba09d4, type: 3}
+--- !u!4 &6892278094898362345 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6892278096512417837, guid: 91eb6890e5b75634f8da9af76eba09d4, type: 3}
+  m_PrefabInstance: {fileID: 1615558596}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1905229978
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 8791617444801315606}
+    m_Modifications:
+    - target: {fileID: 6119717643481275031, guid: 91eb6890e5b75634f8da9af76eba09d4, type: 3}
+      propertyPath: m_Name
+      value: Hibiscus Flower (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6892278096512417837, guid: 91eb6890e5b75634f8da9af76eba09d4, type: 3}
+      propertyPath: m_RootOrder
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 6892278096512417837, guid: 91eb6890e5b75634f8da9af76eba09d4, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.02482293
+      objectReference: {fileID: 0}
+    - target: {fileID: 6892278096512417837, guid: 91eb6890e5b75634f8da9af76eba09d4, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.02482293
+      objectReference: {fileID: 0}
+    - target: {fileID: 6892278096512417837, guid: 91eb6890e5b75634f8da9af76eba09d4, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.02482293
+      objectReference: {fileID: 0}
+    - target: {fileID: 6892278096512417837, guid: 91eb6890e5b75634f8da9af76eba09d4, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.13
+      objectReference: {fileID: 0}
+    - target: {fileID: 6892278096512417837, guid: 91eb6890e5b75634f8da9af76eba09d4, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.3009994
+      objectReference: {fileID: 0}
+    - target: {fileID: 6892278096512417837, guid: 91eb6890e5b75634f8da9af76eba09d4, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1.118
+      objectReference: {fileID: 0}
+    - target: {fileID: 6892278096512417837, guid: 91eb6890e5b75634f8da9af76eba09d4, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.6681728
+      objectReference: {fileID: 0}
+    - target: {fileID: 6892278096512417837, guid: 91eb6890e5b75634f8da9af76eba09d4, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.25274897
+      objectReference: {fileID: 0}
+    - target: {fileID: 6892278096512417837, guid: 91eb6890e5b75634f8da9af76eba09d4, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.5496346
+      objectReference: {fileID: 0}
+    - target: {fileID: 6892278096512417837, guid: 91eb6890e5b75634f8da9af76eba09d4, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.43308783
+      objectReference: {fileID: 0}
+    - target: {fileID: 6892278096512417837, guid: 91eb6890e5b75634f8da9af76eba09d4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -7.951
+      objectReference: {fileID: 0}
+    - target: {fileID: 6892278096512417837, guid: 91eb6890e5b75634f8da9af76eba09d4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -285.702
+      objectReference: {fileID: 0}
+    - target: {fileID: 6892278096512417837, guid: 91eb6890e5b75634f8da9af76eba09d4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 59.872
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 91eb6890e5b75634f8da9af76eba09d4, type: 3}
+--- !u!4 &6892278094608695479 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6892278096512417837, guid: 91eb6890e5b75634f8da9af76eba09d4, type: 3}
+  m_PrefabInstance: {fileID: 1905229978}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &2069017939
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 8791617444801315606}
+    m_Modifications:
+    - target: {fileID: 6119717643481275031, guid: 91eb6890e5b75634f8da9af76eba09d4, type: 3}
+      propertyPath: m_Name
+      value: Hibiscus Flower (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6892278096512417837, guid: 91eb6890e5b75634f8da9af76eba09d4, type: 3}
+      propertyPath: m_RootOrder
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 6892278096512417837, guid: 91eb6890e5b75634f8da9af76eba09d4, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.034675676
+      objectReference: {fileID: 0}
+    - target: {fileID: 6892278096512417837, guid: 91eb6890e5b75634f8da9af76eba09d4, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.03467567
+      objectReference: {fileID: 0}
+    - target: {fileID: 6892278096512417837, guid: 91eb6890e5b75634f8da9af76eba09d4, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.034675673
+      objectReference: {fileID: 0}
+    - target: {fileID: 6892278096512417837, guid: 91eb6890e5b75634f8da9af76eba09d4, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.331
+      objectReference: {fileID: 0}
+    - target: {fileID: 6892278096512417837, guid: 91eb6890e5b75634f8da9af76eba09d4, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.029720359
+      objectReference: {fileID: 0}
+    - target: {fileID: 6892278096512417837, guid: 91eb6890e5b75634f8da9af76eba09d4, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.941
+      objectReference: {fileID: 0}
+    - target: {fileID: 6892278096512417837, guid: 91eb6890e5b75634f8da9af76eba09d4, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.22007544
+      objectReference: {fileID: 0}
+    - target: {fileID: 6892278096512417837, guid: 91eb6890e5b75634f8da9af76eba09d4, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.032929305
+      objectReference: {fileID: 0}
+    - target: {fileID: 6892278096512417837, guid: 91eb6890e5b75634f8da9af76eba09d4, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.77261657
+      objectReference: {fileID: 0}
+    - target: {fileID: 6892278096512417837, guid: 91eb6890e5b75634f8da9af76eba09d4, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.5945975
+      objectReference: {fileID: 0}
+    - target: {fileID: 6892278096512417837, guid: 91eb6890e5b75634f8da9af76eba09d4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -68.953
+      objectReference: {fileID: 0}
+    - target: {fileID: 6892278096512417837, guid: 91eb6890e5b75634f8da9af76eba09d4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -236.916
+      objectReference: {fileID: 0}
+    - target: {fileID: 6892278096512417837, guid: 91eb6890e5b75634f8da9af76eba09d4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 35.948
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 91eb6890e5b75634f8da9af76eba09d4, type: 3}
+--- !u!4 &6892278094712190334 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6892278096512417837, guid: 91eb6890e5b75634f8da9af76eba09d4, type: 3}
+  m_PrefabInstance: {fileID: 2069017939}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &2083733422
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 8791617444801315606}
+    m_Modifications:
+    - target: {fileID: 6119717643481275031, guid: 91eb6890e5b75634f8da9af76eba09d4, type: 3}
+      propertyPath: m_Name
+      value: Hibiscus Flower (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6892278096512417837, guid: 91eb6890e5b75634f8da9af76eba09d4, type: 3}
+      propertyPath: m_RootOrder
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 6892278096512417837, guid: 91eb6890e5b75634f8da9af76eba09d4, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.02439191
+      objectReference: {fileID: 0}
+    - target: {fileID: 6892278096512417837, guid: 91eb6890e5b75634f8da9af76eba09d4, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.024391908
+      objectReference: {fileID: 0}
+    - target: {fileID: 6892278096512417837, guid: 91eb6890e5b75634f8da9af76eba09d4, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.024391906
+      objectReference: {fileID: 0}
+    - target: {fileID: 6892278096512417837, guid: 91eb6890e5b75634f8da9af76eba09d4, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.437
+      objectReference: {fileID: 0}
+    - target: {fileID: 6892278096512417837, guid: 91eb6890e5b75634f8da9af76eba09d4, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.30899987
+      objectReference: {fileID: 0}
+    - target: {fileID: 6892278096512417837, guid: 91eb6890e5b75634f8da9af76eba09d4, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.726
+      objectReference: {fileID: 0}
+    - target: {fileID: 6892278096512417837, guid: 91eb6890e5b75634f8da9af76eba09d4, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.5957299
+      objectReference: {fileID: 0}
+    - target: {fileID: 6892278096512417837, guid: 91eb6890e5b75634f8da9af76eba09d4, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.59388083
+      objectReference: {fileID: 0}
+    - target: {fileID: 6892278096512417837, guid: 91eb6890e5b75634f8da9af76eba09d4, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.47585475
+      objectReference: {fileID: 0}
+    - target: {fileID: 6892278096512417837, guid: 91eb6890e5b75634f8da9af76eba09d4, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.25685373
+      objectReference: {fileID: 0}
+    - target: {fileID: 6892278096512417837, guid: 91eb6890e5b75634f8da9af76eba09d4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 72.182
+      objectReference: {fileID: 0}
+    - target: {fileID: 6892278096512417837, guid: 91eb6890e5b75634f8da9af76eba09d4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -238.854
+      objectReference: {fileID: 0}
+    - target: {fileID: 6892278096512417837, guid: 91eb6890e5b75634f8da9af76eba09d4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 57.886
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 91eb6890e5b75634f8da9af76eba09d4, type: 3}
+--- !u!4 &6892278094835957635 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6892278096512417837, guid: 91eb6890e5b75634f8da9af76eba09d4, type: 3}
+  m_PrefabInstance: {fileID: 2083733422}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1948814411903609137
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -419,43 +1319,43 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6892278096512417837, guid: 91eb6890e5b75634f8da9af76eba09d4, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.022090368
+      value: -0.021996489
       objectReference: {fileID: 0}
     - target: {fileID: 6892278096512417837, guid: 91eb6890e5b75634f8da9af76eba09d4, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.029721737
+      value: -0.029815728
       objectReference: {fileID: 0}
     - target: {fileID: 6892278096512417837, guid: 91eb6890e5b75634f8da9af76eba09d4, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.054856002
+      value: 0.054776493
       objectReference: {fileID: 0}
     - target: {fileID: 6892278096512417837, guid: 91eb6890e5b75634f8da9af76eba09d4, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.7905433
+      value: 0.7919597
       objectReference: {fileID: 0}
     - target: {fileID: 6892278096512417837, guid: 91eb6890e5b75634f8da9af76eba09d4, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.5949483
+      value: -0.5926152
       objectReference: {fileID: 0}
     - target: {fileID: 6892278096512417837, guid: 91eb6890e5b75634f8da9af76eba09d4, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.14286639
+      value: -0.14436153
       objectReference: {fileID: 0}
     - target: {fileID: 6892278096512417837, guid: 91eb6890e5b75634f8da9af76eba09d4, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.025825758
+      value: 0.027692985
       objectReference: {fileID: 0}
     - target: {fileID: 6892278096512417837, guid: 91eb6890e5b75634f8da9af76eba09d4, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: -68.953
+      value: -68.538
       objectReference: {fileID: 0}
     - target: {fileID: 6892278096512417837, guid: 91eb6890e5b75634f8da9af76eba09d4, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: -45.605
+      value: -45.614
       objectReference: {fileID: 0}
     - target: {fileID: 6892278096512417837, guid: 91eb6890e5b75634f8da9af76eba09d4, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 35.948
+      value: 35.981
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 91eb6890e5b75634f8da9af76eba09d4, type: 3}
@@ -567,31 +1467,31 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6892278096512417837, guid: 91eb6890e5b75634f8da9af76eba09d4, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.578
+      value: -0.5791308
       objectReference: {fileID: 0}
     - target: {fileID: 6892278096512417837, guid: 91eb6890e5b75634f8da9af76eba09d4, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.144
+      value: -0.14399908
       objectReference: {fileID: 0}
     - target: {fileID: 6892278096512417837, guid: 91eb6890e5b75634f8da9af76eba09d4, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.141
+      value: 0.14961453
       objectReference: {fileID: 0}
     - target: {fileID: 6892278096512417837, guid: 91eb6890e5b75634f8da9af76eba09d4, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.783383
+      value: 0.7229585
       objectReference: {fileID: 0}
     - target: {fileID: 6892278096512417837, guid: 91eb6890e5b75634f8da9af76eba09d4, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.111021504
+      value: -0.25057977
       objectReference: {fileID: 0}
     - target: {fileID: 6892278096512417837, guid: 91eb6890e5b75634f8da9af76eba09d4, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.15434785
+      value: -0.33888456
       objectReference: {fileID: 0}
     - target: {fileID: 6892278096512417837, guid: 91eb6890e5b75634f8da9af76eba09d4, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.591745
+      value: 0.5474469
       objectReference: {fileID: 0}
     - target: {fileID: 6892278096512417837, guid: 91eb6890e5b75634f8da9af76eba09d4, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -599,7 +1499,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6892278096512417837, guid: 91eb6890e5b75634f8da9af76eba09d4, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: -21.915
+      value: -49.852
       objectReference: {fileID: 0}
     - target: {fileID: 6892278096512417837, guid: 91eb6890e5b75634f8da9af76eba09d4, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
