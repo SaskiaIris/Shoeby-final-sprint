@@ -1,17 +1,20 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class DialogueManager : MonoBehaviour {
-    public Text beeText;
+    public TextMeshProUGUI beeText;
 
     [SerializeField]
-    private Queue<string> sentences;
+    private List<string> sentences;
+
+    private int sentenceIndex = 0;
 
     bool pushedOnce = false;
 
     void Awake() {
-        sentences = new Queue<string>();
+        sentences = new List<string>();
     }
 
     public void StartBeeText(Dialogue dialogue) {
@@ -20,7 +23,7 @@ public class DialogueManager : MonoBehaviour {
             sentences.Clear();
 
             foreach(string sentence in dialogue.sentences) {
-                sentences.Enqueue(sentence);
+                sentences.Add(sentence);
             }
 
             DisplayNextSentence();
@@ -28,13 +31,15 @@ public class DialogueManager : MonoBehaviour {
     }
 
     public void DisplayNextSentence() {
-        if(sentences.Count == 0) {
+        if(sentenceIndex > sentences.Count) {
             EndDialogue();
             return;
         }
 
-        string sentence = sentences.Dequeue();
+        string sentence = sentences[sentenceIndex];
         beeText.text = sentence;
+        sentenceIndex++;
+        
     }
 
     void EndDialogue() {
