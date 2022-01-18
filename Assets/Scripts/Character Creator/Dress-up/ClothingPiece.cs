@@ -160,7 +160,7 @@ public class ClothingPiece {
     }
 
     public GameObject FindCarousel() {
-        string nameToSearchFor = _thisGameObject.tag + _space + _carouselName;
+        string nameToSearchFor =/* _thisGameObject.tag + _space +*/ _carouselName;
         Debug.Log("FILE NAME: ClothingPiece.cs " + "MESSAGE: --- " + "Name of the carousel we are searching for: " + nameToSearchFor);
         GameObject foundCarousel = GameObject.Find(nameToSearchFor);
         return foundCarousel;
