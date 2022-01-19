@@ -19,8 +19,7 @@ public class DialogueManagerOnboarding : MonoBehaviour {
     private int zero = 0;
 
     [SerializeField]
-    private GameObject Controller, Button, Kleding, Bob;
-
+    private GameObject Controller, Button, Bob;
 
     bool pushedOnce = false;
 
@@ -28,15 +27,12 @@ public class DialogueManagerOnboarding : MonoBehaviour {
         sentences = new List<string>();
     }
 
-    void Update()
-    {
-        if (sentenceIndex == 1 || sentenceIndex == 2 || sentenceIndex == 3)
-        {
+    void Update() {
+        if (sentenceIndex == 1 || sentenceIndex == 2 || sentenceIndex == 3) {
             counting = true;
         }
 
-        if (counting)
-        {
+        if (counting) {
             TimerCheck();
         }
 
@@ -65,10 +61,14 @@ public class DialogueManagerOnboarding : MonoBehaviour {
             Controller.SetActive(true);
         }
 
-        if(sentenceIndex == 3)
-        {
+        if(sentenceIndex == 3) {
             Controller.SetActive(false);
             Button.SetActive(true);
+        }
+
+        if(sentenceIndex == 5) {
+            Bob.SetActive(true);
+            Controller.SetActive(false);
         }
 
         Debug.Log(sentenceIndex);
