@@ -1326,7 +1326,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6954867363217030031, guid: 75ba50cee3aed5f48808fc6e126043ce, type: 3}
       propertyPath: m_Name
-      value: Noorderlicht
+      value: Northern Light
       objectReference: {fileID: 0}
     - target: {fileID: 7768559446450659637, guid: 75ba50cee3aed5f48808fc6e126043ce, type: 3}
       propertyPath: m_RootOrder
@@ -1427,7 +1427,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6618223281143330861, guid: 0562c09251ec8bf4a89ec58b024ecc36, type: 3}
       propertyPath: m_Name
-      value: Grond
+      value: Ground
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0562c09251ec8bf4a89ec58b024ecc36, type: 3}

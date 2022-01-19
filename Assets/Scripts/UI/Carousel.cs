@@ -66,17 +66,17 @@ public class Carousel : MonoBehaviour {
 
         float ObjectAngle = angle;//create a temp value that keeps track of the angle of each element
 
-        if(isBiggerThanMax) {
-            for(int m = 0; m < maximumObjects; m++) {
-                objectAngles[m] = ObjectAngle;
-                ObjectAngle += angle;
-            }
-        } else {
+        //if(isBiggerThanMax) {
             for(int m = 0; m < amountOfCarouselObjects; m++) {
                 objectAngles[m] = ObjectAngle;
                 ObjectAngle += angle;
             }
-        }
+        /*} else {
+            for(int m = 0; m < amountOfCarouselObjects; m++) {
+                objectAngles[m] = ObjectAngle;
+                ObjectAngle += angle;
+            }
+        }*/
         
 
         for(int i = 0; i < amountOfCarouselObjects; i++) { //loop through the objects
@@ -85,11 +85,15 @@ public class Carousel : MonoBehaviour {
             carouselObjects[i].transform.parent = this.transform; // make the element child to the carousel center
             carouselObjects[i].transform.position = new Vector3(this.transform.position.x, this.transform.position.y, this.transform.position.z + distanceFromCenter);//move each carousel item from the center an amount of "DistanceFromCenter"
 
-			if(i < maximumObjects) {
+            if(i < maximumObjects) {
                 carouselObjects[i].transform.RotateAround(positionCarousel, axisCarousel, objectAngles[i]);//position the element in their respective locations according to the center through rotation
-            } else if(i >= maximumObjects) {
-				carouselObjects[i].GetComponent<ClothingPieceHandler>().SetActiveness(false);
-			}
+            } else if(i >= maximumObjects && i < maximumObjects * 2) {
+                carouselObjects[i].GetComponent<ClothingPieceHandler>().SetActiveness(false);
+                carouselObjects[i].transform.RotateAround(positionCarousel, axisCarousel, objectAngles[i - maximumObjects]);
+            } else {
+                carouselObjects[i].GetComponent<ClothingPieceHandler>().SetActiveness(false);
+                carouselObjects[i].transform.RotateAround(positionCarousel, axisCarousel, objectAngles[i -10]);
+            }
         }
         //parent wel hier houden ^ net als de eerste positions van het resetten naar carousel center
 
@@ -134,7 +138,7 @@ public class Carousel : MonoBehaviour {
             newAngle -= angle; //calculate the new angle
         }
 
-        if(isBiggerThanMax) {
+        /*if(isBiggerThanMax) {
             carouselObjects[currentVisibleIndexes[0]].GetComponent<ClothingPieceHandler>().SetActiveness(false);
             for(int i = 0; i < currentVisibleIndexes.Length; i++) {
                 if(currentVisibleIndexes[i] >= amountOfCarouselObjects - 1) {
@@ -159,7 +163,7 @@ public class Carousel : MonoBehaviour {
                 //currentSpawnAngle = maximumObjects-1;
                 //resetTime = true;
             }
-        }
+        }*/
 
 
     }
