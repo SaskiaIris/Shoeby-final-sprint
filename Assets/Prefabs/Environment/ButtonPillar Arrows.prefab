@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 9041115449549028270}
   - component: {fileID: 1987362976665907232}
   - component: {fileID: 4169500867156664684}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: ClickerRight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -93,7 +93,7 @@ GameObject:
   - component: {fileID: 3134268727440557764}
   - component: {fileID: 7798187489759719148}
   - component: {fileID: 4750880900004374558}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: CubeConstraintUp
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -189,7 +189,7 @@ GameObject:
   - component: {fileID: 8216955235011754099}
   - component: {fileID: 2809578201132597527}
   - component: {fileID: 5107927281552855683}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: BaseDown
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -300,7 +300,7 @@ GameObject:
   - component: {fileID: 4329982974600107835}
   - component: {fileID: 4202444299124208761}
   - component: {fileID: 1170872126455379533}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: ClickerDown
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -451,7 +451,7 @@ GameObject:
   - component: {fileID: 6472028612764410337}
   - component: {fileID: 1656659894494516003}
   - component: {fileID: 6909671488544392232}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -498,7 +498,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_Color: {r: 1, g: 0.75463164, b: 0.1641509, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -531,7 +531,7 @@ GameObject:
   - component: {fileID: 3616200371775390702}
   - component: {fileID: 3808038114179918396}
   - component: {fileID: 7397420780514645385}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: CubeConstraintDown
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -626,7 +626,7 @@ GameObject:
   - component: {fileID: 6502232690058239148}
   - component: {fileID: 9183838452518603976}
   - component: {fileID: 2477684146602788742}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Pillar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -674,7 +674,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 2f5616635bea1f74a86e5dc59c569e77, type: 2}
+  - {fileID: 2100000, guid: 691550fec4fec704ea96bb26ee86d86a, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -786,7 +786,7 @@ ConfigurableJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0, y: 1.9000024, z: 0}
+  m_ConnectedAnchor: {x: 0, y: 2.5999994, z: 0}
   serializedVersion: 2
   m_SecondaryAxis: {x: 0, y: 1, z: 0}
   m_XMotion: 0
@@ -966,7 +966,7 @@ ConfigurableJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0, y: 1.9000024, z: 0}
+  m_ConnectedAnchor: {x: 0, y: 2.5999994, z: 0}
   serializedVersion: 2
   m_SecondaryAxis: {x: 0, y: 1, z: 0}
   m_XMotion: 0
@@ -1164,7 +1164,7 @@ GameObject:
   - component: {fileID: 2537273720146512091}
   - component: {fileID: 3892672432438435083}
   - component: {fileID: 5417306215801907355}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: BaseLeft
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1276,7 +1276,7 @@ GameObject:
   - component: {fileID: 1510735584172496015}
   - component: {fileID: 4138226521367749360}
   - component: {fileID: 2545609197492496986}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1377,7 +1377,7 @@ GameObject:
   - component: {fileID: 5156556779202131947}
   - component: {fileID: 4596376906282380703}
   - component: {fileID: 2980210717503842804}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: BaseRight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1553,7 +1553,7 @@ ConfigurableJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0, y: 1.9000024, z: 0}
+  m_ConnectedAnchor: {x: 0, y: 2.5999994, z: 0}
   serializedVersion: 2
   m_SecondaryAxis: {x: 0, y: 1, z: 0}
   m_XMotion: 0
@@ -1670,7 +1670,7 @@ GameObject:
   - component: {fileID: 3034022584929960732}
   - component: {fileID: 7258183911383592551}
   - component: {fileID: 3065771177265148746}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: BaseUp
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1779,7 +1779,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5942529324386099035}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: ButtonDown
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1892,7 +1892,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8560334258285884809}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: ButtonUp
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1991,7 +1991,7 @@ ConfigurableJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0, y: 1.9000024, z: 0}
+  m_ConnectedAnchor: {x: 0, y: 2.5999994, z: 0}
   serializedVersion: 2
   m_SecondaryAxis: {x: 0, y: 1, z: 0}
   m_XMotion: 0
