@@ -1213,6 +1213,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5855857085646095146, guid: 98d46676829740e4f85badb6a267d625, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7322470014172776576, guid: 98d46676829740e4f85badb6a267d625, type: 3}
       propertyPath: m_RenderMode
       value: 2
