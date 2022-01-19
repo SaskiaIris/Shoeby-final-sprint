@@ -1,8 +1,7 @@
 using UnityEngine;
 using UnityEngine.Events;
 
-public class PhysicsButton : MonoBehaviour
-{
+public class PhysicsButton : MonoBehaviour {
     [SerializeField]
     private float threshold = 0.1f;
     [SerializeField]
