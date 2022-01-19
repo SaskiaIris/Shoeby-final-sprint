@@ -1,0 +1,76 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &7021340573607118152
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7021340573607118150}
+  - component: {fileID: 2232903527453075529}
+  - component: {fileID: 2232903527453075530}
+  m_Layer: 0
+  m_Name: DialogueManager Onboarding
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7021340573607118150
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7021340573607118152}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2232903527453075529
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7021340573607118152}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24987b566de6d3046878c34d355f7bd1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  beeText: {fileID: 0}
+  sentences: []
+  Controller: {fileID: 0}
+  Button: {fileID: 0}
+  Kleding: {fileID: 0}
+  Bob: {fileID: 0}
+--- !u!114 &2232903527453075530
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7021340573607118152}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3100310ced627fa4d974a8d1a4497798, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    sentences:
+    - Welkom in de VR-Experience!
+    - Voor we beginnen wil ik graag uitleggen wat je allemaal kan doen!
+    - Voor je zie je de controller die je vast hebt! De knop achterop zorgt ervoor
+      dat je kan grijpen!
+    - Voor je zie je een hamer, pak hem maar op en sla ermee op de linker knop!
+    - Hiermee zorg je ervoor dat de tekst en de ervaring vanaf nu verder gaat!
+    - Links van je is een avatar en een kledingstuk verschenen!
+    - Pak de kleding op en gooi het richting de avatar! Dit is hoe je de avatar aankleed
+    - Nu je alles weet, kom mee naar mijn wereld!
+    - Nu je alles weet, kom mee naar mijn wereld!
