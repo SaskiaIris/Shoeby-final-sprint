@@ -8,6 +8,8 @@ public class DialogueManagerOnboarding : MonoBehaviour {
 
     [SerializeField]
     private List<string> sentences;
+    [SerializeField]
+    private List<AudioClip> voiceOverSentences;
 
     private int sentenceIndex = 0;
 
@@ -21,18 +23,24 @@ public class DialogueManagerOnboarding : MonoBehaviour {
     [SerializeField]
     private GameObject Controller, Button, Bob, Carousel;
 
+    [SerializeField]
+    private GameObject vrRig;
+
+    private AudioSource audio;
+
     bool pushedOnce = false;
 
     void Awake() {
         sentences = new List<string>();
+        audio = vrRig.GetComponent<AudioSource>();
     }
 
     void Update() {
-        if (sentenceIndex == 1 || sentenceIndex == 2 || sentenceIndex == 3) {
+        if(sentenceIndex == 1 || sentenceIndex == 2 || sentenceIndex == 3) {
             counting = true;
         }
 
-        if (counting) {
+        if(counting) {
             TimerCheck();
         }
 
@@ -78,24 +86,24 @@ public class DialogueManagerOnboarding : MonoBehaviour {
         Debug.Log(sentenceIndex);
         string sentence = sentences[sentenceIndex];
         beeText.text = sentence;
+        AudioClip clip = voiceOverSentences[sentenceIndex];
+        audio.clip = clip;
+        audio.Play();
         sentenceIndex++;
-        
+
     }
 
-    public void TimerCheck()
-    {
+    public void TimerCheck() {
         timer += Time.deltaTime;
-        timerInSeconds = (int)timer % amountOfMSInASecond;
+        timerInSeconds = (int) timer % amountOfMSInASecond;
 
-        if (timerInSeconds >= amountOfSecondsTillNext)
-        {
+        if(timerInSeconds >= amountOfSecondsTillNext) {
             ResetTimer();
             DisplayNextSentence();
         }
     }
 
-    private void ResetTimer()
-    {
+    private void ResetTimer() {
         counting = false;
         timer = zero;
         timerInSeconds = zero;

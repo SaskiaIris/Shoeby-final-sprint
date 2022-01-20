@@ -135,6 +135,42 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 78307897, guid: f25786a16a89d754385590f84ae68700, type: 3}
+      propertyPath: dialogue.sentences.Array.size
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 78307897, guid: f25786a16a89d754385590f84ae68700, type: 3}
+      propertyPath: dialogue.sentences.Array.data[0]
+      value: Welkom in shoeby world. Ik ben Shoe-bee en dit is mijn paradijs.
+      objectReference: {fileID: 0}
+    - target: {fileID: 78307897, guid: f25786a16a89d754385590f84ae68700, type: 3}
+      propertyPath: dialogue.sentences.Array.data[1]
+      value: Kijk om je heen! Op het pad lopen de Shoeby modellen.
+      objectReference: {fileID: 0}
+    - target: {fileID: 78307897, guid: f25786a16a89d754385590f84ae68700, type: 3}
+      propertyPath: dialogue.sentences.Array.data[2]
+      value: "Genoeg ge\xEFnspireerd voor nu?"
+      objectReference: {fileID: 0}
+    - target: {fileID: 78307897, guid: f25786a16a89d754385590f84ae68700, type: 3}
+      propertyPath: dialogue.sentences.Array.data[3]
+      value: Ik heb een verrassing voor je!
+      objectReference: {fileID: 0}
+    - target: {fileID: 78307897, guid: f25786a16a89d754385590f84ae68700, type: 3}
+      propertyPath: dialogue.sentences.Array.data[4]
+      value: Customize jouw avatar met de knoppen.
+      objectReference: {fileID: 0}
+    - target: {fileID: 78307897, guid: f25786a16a89d754385590f84ae68700, type: 3}
+      propertyPath: dialogue.sentences.Array.data[5]
+      value: We zijn nu bij het leukste gedeelte aangekomen! Time to shop!
+      objectReference: {fileID: 0}
+    - target: {fileID: 78307897, guid: f25786a16a89d754385590f84ae68700, type: 3}
+      propertyPath: dialogue.sentences.Array.data[6]
+      value: Helemaal klaar? Amazing!
+      objectReference: {fileID: 0}
+    - target: {fileID: 78307897, guid: f25786a16a89d754385590f84ae68700, type: 3}
+      propertyPath: dialogue.sentences.Array.data[7]
+      value: Tot de volgende keer!
+      objectReference: {fileID: 0}
     - target: {fileID: 2598541557200430588, guid: f25786a16a89d754385590f84ae68700, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -272,6 +308,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: -7784984706089509794, guid: 1b5402f6398c91943811934015238cb0, type: 3}
+      propertyPath: vrRig
+      value: 
+      objectReference: {fileID: 5855857085883254929}
+    - target: {fileID: -7784984706089509794, guid: 1b5402f6398c91943811934015238cb0, type: 3}
       propertyPath: beeText
       value: 
       objectReference: {fileID: 1327985845}
@@ -299,6 +339,42 @@ PrefabInstance:
       propertyPath: sentences.Array.data[4]
       value: Tekst 5
       objectReference: {fileID: 0}
+    - target: {fileID: -7784984706089509794, guid: 1b5402f6398c91943811934015238cb0, type: 3}
+      propertyPath: voiceOverSentences.Array.size
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: -7784984706089509794, guid: 1b5402f6398c91943811934015238cb0, type: 3}
+      propertyPath: voiceOverSentences.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: e09d46f1143ba3d4785a606c7941c605, type: 3}
+    - target: {fileID: -7784984706089509794, guid: 1b5402f6398c91943811934015238cb0, type: 3}
+      propertyPath: voiceOverSentences.Array.data[1]
+      value: 
+      objectReference: {fileID: 8300000, guid: 28c395fd5e55f294a89b8c10c60edb5e, type: 3}
+    - target: {fileID: -7784984706089509794, guid: 1b5402f6398c91943811934015238cb0, type: 3}
+      propertyPath: voiceOverSentences.Array.data[2]
+      value: 
+      objectReference: {fileID: 8300000, guid: ee01bdc4d70ae2d4ebd060203e438963, type: 3}
+    - target: {fileID: -7784984706089509794, guid: 1b5402f6398c91943811934015238cb0, type: 3}
+      propertyPath: voiceOverSentences.Array.data[3]
+      value: 
+      objectReference: {fileID: 8300000, guid: d8bc1391dbb93b04ab3d1ff31b79c983, type: 3}
+    - target: {fileID: -7784984706089509794, guid: 1b5402f6398c91943811934015238cb0, type: 3}
+      propertyPath: voiceOverSentences.Array.data[4]
+      value: 
+      objectReference: {fileID: 8300000, guid: 5d375be1f4ceb5f4e8604b672f01a1bf, type: 3}
+    - target: {fileID: -7784984706089509794, guid: 1b5402f6398c91943811934015238cb0, type: 3}
+      propertyPath: voiceOverSentences.Array.data[5]
+      value: 
+      objectReference: {fileID: 8300000, guid: 5158f222aa3a4d94788202559288c83f, type: 3}
+    - target: {fileID: -7784984706089509794, guid: 1b5402f6398c91943811934015238cb0, type: 3}
+      propertyPath: voiceOverSentences.Array.data[6]
+      value: 
+      objectReference: {fileID: 8300000, guid: ecc78959df382fa4aaf8c291be7943d3, type: 3}
+    - target: {fileID: -7784984706089509794, guid: 1b5402f6398c91943811934015238cb0, type: 3}
+      propertyPath: voiceOverSentences.Array.data[7]
+      value: 
+      objectReference: {fileID: 8300000, guid: 36fae7390781c9b43bb5cadee9d5e4c9, type: 3}
     - target: {fileID: 9190736197753597425, guid: 1b5402f6398c91943811934015238cb0, type: 3}
       propertyPath: m_RootOrder
       value: 10
@@ -1216,52 +1292,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7322470014623748770, guid: 98d46676829740e4f85badb6a267d625, type: 3}
-      propertyPath: m_LocalScale.x
+    - target: {fileID: 5855857085883254931, guid: 98d46676829740e4f85badb6a267d625, type: 3}
+      propertyPath: m_PlayOnAwake
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7322470014623748770, guid: 98d46676829740e4f85badb6a267d625, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7322470014623748770, guid: 98d46676829740e4f85badb6a267d625, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7322470014623748770, guid: 98d46676829740e4f85badb6a267d625, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7322470014623748770, guid: 98d46676829740e4f85badb6a267d625, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7322470014623748770, guid: 98d46676829740e4f85badb6a267d625, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7322470014623748770, guid: 98d46676829740e4f85badb6a267d625, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7322470014623748770, guid: 98d46676829740e4f85badb6a267d625, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7641887489960347177, guid: 98d46676829740e4f85badb6a267d625, type: 3}
-      propertyPath: m_SortingOrder
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7641887489960347181, guid: 98d46676829740e4f85badb6a267d625, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7641887489960347182, guid: 98d46676829740e4f85badb6a267d625, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0.015
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 98d46676829740e4f85badb6a267d625, type: 3}
+--- !u!1 &5855857085883254929 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5855857085646095140, guid: 98d46676829740e4f85badb6a267d625, type: 3}
+  m_PrefabInstance: {fileID: 5855857085883254928}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &6618223280030557222
 PrefabInstance:
   m_ObjectHideFlags: 0

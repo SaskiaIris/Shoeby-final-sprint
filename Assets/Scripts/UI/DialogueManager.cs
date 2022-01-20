@@ -8,13 +8,21 @@ public class DialogueManager : MonoBehaviour {
 
     [SerializeField]
     private List<string> sentences;
+    [SerializeField]
+    private List<AudioClip> voiceOverSentences;
 
     private int sentenceIndex = 0;
+
+    [SerializeField]
+    private GameObject vrRig;
+
+    private AudioSource audio;
 
     bool pushedOnce = false;
 
     void Awake() {
         sentences = new List<string>();
+        audio = vrRig.GetComponent<AudioSource>();
     }
 
     public void StartBeeText(Dialogue dialogue) {
@@ -38,8 +46,11 @@ public class DialogueManager : MonoBehaviour {
 
         string sentence = sentences[sentenceIndex];
         beeText.text = sentence;
+        AudioClip clip = voiceOverSentences[sentenceIndex];
+        audio.clip = clip;
+        audio.Play();
         sentenceIndex++;
-        
+
     }
 
     void EndDialogue() {
