@@ -935,18 +935,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5855857084288032499}
     m_Modifications:
-    - target: {fileID: 5964835173559071542, guid: cf55db6b0b04fd34ca4e82e32b0ad836, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5964835173559071542, guid: cf55db6b0b04fd34ca4e82e32b0ad836, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5964835173559071542, guid: cf55db6b0b04fd34ca4e82e32b0ad836, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 5964835173619814291, guid: cf55db6b0b04fd34ca4e82e32b0ad836, type: 3}
       propertyPath: m_Name
       value: LevelChanger

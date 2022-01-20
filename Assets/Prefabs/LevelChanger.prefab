@@ -27,7 +27,7 @@ RectTransform:
   m_GameObject: {fileID: 5964835173559071541}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.0063737994, y: 0.006583024, z: 0.009999999}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 5964835174181698362}
   m_RootOrder: 0
@@ -141,7 +141,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 5964835173619814292}
   clicked: 0
-  clicksNeeded: 4
+  clicksNeeded: 1
 --- !u!1 &5964835174181698361
 GameObject:
   m_ObjectHideFlags: 0

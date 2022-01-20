@@ -1,24 +1,25 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class LevelChanger : MonoBehaviour
-{
+public class LevelChanger : MonoBehaviour {
     public Animator animator;
 
     private int levelToLoad;
     [SerializeField]
-    private int clicked, clicksNeeded;
+    private int clicked = 0;
+    [SerializeField]
+    private int clicksNeeded = 4;
 
-    void Start()
-    {
+    /*void Start() {
         clicked = 0;
         clicksNeeded = 4;
+    }*/
+
+    public void FadeToNextLevelStart() {
+        FadeToLevel(SceneManager.GetActiveScene().buildIndex + 1);
     }
 
-    public void FadeToNextLevel()
-    {
+    public void FadeToNextLevelPillarButton() {
         clicked++;
         if (clicked == clicksNeeded)
         {
@@ -26,14 +27,12 @@ public class LevelChanger : MonoBehaviour
         }
     }
 
-    public void FadeToLevel (int levelIndex) 
-    {
+    public void FadeToLevel (int levelIndex) {
         levelToLoad = levelIndex;
-        animator.SetTrigger("FadeOut");
+        animator.SetTrigger("Fadeout");
     }
 
-    public void OnFadeComplete()
-    {
+    public void OnFadeComplete() {
         SceneManager.LoadScene(levelToLoad);
     }
 }
