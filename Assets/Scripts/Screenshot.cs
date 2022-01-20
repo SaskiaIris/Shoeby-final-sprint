@@ -14,7 +14,7 @@ public class Screenshot : MonoBehaviour
     public OVRInput.Controller controller;
 
 
-    void Update()
+    /*void Update()
     {
         if (Input.GetKeyDown(KeyCode.Space)) {
             takeScreenShot();
@@ -26,7 +26,7 @@ public class Screenshot : MonoBehaviour
         }
 
 
-    }
+    }*/
 
     public void takeScreenShot()
     {
