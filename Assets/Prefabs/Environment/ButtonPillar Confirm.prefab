@@ -736,17 +736,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
     sentences:
-    - Welkom in Shoeby-world. Ik ben Shoe-bee en dit is mijn paradijs. Raak de knop
-      aan om verder te gaan!
-    - Kijk om je heen. Dit is de runway! Hier zijn creaties te zien van voorgaande
-      shoeby klanten.
-    - Wie weet staat jouw creatie hier zometeen ook tussen.
-    - "Maar voordat we beginnen, even een kleine introductie:\r"
-    - Knoppen uitleg
-    - "Genoeg ge\xEFnspireerd voor nu? Druk op de knop om je eigen avatar te maken!"
-    - Dit is jouw zelf kneedbare avatar! Druk op de pijltje om hen aan te passen!
-    - Als je klaar bent druk je weer op de groene knop en kan je gaan aankleden.
-    - Pak een kledingstuk en gooi het naar de avatar om hen aan te kleden.
+    - Welkom in shoeby world. Ik ben Shoe-bee en dit is mijn paradijs.
+    - Kijk om je heen! Op het pad lopen de Shoeby modellen.
+    - "Genoeg ge\xEFnspireerd voor nu?"
+    - Ik heb een verrassing voor je!
+    - Customize jouw avatar met de knoppen.
+    - We zijn nu bij het leukste gedeelte aangekomen! Time to shop!
+    - Helemaal klaar? Amazing!
+    - Tot de volgende keer!
 --- !u!1 &8896719809901005065
 GameObject:
   m_ObjectHideFlags: 0

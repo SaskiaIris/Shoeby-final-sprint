@@ -1382,10 +1382,46 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5964835174181698362, guid: cf55db6b0b04fd34ca4e82e32b0ad836, type: 3}
+      propertyPath: m_Pivot.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5964835174181698362, guid: cf55db6b0b04fd34ca4e82e32b0ad836, type: 3}
+      propertyPath: m_Pivot.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5964835174181698362, guid: cf55db6b0b04fd34ca4e82e32b0ad836, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5964835174181698362, guid: cf55db6b0b04fd34ca4e82e32b0ad836, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5964835174181698362, guid: cf55db6b0b04fd34ca4e82e32b0ad836, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5964835174181698362, guid: cf55db6b0b04fd34ca4e82e32b0ad836, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5964835174181698362, guid: cf55db6b0b04fd34ca4e82e32b0ad836, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5964835174181698364, guid: cf55db6b0b04fd34ca4e82e32b0ad836, type: 3}
+      propertyPath: m_PresetInfoIsWorld
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5964835174181698365, guid: cf55db6b0b04fd34ca4e82e32b0ad836, type: 3}
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 4255956858049790149}
+    - target: {fileID: 5964835174181698365, guid: cf55db6b0b04fd34ca4e82e32b0ad836, type: 3}
+      propertyPath: m_RenderMode
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cf55db6b0b04fd34ca4e82e32b0ad836, type: 3}
 --- !u!4 &5964835172578680191 stripped

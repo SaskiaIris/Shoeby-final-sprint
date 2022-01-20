@@ -12,38 +12,46 @@ public class NavMeshTest : MonoBehaviour
     private NavMeshAgent agent;
     private int nextPosition;
 
-    void Start()
-    {
+    [SerializeField]
+    private float proximity = 0.2f;
+
+    void Start() {
         agent = GetComponent<NavMeshAgent>();
 
-        if (agent == null)
-        {
+        if(agent == null) {
             Debug.LogError("no agent found");
         }
 
-        if (!waypoints.Any() || waypoints[nextPosition] == null)
-        {
+        if(!waypoints.Any() || waypoints[nextPosition] == null) {
             
             Debug.LogError("no waypoints to go");
-        }
-        else
-        {
+        } else {
             Debug.Log("we have " + waypoints.Count + " waypoints");
         }
     }
 
 
-    void Update()
-    {
+    void Update() {
         agent.destination = waypoints[nextPosition].position;
 
-        if (transform.position != waypoints[nextPosition].position) return;
+        if(/*transform.position != waypoints[nextPosition].position*/CalculateDistance() > proximity) {
+            return;
+        }
 
         nextPosition++;
 
 
-        if (nextPosition != waypoints.Count) return;
+        if(nextPosition != waypoints.Count) {
+            return;
+        }
 
         nextPosition = 0;
+    }
+
+    private float CalculateDistance() {
+        float distanceToNextWaypoint = Vector3.Distance(agent.destination, transform.position);
+
+
+        return distanceToNextWaypoint;
     }
 }

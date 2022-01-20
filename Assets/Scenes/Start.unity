@@ -130,6 +130,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 33265214296005130, guid: 2a8a1ecf1ffcc8f4694dfa771c4d803c, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 33265214870317891, guid: 2a8a1ecf1ffcc8f4694dfa771c4d803c, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -149,6 +153,10 @@ PrefabInstance:
     - target: {fileID: 33265215204888778, guid: 2a8a1ecf1ffcc8f4694dfa771c4d803c, type: 3}
       propertyPath: m_Name
       value: StartButton
+      objectReference: {fileID: 0}
+    - target: {fileID: 33265215204888778, guid: 2a8a1ecf1ffcc8f4694dfa771c4d803c, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 33265215204888782, guid: 2a8a1ecf1ffcc8f4694dfa771c4d803c, type: 3}
       propertyPath: m_Pivot.x
@@ -245,6 +253,10 @@ PrefabInstance:
     - target: {fileID: 33265215204888783, guid: 2a8a1ecf1ffcc8f4694dfa771c4d803c, type: 3}
       propertyPath: m_AdditionalShaderChannelsFlag
       value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 698098118587437633, guid: 2a8a1ecf1ffcc8f4694dfa771c4d803c, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2a8a1ecf1ffcc8f4694dfa771c4d803c, type: 3}
