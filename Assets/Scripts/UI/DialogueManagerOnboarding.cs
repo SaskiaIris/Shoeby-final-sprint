@@ -19,7 +19,7 @@ public class DialogueManagerOnboarding : MonoBehaviour {
     private int zero = 0;
 
     [SerializeField]
-    private GameObject Controller, Button, Bob;
+    private GameObject Controller, Button, Bob, Carousel;
 
     bool pushedOnce = false;
 
@@ -69,6 +69,10 @@ public class DialogueManagerOnboarding : MonoBehaviour {
         if(sentenceIndex == 5) {
             Bob.SetActive(true);
             Controller.SetActive(false);
+        }
+
+        if(sentenceIndex == 7) {
+            Carousel.SetActive(true);
         }
 
         Debug.Log(sentenceIndex);
