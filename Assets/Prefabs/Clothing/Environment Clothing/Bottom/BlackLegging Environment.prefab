@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 536516763597824499}
   - component: {fileID: 5581103657542333305}
   - component: {fileID: -4488273241485533471}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: BlackLegging Environment
   m_TagString: Bottom
   m_Icon: {fileID: 0}
@@ -262,6 +262,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 97504c7ee6cd705468573ca5034b700b, type: 3}
       propertyPath: m_Name
       value: BlackLegging
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 97504c7ee6cd705468573ca5034b700b, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 97504c7ee6cd705468573ca5034b700b, type: 3}

@@ -696,6 +696,30 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2295907535426265310, guid: fc3aa8179b623414eae393a19e6ada5f, type: 3}
+      propertyPath: m_ConnectedAnchor.x
+      value: 0.00000044703484
+      objectReference: {fileID: 0}
+    - target: {fileID: 2295907535426265310, guid: fc3aa8179b623414eae393a19e6ada5f, type: 3}
+      propertyPath: m_ConnectedAnchor.y
+      value: 2.6000009
+      objectReference: {fileID: 0}
+    - target: {fileID: 2295907535426265310, guid: fc3aa8179b623414eae393a19e6ada5f, type: 3}
+      propertyPath: m_ConnectedAnchor.z
+      value: -0.0000002384186
+      objectReference: {fileID: 0}
+    - target: {fileID: 5860576769854277568, guid: fc3aa8179b623414eae393a19e6ada5f, type: 3}
+      propertyPath: m_ConnectedAnchor.x
+      value: -0.00000035762795
+      objectReference: {fileID: 0}
+    - target: {fileID: 5860576769854277568, guid: fc3aa8179b623414eae393a19e6ada5f, type: 3}
+      propertyPath: m_ConnectedAnchor.y
+      value: 2.5999963
+      objectReference: {fileID: 0}
+    - target: {fileID: 5860576769854277568, guid: fc3aa8179b623414eae393a19e6ada5f, type: 3}
+      propertyPath: m_ConnectedAnchor.z
+      value: -0.0000011920929
+      objectReference: {fileID: 0}
     - target: {fileID: 6047562627158534355, guid: fc3aa8179b623414eae393a19e6ada5f, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -743,6 +767,30 @@ PrefabInstance:
     - target: {fileID: 6387954232641073769, guid: fc3aa8179b623414eae393a19e6ada5f, type: 3}
       propertyPath: m_Name
       value: Bob
+      objectReference: {fileID: 0}
+    - target: {fileID: 7993525037317917809, guid: fc3aa8179b623414eae393a19e6ada5f, type: 3}
+      propertyPath: m_ConnectedAnchor.x
+      value: 0.00000014901164
+      objectReference: {fileID: 0}
+    - target: {fileID: 7993525037317917809, guid: fc3aa8179b623414eae393a19e6ada5f, type: 3}
+      propertyPath: m_ConnectedAnchor.y
+      value: 2.5999963
+      objectReference: {fileID: 0}
+    - target: {fileID: 7993525037317917809, guid: fc3aa8179b623414eae393a19e6ada5f, type: 3}
+      propertyPath: m_ConnectedAnchor.z
+      value: 0.00000059604645
+      objectReference: {fileID: 0}
+    - target: {fileID: 8889917519259703343, guid: fc3aa8179b623414eae393a19e6ada5f, type: 3}
+      propertyPath: m_ConnectedAnchor.x
+      value: -0.00000059604645
+      objectReference: {fileID: 0}
+    - target: {fileID: 8889917519259703343, guid: fc3aa8179b623414eae393a19e6ada5f, type: 3}
+      propertyPath: m_ConnectedAnchor.y
+      value: 2.5999994
+      objectReference: {fileID: 0}
+    - target: {fileID: 8889917519259703343, guid: fc3aa8179b623414eae393a19e6ada5f, type: 3}
+      propertyPath: m_ConnectedAnchor.z
+      value: -0.0000001192093
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fc3aa8179b623414eae393a19e6ada5f, type: 3}
@@ -1219,6 +1267,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1199761407358834062, guid: 62368afcb3258684795d029e6f79a44f, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2046606158399390053, guid: 62368afcb3258684795d029e6f79a44f, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 5063029658566299724, guid: 62368afcb3258684795d029e6f79a44f, type: 3}
       propertyPath: m_Name
       value: Clothing Display

@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: -2312840515828145686}
   - component: {fileID: 2786166265248400094}
   - component: {fileID: 508952172177929600}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: RosieLongDress Environment
   m_TagString: Outfit
   m_Icon: {fileID: 0}
@@ -262,6 +262,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 920d5529425d88e43925f2cbc14a25f4, type: 3}
       propertyPath: m_Name
       value: RosieLongDress
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 920d5529425d88e43925f2cbc14a25f4, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 920d5529425d88e43925f2cbc14a25f4, type: 3}

@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: -2527015082729883712}
   - component: {fileID: 1866102204214725726}
   - component: {fileID: -4490985120585178241}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: RamoonShirt Environment
   m_TagString: Top
   m_Icon: {fileID: 0}
@@ -262,6 +262,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 48a24c1d64b663e48a38b0796869ffe3, type: 3}
       propertyPath: m_Name
       value: RamoonShirt
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 48a24c1d64b663e48a38b0796869ffe3, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 48a24c1d64b663e48a38b0796869ffe3, type: 3}

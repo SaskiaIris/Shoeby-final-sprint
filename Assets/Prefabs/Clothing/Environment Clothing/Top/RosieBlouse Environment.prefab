@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 6253342071810234980}
   - component: {fileID: 8260173563821468974}
   - component: {fileID: 8676669764873144344}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: RosieBlouse Environment
   m_TagString: Top
   m_Icon: {fileID: 0}
@@ -262,6 +262,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 3f9bfb40e83f7b044b804e97dfc037f7, type: 3}
       propertyPath: m_Name
       value: RosieBlouse
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3f9bfb40e83f7b044b804e97dfc037f7, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3f9bfb40e83f7b044b804e97dfc037f7, type: 3}
