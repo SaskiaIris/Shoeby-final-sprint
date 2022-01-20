@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: -6258926406242932635}
   - component: {fileID: 8269351782657840453}
   - component: {fileID: 6639579552280377489}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: SuitPants Environment
   m_TagString: Bottom
   m_Icon: {fileID: 0}
@@ -29,7 +29,7 @@ Transform:
   m_GameObject: {fileID: 4459360368152859579}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1.1}
   m_Children:
   - {fileID: 4208734650320607660}
   m_Father: {fileID: 0}
@@ -265,7 +265,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 90fa2778755cf4a4d92c5e639b6c678a, type: 3}
       propertyPath: m_Layer
-      value: 3
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 90fa2778755cf4a4d92c5e639b6c678a, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 90fa2778755cf4a4d92c5e639b6c678a, type: 3}

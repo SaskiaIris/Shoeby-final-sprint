@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 4594587740433274736}
   - component: {fileID: -4439055805380324080}
   - component: {fileID: -2148088319730822321}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: TwiggyTop Environment
   m_TagString: Top
   m_Icon: {fileID: 0}
@@ -265,7 +265,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: f8b1782c27c78604aacd7847ab977ae0, type: 3}
       propertyPath: m_Layer
-      value: 3
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f8b1782c27c78604aacd7847ab977ae0, type: 3}

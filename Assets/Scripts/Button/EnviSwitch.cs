@@ -5,83 +5,69 @@ using UnityEngine;
 public class EnviSwitch : MonoBehaviour
 {
     public float duration = 0.25f; // seconds
-    private Vector3 bushesOffPosition;
+    private Vector3 clothingOffPosition;
     private Vector3 catwalkOffPosition;
-    private Vector3 bobOffPosition;
-    public Vector3 bushesOnPosition = new Vector3(0.55f, 0.2f, -0.18f);
+    private Vector3 avatarOffPosition;
+    public Vector3 clothingOnPosition = new Vector3(0.55f, 0.2f, -0.18f);
     public Vector3 catwalkOnPosition = new Vector3(1, -3, 1);
-    public Vector3 bobOnPosition = new Vector3(0, 0, 0);
+    public Vector3 avatarOnPosition = new Vector3(0, 0, 0);
     private Coroutine ascent;
     private Coroutine descent;
     [SerializeField]
-    private GameObject bushes, catwalk, bob, shapePillar;
+    private GameObject clothing, catwalk, avatar, shapePillar;
 
     [SerializeField]
     private int clicked = 0;
 
     [SerializeField]
-    private int amountOfClicksBush = 5;
+    private int amountOfClicksAvatar = 3;
 
     [SerializeField]
-    private int amountOfClicksBob = 7;
+    private int amountOfClicksClothing = 5;
 
-    void Start()
-    {
-        bushesOffPosition = bushes.transform.localPosition;
+    void Start() {
+        clothingOffPosition = clothing.transform.localPosition;
         catwalkOffPosition = catwalk.transform.localPosition;
-        bobOffPosition = bob.transform.localPosition;
-        //catwalk = null;
+        avatarOffPosition = avatar.transform.localPosition;
     }
 
-    public void Switch()
-    {
-        if (ascent != null)
-        {
+    public void Switch() {
+        if (ascent != null) {
             StopCoroutine(ascent);
         }
-        if (descent != null)
-        {
+        if (descent != null) {
             StopCoroutine(descent);
         }
 
-        if (clicked == amountOfClicksBush)
-        {
-            //bushes.SetActive(true);
-            ascent = StartCoroutine(AnimateAscent(bushesOffPosition, bushesOnPosition, bushes));
-            descent = StartCoroutine(AnimateDescent(bobOnPosition, catwalkOnPosition, shapePillar));
-        }
-        else if (clicked == amountOfClicksBob)
-        {
-            //bob.SetActive(true);
-            ascent = StartCoroutine(AnimateAscent(bobOffPosition, bobOnPosition, bob));
+        if (clicked == amountOfClicksClothing) {
+            ascent = StartCoroutine(AnimateAscent(clothingOffPosition, clothingOnPosition, clothing));
+            descent = StartCoroutine(AnimateDescent(avatarOnPosition, catwalkOnPosition, shapePillar));
+        } else if (clicked == amountOfClicksAvatar) {
+            ascent = StartCoroutine(AnimateAscent(avatarOffPosition, avatarOnPosition, avatar));
             descent = StartCoroutine(AnimateDescent(catwalkOffPosition, catwalkOnPosition, catwalk));
-            //bushes.SetActive(false);
         }
 
         clicked++;
     }
 
-    private IEnumerator AnimateAscent(Vector3 objectFromPosition, Vector3 objectToPosition, GameObject objectje)
-    {
-        objectje.SetActive(true);
+    private IEnumerator AnimateAscent(Vector3 objectFromPosition, Vector3 objectToPosition, GameObject objectToMove) {
+        objectToMove.SetActive(true);
         float t = 0;
         while (t < duration)
         {
-            objectje.transform.position = Vector3.Lerp(objectFromPosition, objectToPosition, t / duration);
+            objectToMove.transform.position = Vector3.Lerp(objectFromPosition, objectToPosition, t / duration);
             t += Time.deltaTime;
             yield return null;
         }
     }
 
-    private IEnumerator AnimateDescent(Vector3 objectFromPos, Vector3 objectToPos, GameObject objectje)
-    {
+    private IEnumerator AnimateDescent(Vector3 objectFromPos, Vector3 objectToPos, GameObject objectToMove) {
         float t = 0;
-        while (t < duration)
-        {
-            objectje.transform.position = Vector3.Lerp(objectFromPos, objectToPos, t / duration);
+        while (t < duration) {
+            objectToMove.transform.position = Vector3.Lerp(objectFromPos, objectToPos, t / duration);
             t += Time.deltaTime;
             yield return null;
         }
-        objectje.SetActive(false);
+        objectToMove.SetActive(false);
     }
 }

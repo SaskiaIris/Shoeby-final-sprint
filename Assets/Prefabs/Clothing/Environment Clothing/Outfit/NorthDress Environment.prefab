@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 7682952818081961479}
   - component: {fileID: -7950936135095973442}
   - component: {fileID: -1178097464964257545}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: NorthDress Environment
   m_TagString: Outfit
   m_Icon: {fileID: 0}
@@ -265,7 +265,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 3d33a80dc24dfb345b220f27f6478236, type: 3}
       propertyPath: m_Layer
-      value: 3
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3d33a80dc24dfb345b220f27f6478236, type: 3}

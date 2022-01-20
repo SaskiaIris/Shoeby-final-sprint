@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 5993505111194133757}
   - component: {fileID: -1233977874774866223}
   - component: {fileID: -7264019452435256235}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: RosesShortDress Environment
   m_TagString: Outfit
   m_Icon: {fileID: 0}
@@ -265,7 +265,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 31b3abc05c2800943bd25a2e9bca500b, type: 3}
       propertyPath: m_Layer
-      value: 3
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 31b3abc05c2800943bd25a2e9bca500b, type: 3}

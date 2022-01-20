@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: -6547190387325365089}
   - component: {fileID: 5719963756386073181}
   - component: {fileID: -95725608325208386}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: ResortBlouse Environment
   m_TagString: Top
   m_Icon: {fileID: 0}
@@ -265,7 +265,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: ea85666572231e34c991b319d62a106c, type: 3}
       propertyPath: m_Layer
-      value: 3
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ea85666572231e34c991b319d62a106c, type: 3}

@@ -44,13 +44,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   duration: 1
-  bushesOnPosition: {x: -0.4, y: 0, z: -1.15}
+  clothingOnPosition: {x: 0.55, y: 0.2, z: -0.18}
   catwalkOnPosition: {x: 1, y: -3, z: 1}
-  bobOnPosition: {x: 0, y: 0.3, z: 0}
-  bushes: {fileID: 0}
+  avatarOnPosition: {x: 0, y: 0, z: 0}
+  clothing: {fileID: 0}
   catwalk: {fileID: 0}
-  bob: {fileID: 0}
+  avatar: {fileID: 0}
   shapePillar: {fileID: 0}
   clicked: 0
-  amountOfClicksBush: 4
-  amountOfClicksBob: 2
+  amountOfClicksAvatar: 3
+  amountOfClicksClothing: 5

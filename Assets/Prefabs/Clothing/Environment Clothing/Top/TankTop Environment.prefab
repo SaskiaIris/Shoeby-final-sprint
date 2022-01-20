@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: -4820466152345442734}
   - component: {fileID: 7985404466180889635}
   - component: {fileID: -9021674069198631139}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: TankTop Environment
   m_TagString: Top
   m_Icon: {fileID: 0}
@@ -265,7 +265,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: aef7caeeae6323b4faef280133efe11c, type: 3}
       propertyPath: m_Layer
-      value: 3
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aef7caeeae6323b4faef280133efe11c, type: 3}

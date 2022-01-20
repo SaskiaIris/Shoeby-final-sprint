@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: -9077069291009215426}
   - component: {fileID: 1114591937248599207}
   - component: {fileID: 754059040125006895}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: VayenDress Environment
   m_TagString: Outfit
   m_Icon: {fileID: 0}
@@ -265,7 +265,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: a7ecd8e967fe6a44a98f5e2042700514, type: 3}
       propertyPath: m_Layer
-      value: 3
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a7ecd8e967fe6a44a98f5e2042700514, type: 3}
