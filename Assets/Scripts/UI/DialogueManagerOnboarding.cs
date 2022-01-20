@@ -13,7 +13,7 @@ public class DialogueManagerOnboarding : MonoBehaviour {
 
     private int sentenceIndex = 0;
 
-    private int amountOfSecondsTillNext = 5;
+    private int amountOfSecondsTillNext = 10;
     private float timer = 0.0f;
     private int timerInSeconds = 0;
     private int amountOfMSInASecond = 60;
