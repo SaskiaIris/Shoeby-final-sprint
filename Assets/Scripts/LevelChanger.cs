@@ -10,13 +10,19 @@ public class LevelChanger : MonoBehaviour {
     [SerializeField]
     private int clicksNeeded = 4;
 
-    /*void Start() {
-        clicked = 0;
-        clicksNeeded = 4;
-    }*/
+    [SerializeField]
+    private int clicksNeededResetGame = 8;
 
     public void FadeToNextLevelStart() {
         FadeToLevel(SceneManager.GetActiveScene().buildIndex + 1);
+    }
+
+    public void FadeToStartLevel() {
+        clicked++;
+        if(clicked == clicksNeededResetGame) {
+            FadeToLevel(0);
+            Debug.Log("switch nuuuuuuuu");
+        };
     }
 
     public void FadeToNextLevelPillarButton() {

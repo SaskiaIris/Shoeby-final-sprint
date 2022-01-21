@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.4243068, g: 0.37375423, b: 0.3580715, a: 1}
+  m_IndirectSpecularColor: {r: 0.42430878, g: 0.373753, b: 0.35806265, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -191,6 +191,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: ButtonPillar Confirm
       objectReference: {fileID: 0}
+    - target: {fileID: 2725319319553261680, guid: f25786a16a89d754385590f84ae68700, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4965519544397098329, guid: f25786a16a89d754385590f84ae68700, type: 3}
+      propertyPath: onPressed.m_PersistentCalls.m_Calls.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4965519544397098329, guid: f25786a16a89d754385590f84ae68700, type: 3}
+      propertyPath: onPressed.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4965519544397098329, guid: f25786a16a89d754385590f84ae68700, type: 3}
       propertyPath: onPressed.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -199,6 +211,46 @@ PrefabInstance:
       propertyPath: onPressed.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
       objectReference: {fileID: 996992081}
+    - target: {fileID: 4965519544397098329, guid: f25786a16a89d754385590f84ae68700, type: 3}
+      propertyPath: onPressed.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 5855857085883254930}
+    - target: {fileID: 4965519544397098329, guid: f25786a16a89d754385590f84ae68700, type: 3}
+      propertyPath: onPressed.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4965519544397098329, guid: f25786a16a89d754385590f84ae68700, type: 3}
+      propertyPath: onPressed.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Switch
+      objectReference: {fileID: 0}
+    - target: {fileID: 4965519544397098329, guid: f25786a16a89d754385590f84ae68700, type: 3}
+      propertyPath: onPressed.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: DisplayNextSentence
+      objectReference: {fileID: 0}
+    - target: {fileID: 4965519544397098329, guid: f25786a16a89d754385590f84ae68700, type: 3}
+      propertyPath: onPressed.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: FadeToStartLevel
+      objectReference: {fileID: 0}
+    - target: {fileID: 4965519544397098329, guid: f25786a16a89d754385590f84ae68700, type: 3}
+      propertyPath: onPressed.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: EnviSwitch, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 4965519544397098329, guid: f25786a16a89d754385590f84ae68700, type: 3}
+      propertyPath: onPressed.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: DialogueManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 4965519544397098329, guid: f25786a16a89d754385590f84ae68700, type: 3}
+      propertyPath: onPressed.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
+      value: LevelChanger, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 4965519544397098329, guid: f25786a16a89d754385590f84ae68700, type: 3}
+      propertyPath: onPressed.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_IntArgument
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4965519544397098329, guid: f25786a16a89d754385590f84ae68700, type: 3}
+      propertyPath: onPressed.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 5760339112306981084, guid: f25786a16a89d754385590f84ae68700, type: 3}
       propertyPath: m_IsKinematic
       value: 1
@@ -317,7 +369,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7784984706089509794, guid: 1b5402f6398c91943811934015238cb0, type: 3}
       propertyPath: voiceOverSentences.Array.size
-      value: 8
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: -7784984706089509794, guid: 1b5402f6398c91943811934015238cb0, type: 3}
       propertyPath: voiceOverSentences.Array.data[0]
@@ -351,6 +403,10 @@ PrefabInstance:
       propertyPath: voiceOverSentences.Array.data[7]
       value: 
       objectReference: {fileID: 8300000, guid: 36fae7390781c9b43bb5cadee9d5e4c9, type: 3}
+    - target: {fileID: -7784984706089509794, guid: 1b5402f6398c91943811934015238cb0, type: 3}
+      propertyPath: voiceOverSentences.Array.data[8]
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 9190736197753597425, guid: 1b5402f6398c91943811934015238cb0, type: 3}
       propertyPath: m_RootOrder
       value: 10
@@ -603,6 +659,10 @@ PrefabInstance:
     - target: {fileID: 6047562627158534355, guid: fc3aa8179b623414eae393a19e6ada5f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6180255105649025998, guid: fc3aa8179b623414eae393a19e6ada5f, type: 3}
+      propertyPath: blendshapes.Array.data[5].shapeName
+      value: Kont
       objectReference: {fileID: 0}
     - target: {fileID: 6387954232641073769, guid: fc3aa8179b623414eae393a19e6ada5f, type: 3}
       propertyPath: m_Name
@@ -901,6 +961,34 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1703274162 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7456207287085544864, guid: f25786a16a89d754385590f84ae68700, type: 3}
+  m_PrefabInstance: {fileID: 78307895}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1703274168
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1703274162}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 755fa81e400a2894091b2ccb48bf9e3b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    sentences:
+    - Welkom in Shoeby world. Ik ben Shoe-bee en dit is mijn paradijs.
+    - Kijk om je heen! Op het pad lopen de Shoeby modellen.
+    - "Genoeg ge\xEFnspireerd voor nu?\r"
+    - Ik heb een verrassing voor je!
+    - Customize jouw avatar met de knoppen.
+    - We zijn nu bij het leukste gedeelte aangekomen! Time to shop!
+    - Helemaal klaar? Amazing!
+    - "Tot de volgende keer!\r"
+    - "Tot de volgende keer!\r"
 --- !u!4 &543450653229488587 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7542189511888967121, guid: 2eb1300c578b4f545850cbe1fc5c31d5, type: 3}
@@ -1204,6 +1292,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5855857085646095143, guid: 98d46676829740e4f85badb6a267d625, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5855857085883254931, guid: 98d46676829740e4f85badb6a267d625, type: 3}
+      propertyPath: Priority
+      value: 140
+      objectReference: {fileID: 0}
+    - target: {fileID: 7322470014623748770, guid: 98d46676829740e4f85badb6a267d625, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7322470014623748770, guid: 98d46676829740e4f85badb6a267d625, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 4.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7641887490471703170, guid: 98d46676829740e4f85badb6a267d625, type: 3}
+      propertyPath: clicksNeededResetGame
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 98d46676829740e4f85badb6a267d625, type: 3}
 --- !u!1 &5855857085883254929 stripped
@@ -1211,6 +1319,17 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 5855857085646095140, guid: 98d46676829740e4f85badb6a267d625, type: 3}
   m_PrefabInstance: {fileID: 5855857085883254928}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &5855857085883254930 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7641887490471703170, guid: 98d46676829740e4f85badb6a267d625, type: 3}
+  m_PrefabInstance: {fileID: 5855857085883254928}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d838726ffae81b64ab81bc0c1b3f8bae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &6618223280030557222
 PrefabInstance:
   m_ObjectHideFlags: 0

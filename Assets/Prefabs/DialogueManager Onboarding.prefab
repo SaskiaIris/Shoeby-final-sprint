@@ -46,10 +46,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   beeText: {fileID: 0}
   sentences: []
+  voiceOverSentences:
+  - {fileID: 8300000, guid: 6b20204a336071c48af8fd6265ac56a3, type: 3}
+  - {fileID: 8300000, guid: 4b56c794378d5a64a877b1b6992dae8d, type: 3}
+  - {fileID: 8300000, guid: 836f827e7954c8742bff6dce5eff1db4, type: 3}
+  - {fileID: 8300000, guid: 8b611122d500a9b4a835d9f7755b7076, type: 3}
+  - {fileID: 8300000, guid: 840cd9133ceab3749a51c60756ae5cf7, type: 3}
+  - {fileID: 8300000, guid: a5988bf244944b0408db46c6363020d2, type: 3}
+  - {fileID: 8300000, guid: f69c902934dbed549b4faddbe4d8854b, type: 3}
+  - {fileID: 8300000, guid: bb204bdd391008647acf6cf9e4fce2df, type: 3}
+  - {fileID: 8300000, guid: 6ef77f8b57398c543af0807743c2f2c3, type: 3}
   Controller: {fileID: 0}
   Button: {fileID: 0}
-  Kleding: {fileID: 0}
   Bob: {fileID: 0}
+  Carousel: {fileID: 0}
+  vrRig: {fileID: 0}
 --- !u!114 &2232903527453075530
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -65,12 +76,12 @@ MonoBehaviour:
   dialogue:
     sentences:
     - Welkom in de VR-Experience!
-    - Voor we beginnen wil ik graag uitleggen wat je allemaal kan doen!
-    - Voor je zie je de controller die je vast hebt! De knop achterop zorgt ervoor
-      dat je kan grijpen!
-    - Voor je zie je een hamer, pak hem maar op en sla ermee op de linker knop!
-    - Hiermee zorg je ervoor dat de tekst en de ervaring vanaf nu verder gaat!
-    - Links van je is een avatar en een kledingstuk verschenen!
-    - Pak de kleding op en gooi het richting de avatar! Dit is hoe je de avatar aankleed
-    - Nu je alles weet, kom mee naar mijn wereld!
+    - "Voor we beginnen wil ik graag uitleggen wat je allemaal kan doen.\r"
+    - Voor je zie je de controller die je vast hebt. De knop achterop zorgt ervoor
+      dat je kan grijpen.
+    - Voor je zie je een hamer, pak hem maar op en sla ermee op de knop!
+    - Hiermee zorg je ervoor dat de tekst en de ervaring vanaf nu verder gaan.
+    - Kijk eens links? Er zijn een avatar en een kledingstuk verschenen.
+    - Pak de kleding op en gooi het richting de avatar! Dit is hoe je de avatar aankleedt.
+    - In de Shoeby-wereld kom je ook carousels tegen, deze draai je rond met de A-knop.
     - Nu je alles weet, kom mee naar mijn wereld!
