@@ -54,9 +54,9 @@ public class TransformBody : MonoBehaviour {
         skinnedMeshRenderer.SetBlendShapeWeight(8, 100);
         skinnedMeshRenderer.SetBlendShapeWeight(10, 100);
         skinnedMeshRenderer.SetBlendShapeWeight(12, 100);
-        blendshapes[8].currentBlendValue = 100;
-        blendshapes[10].currentBlendValue = 100;
-        blendshapes[12].currentBlendValue = 100;
+        blendshapes[4].currentBlendValue = 100;
+        blendshapes[5].currentBlendValue = 100;
+        blendshapes[6].currentBlendValue = 100;
     }
 	IEnumerator ScaleBody(Blendshape shape, bool buttonRight, float scaleScaleStep) {
         isBusy = true;
