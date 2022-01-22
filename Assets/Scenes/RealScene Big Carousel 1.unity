@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.42430878, g: 0.373753, b: 0.35806265, a: 1}
+  m_IndirectSpecularColor: {r: 0.4243068, g: 0.37375423, b: 0.3580715, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -718,6 +718,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fc3aa8179b623414eae393a19e6ada5f, type: 3}
+--- !u!114 &1110034911 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6180255105649025998, guid: fc3aa8179b623414eae393a19e6ada5f, type: 3}
+  m_PrefabInstance: {fileID: 1110034910}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 403322189}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d465e877234ab84ba2a22d453b9ead0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1186307087 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6618223281143330857, guid: 0562c09251ec8bf4a89ec58b024ecc36, type: 3}
@@ -951,6 +962,34 @@ PrefabInstance:
     - target: {fileID: 2338350778292994980, guid: c273627f9e9d58945a83bedc5b399c3d, type: 3}
       propertyPath: amountOfClicksClothing
       value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2338350778292994980, guid: c273627f9e9d58945a83bedc5b399c3d, type: 3}
+      propertyPath: resetBlendShapesWhenDressing.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2338350778292994980, guid: c273627f9e9d58945a83bedc5b399c3d, type: 3}
+      propertyPath: resetBlendShapesWhenDressing.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2338350778292994980, guid: c273627f9e9d58945a83bedc5b399c3d, type: 3}
+      propertyPath: resetBlendShapesWhenDressing.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1110034911}
+    - target: {fileID: 2338350778292994980, guid: c273627f9e9d58945a83bedc5b399c3d, type: 3}
+      propertyPath: resetBlendShapesWhenDressing.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2338350778292994980, guid: c273627f9e9d58945a83bedc5b399c3d, type: 3}
+      propertyPath: resetBlendShapesWhenDressing.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ResetBlendshapes
+      objectReference: {fileID: 0}
+    - target: {fileID: 2338350778292994980, guid: c273627f9e9d58945a83bedc5b399c3d, type: 3}
+      propertyPath: resetBlendShapesWhenDressing.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: TransformBody, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 2338350778292994980, guid: c273627f9e9d58945a83bedc5b399c3d, type: 3}
+      propertyPath: resetBlendShapesWhenDressing.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 2338350778292994983, guid: c273627f9e9d58945a83bedc5b399c3d, type: 3}
       propertyPath: m_Name

@@ -44,7 +44,21 @@ public class TransformBody : MonoBehaviour {
         }
     }
 
-    IEnumerator ScaleBody(Blendshape shape, bool buttonRight, float scaleScaleStep) {
+    public void ResetBlendshapes() {
+        foreach(Blendshape shape in blendshapes) {
+            skinnedMeshRenderer.SetBlendShapeWeight(shape.maxIndex, 0);
+            skinnedMeshRenderer.SetBlendShapeWeight(shape.minIndex, 0);
+            shape.currentBlendValue = skinnedMeshRenderer.GetBlendShapeWeight(shape.minIndex);
+            shape.isMin = true;
+        }
+        skinnedMeshRenderer.SetBlendShapeWeight(8, 100);
+        skinnedMeshRenderer.SetBlendShapeWeight(10, 100);
+        skinnedMeshRenderer.SetBlendShapeWeight(12, 100);
+        blendshapes[8].currentBlendValue = 100;
+        blendshapes[10].currentBlendValue = 100;
+        blendshapes[12].currentBlendValue = 100;
+    }
+	IEnumerator ScaleBody(Blendshape shape, bool buttonRight, float scaleScaleStep) {
         isBusy = true;
 
         int blendshapeIndex = 0;

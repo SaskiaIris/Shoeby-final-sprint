@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class EnviSwitch : MonoBehaviour
 {
@@ -25,6 +26,9 @@ public class EnviSwitch : MonoBehaviour
     [SerializeField]
     private int amountOfClicksClothing = 5;
 
+    [SerializeField]
+    private UnityEvent resetBlendShapesWhenDressing;
+
     void Start() {
         clothingOffPosition = clothing.transform.localPosition;
         catwalkOffPosition = catwalk.transform.localPosition;
@@ -42,6 +46,7 @@ public class EnviSwitch : MonoBehaviour
         if (clicked == amountOfClicksClothing) {
             ascent = StartCoroutine(AnimateAscent(clothingOffPosition, clothingOnPosition, clothing));
             descent = StartCoroutine(AnimateDescent(avatarOnPosition, catwalkOnPosition, shapePillar));
+            resetBlendShapesWhenDressing.Invoke();
         } else if (clicked == amountOfClicksAvatar) {
             ascent = StartCoroutine(AnimateAscent(avatarOffPosition, avatarOnPosition, avatar));
             descent = StartCoroutine(AnimateDescent(catwalkOffPosition, catwalkOnPosition, catwalk));
